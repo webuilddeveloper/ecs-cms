@@ -88,6 +88,11 @@ body {
   /* กำหนดให้ Body มีความสูงเต็มหน้าจอ */
 }
 
+.container {
+  width: 100%;
+  display: flex;
+}
+
 /* Sidebar */
 .sidebar {
   width: 250px;
@@ -251,20 +256,22 @@ body {
 
 /* User Info Box */
 .user-info-box {
+  margin-left: auto;
+  width: 250px;
   display: flex;
   align-items: center;
-  background-color: #ffeb3b;
+  background-color: #ffffff;
   /* พื้นหลังสีเหลือง */
   padding: 10px;
   border-radius: 5px;
-  position: fixed;
+  /* position: fixed; */
   /* ทำให้ตำแหน่งติดมุมขวาบนตลอดเวลา */
   /* top: 20px; */
   /* ห่างจากด้านบน 20px */
-  right: 20px;
+  /* right: 20px; */
   /* ห่างจากขวา 20px */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  /* z-index: 1000; */
   /* ทำให้ user-info-box อยู่ด้านบนสุด */
 }
 
@@ -323,6 +330,213 @@ body {
   height: 20px;
   margin-left: auto;
 }
+
+/* #region globals */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+Thai:500,400,600|Poppins:500,400|Kanit:400");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/672840d5f80466cf84945c45.672840d5f80466cf84945c48.ZWQOmtL.hcp.png");
+
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal>* {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* #endregion */
+
+/* #region styleguide */
+.notosansthai-normal-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-medium-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-semi-bold-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-medium-blue-15px {
+  color: var(--blue);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-semi-bold-black-22px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-22);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-normal-slate-gray-15px {
+  color: var(--slate-gray);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-semi-bold-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-normal-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-clementine-13px {
+  color: var(--clementine);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-13);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-black-16px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-medium-black-14px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-14);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-bold-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosansthai-semi-bold-black-18px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-18);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.order-approval-detail-notosansthai-normal-black-20px {
+  color: var(--black-2);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-semi-bold-vulcan-20px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-normal-vulcan-18px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-18);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-black-17px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-17);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-black-18px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-18);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-slimy-green-13px {
+  color: var(--slimy-green);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-13);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* #endregion */
+
 
 /* #region home-educational */
 

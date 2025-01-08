@@ -28466,3 +28466,122 @@ body {
   margin-top: -1.00px;
   width: 600px;
 }
+
+.input-text {
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  padding: 0px 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.input-text-disabled {
+  background-color: #ccc;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  padding: 0px 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+
+.approval-educational-detail-frame-11439-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.approval-educational-detail-list-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.order-approval-attach-book-frame-38262-2 {
+  align-self: end;
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6-2 {
+  align-items: center;
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 50px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6-3 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 50px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.notosansthai-semi-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-semi-bold-back-18px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+/* กรอบรูปภาพ */
+.image-container {
+  position: relative;
+}
+
+/* ขนาดและการจัดการรูปภาพ */
+.image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* ปรับขนาดรูปให้เต็มกรอบ */
+}
+
+/* กรอบด้านล่างของรูป */
+.overlay {
+  border-radius: 0px 0px 16px 16px;
+  height: 70px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* สีทึบๆ */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  align-content: center;
+}

@@ -14686,14 +14686,6 @@ input:focus {
 /* --------- */
 
 
-.notosansthai-semi-bold-black-20px {
-  color: var(--bkack);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m-2);
-  font-style: normal;
-  font-weight: 600;
-}
-
 .purchase-order-shipping-notosansthai-semi-bold-white-20px {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
@@ -28258,17 +28250,6 @@ body {
   position: relative;
 }
 
-.main-content h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.main-content p {
-  font-size: 18px;
-  color: #555;
-}
-
 /* User Info Box */
 .user-info-box {
   margin-left: auto;
@@ -28345,6 +28326,7 @@ body {
   height: 20px;
   margin-left: auto;
 }
+
    
 .home-manage-text-1 {
   color: var(--blue);
@@ -28588,6 +28570,103 @@ body {
   align-items: center;
   border-radius: 10px;
   display: flex;
+
+}
+.purchase-order-educational-frame-38496-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.home-educational-column-table-default-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.purchase-order-educational-button-5-2 {
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 123px;
+}
+
+.purchase-order-educational-button-5-3 {
+  background-color: #E0EDFF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 123px;
+}
+
+.notosansthai-semi-bold-white-20px-2 {
+  color: #3C4FFE;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.approval-educational-detail-flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 321px;
+  height: 90px;
+  min-width: 766px;
+}
+
+.approval-educational-detail-frame-27-2 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order-list-detail-educational-frame-38339-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-list-detail-educational-xxxxxxxx-2 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 42.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6 {
+  align-items: center;
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+
   gap: 8px;
   justify-content: center;
   overflow: hidden;
@@ -28596,8 +28675,13 @@ body {
 }
 
 
+
 .manage-attach-book-text_label {
   color: var(--bkack);
+
+.approval-educational-detail-text_label-6 {
+  color: var(--white);
+
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-20);
   font-weight: 600;
@@ -28607,6 +28691,7 @@ body {
   position: relative;
   text-align: center;
   width: fit-content;
+
 } 
 
 .manage-notosansthai-semi-bold-midnight-blue-20px {
@@ -28618,10 +28703,101 @@ body {
 }
 
 .manage-notosansthai-semi-bold-white-20px {
+
+}
+
+.home-educational-text-9-2 {
+  color: #3348FF;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-32);
+  font-weight: 500;
+  line-height: 48.0px;
+  margin-top: -1.00px;
+  width: 600px;
+}
+
+.input-text {
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  padding: 0px 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.input-text-disabled {
+  background-color: #ccc;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  padding: 0px 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+
+.approval-educational-detail-frame-11439-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.approval-educational-detail-list-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.order-approval-attach-book-frame-38262-2 {
+  align-self: end;
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6-2 {
+  align-items: center;
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 50px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6-3 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 50px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.notosansthai-semi-bold-white-18px {
+
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-20);
   font-style: normal;
+
   font-weight: 500;
 } 
 .home-manage-select-field {
@@ -28642,8 +28818,90 @@ body {
 } 
 .manage-notosansthai-normal-slate-gray-15px {
   color: var(--bggrey);
+
+  font-weight: 600;
+}
+
+.notosansthai-semi-bold-back-18px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+/* กรอบรูปภาพ */
+.image-container {
+  position: relative;
+}
+
+/* ขนาดและการจัดการรูปภาพ */
+.image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* ปรับขนาดรูปให้เต็มกรอบ */
+}
+
+/* กรอบด้านล่างของรูป */
+.overlay {
+  border-radius: 0px 0px 16px 16px;
+  height: 70px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* สีทึบๆ */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  align-content: center;
+}
+
+.notosansthai-normal-black-15px {
+  color: var(--bkack);
+
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-15);
   font-style: normal;
   font-weight: 400;
+
 }
+
+}
+
+.notosansthai-normal-black-15px-w500 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.box-title {
+  background: #E6E6FA;
+  color: #3348FF;
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px 20px 0px 0px;
+  padding: 25px 24px;
+}
+
+.approval-educational-detail-frame-27-3 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+

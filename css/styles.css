@@ -28342,3 +28342,127 @@ body {
   height: 20px;
   margin-left: auto;
 }
+
+.purchase-order-educational-frame-38496-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.home-educational-column-table-default-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.purchase-order-educational-button-5-2 {
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 123px;
+}
+
+.purchase-order-educational-button-5-3 {
+  background-color: #E0EDFF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 123px;
+}
+
+.notosansthai-semi-bold-white-20px-2 {
+  color: #3C4FFE;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.approval-educational-detail-flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 321px;
+  height: 90px;
+  min-width: 766px;
+}
+
+.approval-educational-detail-frame-27-2 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order-list-detail-educational-frame-38339-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-list-detail-educational-xxxxxxxx-2 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 42.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.approval-educational-detail-button-6 {
+  align-items: center;
+  background-color: #3348FF;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+}
+
+.approval-educational-detail-text_label-6 {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.home-educational-text-9-2 {
+  color: #3348FF;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-32);
+  font-weight: 500;
+  line-height: 48.0px;
+  margin-top: -1.00px;
+  width: 600px;
+}

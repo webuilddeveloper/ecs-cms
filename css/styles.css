@@ -14683,14 +14683,6 @@ input:focus {
 /* --------- */
 
 
-.notosansthai-semi-bold-black-20px {
-  color: var(--bkack);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m-2);
-  font-style: normal;
-  font-weight: 600;
-}
-
 .purchase-order-shipping-notosansthai-semi-bold-white-20px {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
@@ -28255,17 +28247,6 @@ body {
   position: relative;
 }
 
-.main-content h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.main-content p {
-  font-size: 18px;
-  color: #555;
-}
-
 /* User Info Box */
 .user-info-box {
   margin-left: auto;
@@ -28584,4 +28565,47 @@ body {
   font-size: var(--font-size-20);
   font-weight: 600;
   align-content: center;
+}
+
+.notosansthai-normal-black-15px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-black-15px-w500 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.box-title {
+  background: #E6E6FA;
+  color: #3348FF;
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px 20px 0px 0px;
+  padding: 25px 24px;
+}
+
+.approval-educational-detail-frame-27-3 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
 }

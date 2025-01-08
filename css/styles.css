@@ -14682,10 +14682,13 @@ input:focus {
   position: relative;
 }
 
-
-/* --------- */
-
-
+.notosansthai-semi-bold-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m-2);
+  font-style: normal;
+  font-weight: 600;
+}
 .purchase-order-shipping-notosansthai-semi-bold-white-20px {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
@@ -28678,7 +28681,7 @@ body {
 
 .manage-attach-book-text_label {
   color: var(--bkack);
-
+}
 .approval-educational-detail-text_label-6 {
   color: var(--white);
 
@@ -28818,7 +28821,6 @@ body {
 } 
 .manage-notosansthai-normal-slate-gray-15px {
   color: var(--bggrey);
-
   font-weight: 600;
 }
 
@@ -28868,7 +28870,6 @@ body {
 
 }
 
-}
 
 .notosansthai-normal-black-15px-w500 {
   color: var(--bkack);
@@ -28905,3 +28906,13 @@ body {
   margin-bottom: 20px;
 }
 
+main-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #555;
+}

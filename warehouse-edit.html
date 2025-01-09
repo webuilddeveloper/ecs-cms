@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
-<body>
+<body id="body">
   <div class="container">
     <!-- Sidebar -->
     <nav class="sidebar">
@@ -195,7 +195,7 @@
         </div>
       </div>
     </div>
-    <div id="popup" class="approval-educational-detail-popup-container" style="display: none;">
+    <div id="popup" class="order-approval-detail-popup-container" style="display: none;">
       <div class="approval-educational-detail-view-1"></div>
       <div class="approval-educational-detail-popup">
         <div class="approval-educational-detail-frame-container">
@@ -229,7 +229,7 @@
       </div>
     </div>
 
-    <div id="popupS" class="approval-educational-detail-popup-container" style="display: none;">
+    <div id="popupS" class="order-approval-detail-popup-container" style="display: none;">
       <div class="approval-educational-detail-view-1"></div>
       <div class="approval-educational-detail-popup">
         <div class="approval-educational-detail-frame-container">
@@ -298,28 +298,28 @@
     function showPopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
 
     function showPopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
 
@@ -327,14 +327,14 @@
       document.getElementById("textstatus").innerText = param;
       const popup = document.getElementById("popupS");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopupS() {
       const popup = document.getElementById("popupS");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
 

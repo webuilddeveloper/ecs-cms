@@ -86,14 +86,6 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      <!-- User Info Box -->
-      <div class="user-info-box">
-        <img src="./img/ellipse-11-2@2x.png" alt="User Avatar" class="user-avatar">
-        <div class="user-info">
-          <h3>John Doe</h3>
-          <p>Software Engineer</p>
-        </div>
-      </div>
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
@@ -288,7 +280,7 @@
         </div>
       </div>
     </div>
-    <div id="popup" class="approval-educational-detail-popup-container" style="display: none;">
+    <div id="popup" class="order-approval-detail-popup-container" style="display: none;">
       <div class="approval-educational-detail-view-1"></div>
       <div class="approval-educational-detail-popup">
         <div class="approval-educational-detail-frame-container">
@@ -323,7 +315,7 @@
         </div>
       </div>
     </div>
-    <div id="popupF" class="approval-educational-detail-popup-container" style="display: none;">
+    <div id="popupF" class="order-approval-detail-popup-container" style="display: none;">
       <div class="approval-educational-detail-view-3">
         <div class="approval-educational-detail-popup-3">
           <div class="approval-educational-detail-frame-container-3">
@@ -378,7 +370,7 @@
         </div>
       </div>
     </div>
-    <div id="popupS" class="approval-educational-detail-popup-container" style="display: none;">
+    <div id="popupS" class="order-approval-detail-popup-container" style="display: none;">
       <div class="approval-educational-detail-view-1"></div>
       <div class="approval-educational-detail-popup">
         <div class="approval-educational-detail-frame-container">
@@ -404,28 +396,28 @@
     function showPopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
 
     function showPopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
 
@@ -433,14 +425,14 @@
       document.getElementById("textstatus").innerText = param;
       const popup = document.getElementById("popupS");
       popup.style.display = "flex"; // แสดง popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.add('no-scroll');
     }
 
     function hidePopupS() {
       const popup = document.getElementById("popupS");
       popup.style.display = "none"; // ซ่อน popup
-      const contentCancel = document.getElementById("contentCancel");
+      const body = document.getElementById("body");
       document.body.classList.remove('no-scroll');
     }
     function checkBoxAll() {

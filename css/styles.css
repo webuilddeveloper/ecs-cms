@@ -29582,3 +29582,240 @@ td {
   transform: translateY(-50%);
   pointer-events: none;
 }
+.home-usage-input-select-long {
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}  
+.home-usage-input-select-long2 {
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+.home-usage-button-1 { 
+  margin-left: auto;
+  background-color: var(--blue);
+  border-radius: 10px;
+  cursor: pointer; 
+  display: inline-flex;
+  /* flex: 0 0 auto;  
+  gap: 8px; 
+   justify-content: flex-end;*/
+  padding: 5px 8px;      
+
+ 
+}  
+.usage-list-detail-educational-text-7 {
+  line-height: normal;
+  width: 200px;
+} 
+.usage-order-detail-rectangle-4317 {
+  height: 110px;
+  position: relative;
+  width: 110px;
+}
+
+.approval-usage-detail-frame-11439 {
+  align-items: flex-start;
+  display: flex;
+  /* gap: 80px; */
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+} 
+.order-confirm-usage-image-8 {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.purchase-order-confirm-usage-frame { 
+  border: 1px solid #a2a2a2;
+  border-radius: 8.66px;
+  height: 80px;
+  margin-bottom: -1.00px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+.purchase-order-confirm-usage-frame-9 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 16px;
+  height: 108px;
+  position: relative;
+  width: 100%; /* ใช้เต็มความกว้าง */
+  padding-left: 30px; /* เพิ่มระยะห่างเฉพาะด้านซ้าย */
+} 
+.usage-approval-detail-frame-38262 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+  height: 42px;
+  position: relative;
+  width: 100%;
+} 
+.usage-approval-detail-frame {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+} 
+.usage-approval-detail-frame-38381 {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 245px;
+  overflow: hidden;
+  padding: 20px 24px;
+  position: relative;
+  width: 100%;
+} 
+
+
+/* styles.css */
+.tab-nav {
+  width: 100%;
+  background: white;
+  /* padding: 20px; */
+}
+
+.tab-container {
+  position: relative;
+  display: inline-flex;
+  border-bottom: 3px solid var(--geyser); 
+  width: 100%;
+}
+
+.tab-item {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+  cursor: pointer;
+  color: #757575 !important;
+}
+
+.tab-item.active {
+  color: var(--blue) !important;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.slider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: var(--blue);
+  transition: all 0.3s ease;
+}
+
+
+
+.content-item {
+  display: none; /* ซ่อนเนื้อหาทั้งหมดเริ่มต้น */
+}
+
+.content-item.active {
+  display: block; /* แสดงเฉพาะเนื้อหาที่ active */
+}
+
+/* สไตล์สำหรับเนื้อหาภายใน */
+.content-item h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.content-item p {
+  color: #666;
+  line-height: 1.6;
+} 
+
+ 
+.home-product-text-cell {
+  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 1; */
+  display: -webkit-box;
+  flex: 1;
+  line-height: 21.0px; 
+  height: 90px;
+  /* overflow: hidden; 
+  text-overflow: ellipsis; */
+} 
+.home-product-base-table-cell {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  display: flex;
+  gap: 8px;
+  height: 100px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+} 
+.notosansthai-bold-15px {
+  font-size: 18px; /* ขนาดใหญ่ขึ้น */
+  font-weight: 400; /* สีเข้มกว่า */
+  color: var(--bkack); /* สีข้อความเข้มกว่า */
+} 
+.notosansthai-normal-525E6F-13px {
+  color: #525E6F;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-13);
+  font-style: normal;
+  font-weight: 400;
+} 
+.approval-product-status {
+  background-color: #5A616D29;
+} 
+.home-delivery-select-field {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--geyser);
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  overflow: hidden;
+  padding: 8px 10px;
+  position: relative;
+  width: 100%; 
+  margin-left: auto;
+  /* margin-top: 25px; */
+ 
+}

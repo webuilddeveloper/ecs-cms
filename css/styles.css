@@ -1422,7 +1422,7 @@ input:focus {
 }
 
 .notosansthai-medium-vulcan-15px {
-  color: var(--vulcan);
+  /* color: var(--vulcan); */
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-15);
   font-style: normal;
@@ -2095,7 +2095,7 @@ input:focus {
   letter-spacing: 0;
   line-height: 21.0px;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .home-educational-base-table-cell-1 {
@@ -17051,12 +17051,13 @@ input:focus {
 .popup {
   align-items: flex-start;
   display: flex;
-  height: 364px;
+  /* height: 364px; */
   left: 319px;
-  min-width: 801px;
+  /* min-width: 801px; */
+  width: max-content;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 100%);
   /* top: 725px; */
 }
 
@@ -17083,7 +17084,7 @@ input:focus {
   flex-direction: column;
   gap: 32px;
   position: relative;
-  width: 721px;
+  /* width: 721px; */
 }
 
 .popup .frame-38265 {
@@ -17154,9 +17155,9 @@ input:focus {
 .popup .frame-1041 {
   cursor: pointer;
   height: 31px;
-  left: 747px;
+  left: 465px;
   position: absolute;
-  top: 24px;
+  top: 10px;
   width: 31px;
 }
 
@@ -28364,8 +28365,8 @@ body {
   cursor: pointer;
   display: flex;
   gap: 8px;
-  padding: 8px 24px;
-  width: 123px;
+  padding: 12px 24px;
+  min-width: 123px;
 }
 
 .purchase-order-educational-button-5-3 {

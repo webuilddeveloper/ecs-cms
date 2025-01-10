@@ -48,7 +48,7 @@
             <li><a href="#">Online</a></li>
           </ul>
         </li>
-        <li><a href="#" class="menu-item text-menu active"><img src="./img/icon-analytics.png" alt="คลังสินค้า"
+        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-analytics.png" alt="คลังสินค้า"
               class="icon-image">คลังสินค้า</a></li>
         <li class="dropdown">
           <a href="#" class="menu-item"><img src="./img/icon-analytics.png" alt="รายงาน" class="icon-image">
@@ -72,13 +72,13 @@
               class="icon-image">จัดการผู้ใช้งาน</a></li>
         <li><a href="#" class="menu-item text-menu"><img src="./img/icon-book.png" alt="ประวัติการใช้งาน"
               class="icon-image">ประวัติการใช้งาน</a></li>
-        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-checkmark.png" alt="การอนุมัติผู้ใช้งาน"
+        <li><a href="#" class="menu-item text-menu active"><img src="./img/icon-checkmark.png" alt="การอนุมัติผู้ใช้งาน"
               class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
         <li class="dropdown">
           <a href="#" class="menu-item"><img src="./img/icon-image.png" alt="จัดการเนื้อหา" class="icon-image">
             จัดการเนื้อหา <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu">
-            <li><a href="./image-content-manage.html">รูปภาพ</a></li>
+            <li><a href="#">รูปภาพ</a></li>
           </ul>
         </li>
       </ul>
@@ -97,7 +97,7 @@
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
-            <div class="home-educational-text-9-2 valign-text-middle">คลังสินค้า</div>
+            <div class="home-educational-text-9-2 valign-text-middle">การอนุมัติผู้ใช้งาน</div>
           </div>
           <div class="purchase-order-educational-frame-38494">
             <div class="purchase-order-educational-frame-38496-2">
@@ -113,10 +113,9 @@
               <div class="approval-educational-input-select input">
                 <div class="approval-educational-select-field">
                   <select id="agency" class="home-educational-list-custom-dropdown">
-                    <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
-                    <option value="ปพ.1-ป">ปพ.1 : ป</option>
-                    <option value="ปพ.1-บ">ปพ.1 : บ</option>
-                    <option value="ปพ.1-พ">ปพ.1 : พ</option>
+                    <option value="" disabled selected>ทุกสังกัดย่อย</option>
+                    <option value="สพป">สพป</option>
+                    <option value="สพม">สพม</option>
                   </select>
                   <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
                   <!-- <div class="approval-educational-select notosansthai-normal-slate-gray-15px">ทุกสถานะการอนุมัติ</div>
@@ -126,13 +125,10 @@
               <div class="approval-educational-input-select input">
                 <div class="approval-educational-select-field">
                   <select id="agency" class="home-educational-list-custom-dropdown">
-                    <option value="" disabled selected>เลือกระดับชั้น</option>
-                    <option value="ป.1">ป.1</option>
-                    <option value="ป.2">ป.2</option>
-                    <option value="ป.3">ป.3</option>
-                    <option value="ป.4">ป.4</option>
-                    <option value="ป.5">ป.5</option>
-                    <option value="ป.6">ป.6</option>
+                    <option value="" disabled selected>ทุกสถานะการอนุมัติ</option>
+                    <option value="รออนุมัติ">รออนุมัติ</option>
+                    <option value="อนุมัติ">อนุมัติ</option>
+                    <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
                   </select>
                   <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
                   <!-- <div class="approval-educational-select notosansthai-normal-slate-gray-15px">ทุกสถานะการอนุมัติ</div>
@@ -140,28 +136,57 @@
                 </div>
               </div>
             </div>
-            <div class="purchase-order-educational-frame-38496-2">
-              <a href="javascript:SubmitForm('form7')">
-                <div class="purchase-order-educational-button-5-2 purchase-order-educational-button-7">
-                  <div
-                    class="purchase-order-educational-text_label-2 valign-text-middle purchase-order-educational-text_label-3 notosansthai-semi-bold-white-20px">
-                    ค้นหา
-                  </div>
-                </div>
-              </a>
-              <a href="javascript:SubmitForm('form7')">
-                <div class="purchase-order-educational-button-5-3 purchase-order-educational-button-7">
-                  <div
-                    class="purchase-order-educational-text_label-2 valign-text-middle purchase-order-educational-text_label-3 notosansthai-semi-bold-white-20px-2">
-                    ล้างค่า
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
           <div class="home-educational-frame-38">
             <div class="home-educational-frame-38-1">
               <div class="home-educational-frame-3346">
+                <div class="approval-educational-column-table-default">
+                  <div class="approval-educational-table-header approval-educational-base-table-header base-table" onclick="checkBoxAll()">
+                    <input id="checkbox-all" type="checkbox" class="approval-educational-base-checkbox"
+                      id="checkbox-all" />
+                    <label for="checkbox-all" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox1" type="checkbox" class="approval-educational-base-checkbox" id="checkbox1" />
+                    <label for="checkbox1" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox2" type="checkbox" class="approval-educational-base-checkbox" id="checkbox2" />
+                    <label for="checkbox2" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox3" type="checkbox" class="approval-educational-base-checkbox" id="checkbox3" />
+                    <label for="checkbox3" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox4" type="checkbox" class="approval-educational-base-checkbox" id="checkbox4" />
+                    <label for="checkbox4" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox5" type="checkbox" class="approval-educational-base-checkbox" id="checkbox5" />
+                    <label for="checkbox5" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox6" type="checkbox" class="approval-educational-base-checkbox" id="checkbox6" />
+                    <label for="checkbox6" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox7" type="checkbox" class="approval-educational-base-checkbox" id="checkbox7" />
+                    <label for="checkbox7" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox8" type="checkbox" class="approval-educational-base-checkbox" id="checkbox8" />
+                    <label for="checkbox8" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox9" type="checkbox" class="approval-educational-base-checkbox" id="checkbox9" />
+                    <label for="checkbox9" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                  <div class="approval-educational-base-table">
+                    <input id="checkbox10" type="checkbox" class="approval-educational-base-checkbox" id="checkbox10" />
+                    <label for="checkbox10" class="approval-educational-base-checkbox-label"></label>
+                  </div>
+                </div>
                 <div class="home-educational-column-table-default-1 column-table-default-3">
                   <div class="home-educational-table-header">
                     <div class="home-educational-header-1 notosansthai-semi-bold-vulcan-15px">ลำดับ</div>
@@ -199,187 +224,191 @@
                 </div>
                 <div class="home-educational-column-table-default-4">
                   <div class="home-educational-table-header">
-                    <div class="home-educational-header-2 notosansthai-semi-bold-vulcan-15px">รหัสสินค้า</div>
+                    <div class="home-educational-header-2 notosansthai-semi-bold-vulcan-15px">ชื่อ-นามสกุล</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174950</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ยลดา ร่ำรวย</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สุวัช เจริญธรรม</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">กรกช สดศรี</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">หิรัญ ปกครองดี</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สมชาย ปกปักษ์</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ลัดดา ดีงาม</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เฟื่องฟ้า เกศแก้ว</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สมปอง ปองกุล</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ธนบดี เกียรติก้อง</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">1-174951</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">วรรณา ชัยมี</div>
                   </div>
                 </div>
                 <div class="home-educational-column-table-default-4">
                   <div class="home-educational-table-header">
-                    <div class="home-educational-header-3 notosansthai-semi-bold-vulcan-15px">รหัสบาร์โค้ด</div>
+                    <div class="home-educational-header-3 notosansthai-semi-bold-vulcan-15px">ชื่อสังกัดย่อย</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">8850526042532</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.</div>
                   </div>
                 </div>
                 <div class="home-educational-column-table-default-4">
                   <div class="home-educational-table-header">
-                    <div class="home-educational-header-4 notosansthai-semi-bold-vulcan-15px">ชื่อสินค้า</div>
+                    <div class="home-educational-header-4 notosansthai-semi-bold-vulcan-15px">ชื่อเขตพื้นที่การศึกษา</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กระบี่</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กรุงเทพมหานคร</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กาญจนบุรี เขต 1</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กาญจนบุรี เขต 2</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กาญจนบุรี เขต 3</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพป.กาญจนบุรี เขต 4</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.สระบุรี</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.ปทุมธานี</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.พระนครศรีอยุธยา</div>
                   </div>
                   <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">ปพ.1:ป
-                      ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">สพม.นนทบุรี</div>
                   </div>
                 </div>
-                <div class="home-educational-column-table-default-4">
-                  <div class="home-educational-table-header">
-                    <div class="home-educational-header-5 notosansthai-semi-bold-vulcan-15px">จำนวนคงเหลือ</div>
+
+                <div class="approval-educational-column-table-default-4 column-table-default-6">
+                  <div class="approval-educational-table-header">
+                    <div class="approval-educational-header-4 notosansthai-semi-bold-vulcan-15px">สถานะการอนุมัติ</div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-12.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-clementine-13px">
+                        รออนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-12.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-clementine-13px">
+                        รออนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-12.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-clementine-13px">
+                        รออนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-12.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-clementine-13px">
+                        รออนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-1 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-16.svg" alt="icon" />
+                      <div class="approval-educational-text-2 valign-text-middle approval-educational-text-5">ไม่อนุมัติ
+                      </div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-1 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-17.svg" alt="icon" />
+                      <div class="approval-educational-text-2 valign-text-middle approval-educational-text-5">ไม่อนุมัติ
+                      </div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-2 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-18.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-slimy-green-13px">
+                        อนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-2 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-18.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-slimy-green-13px">
+                        อนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-2 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-18.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-slimy-green-13px">
+                        อนุมัติ</div>
+                    </div>
                   </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">246,000</div>
-                  </div>
-                </div>
-                <div class="home-educational-column-table-default-4">
-                  <div class="home-educational-table-header">
-                    <div class="home-educational-header-5 notosansthai-semi-bold-vulcan-15px">หน่วย</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
-                  </div>
-                  <div class="home-educational-base-table-cell">
-                    <div class="home-educational-text-cell text notosansthai-normal-vulcan-15px">เล่ม</div>
+                  <div class="approval-educational-base-table-cell-1 approval-educational-base-table-cell-3">
+                    <div class="approval-educational-status-2 approval-educational-status-3">
+                      <img class="approval-educational-icon-1" src="img/icon-18.svg" alt="icon" />
+                      <div
+                        class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-slimy-green-13px">
+                        อนุมัติ</div>
+                    </div>
                   </div>
                 </div>
                 <div class="pointer column-table-default-3">
@@ -387,7 +416,7 @@
                     <div class="home-educational-header-6 notosansthai-semi-bold-vulcan-15px">รายละเอียด</div>
                   </div>
                   <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-detail.html">
+                    <a href="./user-approval-edit.html">
                       <div class="home-educational-actions-btn">
                         <div class="home-educational-button button-6">
                           <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
@@ -398,73 +427,7 @@
                     </a>
                   </div>
                   <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-detail.html">
-                      <div class="home-educational-actions-btn">
-                        <div class="home-educational-button button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-detail.html">
+                    <a href="./user-approval-edit.html">
                       <div class="home-educational-actions-btn">
                         <div class="home-educational-button button-6">
                           <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
@@ -476,7 +439,7 @@
                   </div>
                   <div class="home-educational-base-table-cell-1">
                     <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
+                      <a href="./user-approval-edit.html">
                         <div class="home-educational-button-1 button-6">
                           <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
                           <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
@@ -487,7 +450,7 @@
                   </div>
                   <div class="home-educational-base-table-cell-1">
                     <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-detail.html">
+                      <a href="./user-approval-edit.html">
                         <div class="home-educational-button-1 button-6">
                           <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
                           <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
@@ -496,107 +459,68 @@
                       </a>
                     </div>
                   </div>
-                </div>
-                <div class="pointer column-table-default-3">
-                  <div class="home-educational-table-header">
-                    <div class="home-educational-header-6 notosansthai-semi-bold-vulcan-15px">แก้ไข</div>
+                  <div class="home-educational-base-table-cell-1">
+                    <div class="home-educational-actions-btn-1">
+                      <a href="./user-approval-edit.html">
+                        <div class="home-educational-button-1 button-6">
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                   <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-edit.html">
+                    <div class="home-educational-actions-btn-1">
+                      <a href="./user-approval-edit.html">
+                        <div class="home-educational-button-1 button-6">
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home-educational-base-table-cell-1">
+                    <div class="home-educational-actions-btn-1">
+                      <a href="./user-approval-edit.html">
+                        <div class="home-educational-button-1 button-6">
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home-educational-base-table-cell-1">
+                    <a href="./user-approval-edit.html">
                       <div class="home-educational-actions-btn">
                         <div class="home-educational-button button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-edit.html">
-                      <div class="home-educational-actions-btn">
-                        <div class="home-educational-button button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
-                        <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home-educational-base-table-cell-1">
-                    <a href="./warehouse-edit.html">
-                      <div class="home-educational-actions-btn">
-                        <div class="home-educational-button button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="home-educational-base-table-cell-1">
                     <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
+                      <a href="./user-approval-edit.html">
                         <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
                         </div>
                       </a>
                     </div>
                   </div>
                   <div class="home-educational-base-table-cell-1">
                     <div class="home-educational-actions-btn-1">
-                      <a href="./warehouse-edit.html">
+                      <a href="./user-approval-edit.html">
                         <div class="home-educational-button-1 button-6">
-                          <img class="home-educational-icon-1" src="img/icon-edit.png" alt="icon-btn-left" />
-
+                          <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
+                          <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                          </div>
                         </div>
                       </a>
                     </div>
@@ -667,6 +591,20 @@
   </div>
 
   <script>
+    function checkBoxAll() {
+      var isChecked = document.getElementById('checkbox-all').checked;
+
+      document.getElementById('checkbox1').checked = isChecked;
+      document.getElementById('checkbox2').checked = isChecked;
+      document.getElementById('checkbox3').checked = isChecked;
+      document.getElementById('checkbox4').checked = isChecked;
+      document.getElementById('checkbox5').checked = isChecked;
+      document.getElementById('checkbox6').checked = isChecked;
+      document.getElementById('checkbox7').checked = isChecked;
+      document.getElementById('checkbox8').checked = isChecked;
+      document.getElementById('checkbox9').checked = isChecked;
+      document.getElementById('checkbox10').checked = isChecked;
+    }
     // JavaScript to handle the dropdown menu toggle
     const dropdown = document.querySelectorAll('.dropdown > a');
     dropdown.forEach(item => {

@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
-<body>
+<body id="body">
   <div class="container">
     <!-- Sidebar -->
     <nav class="sidebar">
@@ -89,7 +89,7 @@
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
-            <div class="home-educational-text-9-2 valign-text-middle">คลังสินค้า > รายละเอียดสินค้า</div>
+            <div class="home-educational-text-9-2 valign-text-middle">คลังสินค้า > รายละเอียดสินค้า > แก้ไข</div>
           </div>
           <div class="approval-educational-detail-flex-row-2">
             <a href="./warehouse.html">
@@ -106,22 +106,25 @@
                   class="order-list-detail-educational-text-7 valign-text-middle order-list-detail-educational-text-3 notosansthai-semi-bold-black-20px">
                   รหัสสินค้า</div>
                 <div class="order-list-detail-educational-frame-38426">
-                  <div class="order-list-detail-educational-xxxxxxxx-2 valign-text-middle">1-174950</div>
-                  <a href="javascript:SubmitForm('form7')">
-                    <div class="purchase-order-educational-button-5-3 purchase-order-educational-button-7">
-                      <div
-                        class="purchase-order-educational-text_label-2 valign-text-middle purchase-order-educational-text_label-3 notosansthai-semi-bold-white-20px-2">
-                        คัดลอก
-                      </div>
-                    </div>
-                  </a>
+                  <input disabled
+                    class="order-list-detail-educational-xxxxxxxx-2 valign-text-middle input-text-disabled" name="1"
+                    type="text" value="1-174950" style="text-align: end;" />
                 </div>
               </div>
               <img class="order-list-detail-educational-line" src="img/line-6-25.svg" alt="Line 7" />
               <div class="approval-educational-detail-frame-38486">
-                <div class="approval-educational-detail-view">
-                  <img class="purchase-order-detail-rectangle-4317" src="img/rectangle-4317-1@2x.png"
-                    alt="Rectangle 4317" onclick="openModal(); currentSlide(3)" />
+                <div class="approval-educational-detail-view" style="flex: 0;">
+                  <a href="./home-educational.html">
+                    <div class="image-container">
+                      <img class="purchase-order-detail-rectangle-4317" src="img/rectangle-4317-1@2x.png"
+                        alt="Rectangle 4317" onclick="openModal(); currentSlide(3)" />
+                      <div class="overlay">
+                        เพิ่มหรือเปลี่ยนรูปภาพ
+                      </div>
+                    </div>
+                  </a>
+                  <!-- <img class="purchase-order-detail-rectangle-4317" src="img/rectangle-4317-1@2x.png"
+                    alt="Rectangle 4317" onclick="openModal(); currentSlide(3)" /> -->
                   <div class="purchase-order-detail-frame-38501">
                     <img class="purchase-order-detail-rectangle-4318" src="img/rectangle-4318-1@2x.png"
                       alt="Rectangle 4318" onclick="openModal(); currentSlide(1)" />
@@ -130,33 +133,41 @@
                   </div>
                 </div>
                 <div class="approval-educational-detail-view">
-                  <article class="approval-educational-detail-list">
+                  <article class="approval-educational-detail-list-2">
                     <div class="approval-educational-detail-frame-11437">
                       <div class="approval-educational-detail-text notosansthai-semi-bold-black-20px">รหัสบาร์โค้ด :
                       </div>
                     </div>
-                    <div class="approval-educational-detail-frame-11439">
-                      <div class="approval-educational-detail-text notosansthai-normal-black-20px">8850526042532</div>
+                    <div class="approval-educational-detail-frame-11439-2">
+                      <input disabled
+                        class="approval-educational-detail-text notosansthai-normal-black-20px input-text-disabled"
+                        name="2" type="text" value="8850526042532" />
                     </div>
                   </article>
-                  <article class="approval-educational-detail-list">
+                  <article class="approval-educational-detail-list-2">
                     <div class="approval-educational-detail-frame-11437">
                       <div class="approval-educational-detail-text notosansthai-semi-bold-black-20px">ชื่อสินค้า :</div>
                     </div>
-                    <div class="approval-educational-detail-frame-11439">
-                      <div class="approval-educational-detail-text notosansthai-normal-black-20px">ปพ.1:ป
-                        ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                    <div class="approval-educational-detail-frame-11439-2">
+                      <textarea disabled
+                        class="approval-educational-detail-text notosansthai-normal-black-20px input-text-disabled"
+                        name="2"
+                        rows="5">ปพ.1:ประเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)</textarea>
                     </div>
                   </article>
-                  <article class="approval-educational-detail-list">
+                  <article class="approval-educational-detail-list-2">
                     <div class="approval-educational-detail-frame-11437">
                       <div class="approval-educational-detail-text notosansthai-semi-bold-black-20px">รายละเอียด :</div>
                     </div>
-                    <div class="approval-educational-detail-frame-11439">
-                      <div class="approval-educational-detail-text notosansthai-normal-black-20px">
+                    <div class="approval-educational-detail-frame-11439-2">
+                      <textarea class="approval-educational-detail-text notosansthai-normal-black-20px input-text"
+                        name="2" rows="8">เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
+                        ข้อมูลพฤติกรรมคุณลักษณะ อันพึงประสงค์ และกิจกรรมพัฒนาผู้เรียนใช้เป็นเอกสารหลักฐานในการ
+                        ยื่นสมัครเรียนต่อในระดับมัธยมศึกษาตอนต้น</textarea>
+                      <!-- <div class="approval-educational-detail-text notosansthai-normal-black-20px">
                         เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
                         ข้อมูลพฤติกรรมคุณลักษณะ อันพึงประสงค์ และกิจกรรมพัฒนาผู้เรียนใช้เป็นเอกสารหลักฐานในการ
-                        ยื่นสมัครเรียนต่อในระดับมัธยมศึกษาตอนต้น</div>
+                        ยื่นสมัครเรียนต่อในระดับมัธยมศึกษาตอนต้น</div> -->
                     </div>
                   </article>
                 </div>
@@ -167,6 +178,74 @@
               </div>
             </div>
           </div>
+          <div class="order-approval-attach-book-frame-38262-2" style="margin-bottom: 20px;">
+            <a href="./warehouse.html">
+              <article class="approval-educational-detail-button-6-3">
+                <div class="approval-educational-detail-text_label valign-text-middle notosansthai-semi-bold-back-18px">
+                  ย้อนกลับ</div>
+              </article>
+            </a><a onclick="showPopup()">
+              <article class="approval-educational-detail-button-6-2">
+                <div
+                  class="order-approval-attach-book-text_label-3 order-approval-attach-book-text_label-4 valign-text-middle notosansthai-semi-bold-white-18px">
+                  ตกลง</div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup" class="order-approval-detail-popup-container" style="display: none;">
+      <div class="approval-educational-detail-view-1"></div>
+      <div class="approval-educational-detail-popup">
+        <div class="approval-educational-detail-frame-container">
+          <div class="approval-educational-detail-frame-38264-2">
+            <div class="approval-educational-detail-frame-38266">
+              <div class="approval-educational-detail-frame-38265">
+                <h1 class="approval-educational-detail-text-7 valign-text-middle approval-educational-detail-text-2"
+                  style="font-size: 39px;">ยืนยันการบันทึกข้อมูล</h1>
+                <div
+                  class="approval-educational-detail-text-8 valign-text-middle approval-educational-detail-text-2 notosansthai-normal-black-20px">
+                  คุณต้องการที่จะยืนยันการบันทึกนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการบันทึก
+                </div>
+              </div>
+              <div class="approval-educational-detail-frame-38262">
+                <article class="approval-educational-detail-button-6-3" onclick="hidePopup()">
+                  <div
+                    class="approval-educational-detail-text_label valign-text-middle notosansthai-semi-bold-back-18px">
+                    ยกเลิก</div>
+                </article>
+                <article class="approval-educational-detail-button-6-2"
+                  onclick="hidePopup(),showPopupS('บันทึกข้อมูลสำเร็จ')">
+                  <div
+                    class="order-approval-attach-book-text_label-3 order-approval-attach-book-text_label-4 valign-text-middle notosansthai-semi-bold-white-18px">
+                    ยืนยัน
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupS" class="order-approval-detail-popup-container" style="display: none;">
+      <div class="approval-educational-detail-view-1"></div>
+      <div class="approval-educational-detail-popup">
+        <div class="approval-educational-detail-frame-container">
+          <div class="approval-educational-detail-frame-38264-2">
+            <div class="approval-educational-detail-frame-38266">
+              <div class="approval-educational-detail-frame-38265">
+                <img class="approval-educational-detail-check-one" src="img/check-one-4.svg" alt="check-one" />
+                <h1 id="textstatus"
+                  class="approval-educational-detail-text_label-4-2 valign-text-middle approval-educational-detail-text_label-5">
+                  อนุมัติสถานศึกษาสำเร็จ!</h1>
+              </div>
+            </div>
+          </div>
+          <a onclick="hidePopupS()"><img class="approval-educational-detail-frame-1041" src="img/frame-1041.svg"
+              alt="Frame 1041" />
+          </a>
         </div>
       </div>
     </div>
@@ -215,6 +294,50 @@
         modalImg.src = "img/rectangle-4317-1@2x.png";
       }
     }
+
+    function showPopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex"; // แสดง popup
+      const body = document.getElementById("body");
+      document.body.classList.add('no-scroll');
+    }
+
+    function hidePopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "none"; // ซ่อน popup
+      const body = document.getElementById("body");
+      document.body.classList.remove('no-scroll');
+    }
+
+    function showPopupF() {
+      const popup = document.getElementById("popupF");
+      popup.style.display = "flex"; // แสดง popup
+      const body = document.getElementById("body");
+      document.body.classList.add('no-scroll');
+    }
+
+    function hidePopupF() {
+      const popup = document.getElementById("popupF");
+      popup.style.display = "none"; // ซ่อน popup
+      const body = document.getElementById("body");
+      document.body.classList.remove('no-scroll');
+    }
+
+    function showPopupS(param) {
+      document.getElementById("textstatus").innerText = param;
+      const popup = document.getElementById("popupS");
+      popup.style.display = "flex"; // แสดง popup
+      const body = document.getElementById("body");
+      document.body.classList.add('no-scroll');
+    }
+
+    function hidePopupS() {
+      const popup = document.getElementById("popupS");
+      popup.style.display = "none"; // ซ่อน popup
+      const body = document.getElementById("body");
+      document.body.classList.remove('no-scroll');
+    }
+
   </script>
 </body>
 

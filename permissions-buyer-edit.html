@@ -65,8 +65,8 @@
               class="icon-image">
             กำหนดสิทธิ์ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu active">
-            <li class="active"><a class="active" href="#">เจ้าหน้าที่</a></li>
-            <li><a href="#">ผู้ซื้อ</a></li>
+            <li><a href="#">เจ้าหน้าที่</a></li>
+            <li class="active"><a class="active" href="#">ผู้ซื้อ</a></li>
           </ul>
         </li>
         <li><a href="#" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
@@ -90,7 +90,7 @@
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
-            <div class="home-educational-text-9-2 valign-text-middle">กำหนดสิทธิ์ (เจ้าหน้าที่) > เพิ่มข้อมูล</div>
+            <div class="home-educational-text-9-2 valign-text-middle">กำหนดสิทธิ์ (ผู้ซื้อ) > เพิ่มข้อมูล</div>
           </div>
 
           <div style="width: 100%;">
@@ -118,7 +118,8 @@
                   </div>
                   <article class="register-officer-text-field">
                     <div class="register-officer-text notosansthai-normal-black-18px">ชื่อตำแหน่ง</div>
-                    <div class="register-officer-frame-20"><input id="name" type="text" class="register-officer-input-field" />
+                    <div class="register-officer-frame-20"><input id="name" type="text"
+                        class="register-officer-input-field" />
                     </div>
                   </article>
                 </div>
@@ -128,7 +129,7 @@
 
           <div style="width: 100%;">
             <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง รายละเอียดคำสั่งซื้อ
+              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึงเมนู (สถานศึกษา)
               </div>
               <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
                 <a style="color: #D92D20;" onclick="uncheckBoxAll1()">ไม่เลือกทั้งหมด</a>
@@ -140,7 +141,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox1" type="checkbox" class="icon" id="checkbox1" />
-                    <label for="checkbox1" class="notosansthai-normal-black-18px">ตรวจสอบคำสั่งซื้อ</label>
+                    <label for="checkbox1" class="notosansthai-normal-black-18px">ออกใบขอสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -164,7 +165,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox6" type="checkbox" class="icon" id="checkbox6" />
-                    <label for="checkbox6" class="notosansthai-normal-black-18px">ตรวจสอบการชำระเงิน</label>
+                    <label for="checkbox6" class="notosansthai-normal-black-18px">ใบขอสั่งซื้อของฉัน</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -188,7 +189,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox11" type="checkbox" class="icon" id="checkbox11" />
-                    <label for="checkbox11" class="notosansthai-normal-black-18px">รอใส่ข้อมูลชุดตัวเลข</label>
+                    <label for="checkbox11" class="notosansthai-normal-black-18px">รายการคำสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -212,7 +213,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox16" type="checkbox" class="icon" id="checkbox16" />
-                    <label for="checkbox16" class="notosansthai-normal-black-18px">ที่ต้องจัดส่ง</label>
+                    <label for="checkbox16" class="notosansthai-normal-black-18px">ยกเลิกเลข ปพ.</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -236,7 +237,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox21" type="checkbox" class="icon" id="checkbox21" />
-                    <label for="checkbox21" class="notosansthai-normal-black-18px">กำลังจัดส่ง</label>
+                    <label for="checkbox21" class="notosansthai-normal-black-18px">ประวัติการสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -257,109 +258,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox26" type="checkbox" class="icon" id="checkbox26" />
-                    <label for="checkbox26" class="notosansthai-normal-black-18px">จัดส่งสำเร็จ</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox27" type="checkbox" class="icon" id="checkbox27" />
-                      <label for="checkbox27" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox28" type="checkbox" class="icon" id="checkbox28" />
-                      <label for="checkbox28" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox29" type="checkbox" class="icon" id="checkbox29" />
-                      <label for="checkbox29" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox30" type="checkbox" class="icon" id="checkbox30" />
-                      <label for="checkbox30" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox31" type="checkbox" class="icon" id="checkbox31" />
-                    <label for="checkbox31" class="notosansthai-normal-black-18px">การยกเลิก</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox32" type="checkbox" class="icon" id="checkbox32" />
-                      <label for="checkbox32" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox33" type="checkbox" class="icon" id="checkbox33" />
-                      <label for="checkbox33" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox34" type="checkbox" class="icon" id="checkbox34" />
-                      <label for="checkbox34" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox35" type="checkbox" class="icon" id="checkbox35" />
-                      <label for="checkbox35" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox36" type="checkbox" class="icon" id="checkbox36" />
-                    <label for="checkbox36" class="notosansthai-normal-black-18px">การคืนเงิน/คืนสินค้า</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox37" type="checkbox" class="icon" id="checkbox37" />
-                      <label for="checkbox37" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox38" type="checkbox" class="icon" id="checkbox38" />
-                      <label for="checkbox38" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox39" type="checkbox" class="icon" id="checkbox39" />
-                      <label for="checkbox39" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox40" type="checkbox" class="icon" id="checkbox40" />
-                      <label for="checkbox40" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox41" type="checkbox" class="icon" id="checkbox41" />
-                    <label for="checkbox41" class="notosansthai-normal-black-18px">จัดส่งไม่สำเร็จ</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox42" type="checkbox" class="icon" id="checkbox42" />
-                      <label for="checkbox42" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox43" type="checkbox" class="icon" id="checkbox43" />
-                      <label for="checkbox43" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox44" type="checkbox" class="icon" id="checkbox44" />
-                      <label for="checkbox44" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox45" type="checkbox" class="icon" id="checkbox45" />
-                      <label for="checkbox45" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
           <div style="width: 100%;">
             <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง จัดการข้อมูลชุดตัวเลข
+              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึงเมนู
+                (เขตพื้นที่การศึกษา)
               </div>
               <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
                 <a style="color: #D92D20;" onclick="uncheckBoxAll2()">ไม่เลือกทั้งหมด</a>
@@ -371,7 +277,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox46" type="checkbox" class="icon" id="checkbox46" />
-                    <label for="checkbox46" class="notosansthai-normal-black-18px">Pre-Print</label>
+                    <label for="checkbox46" class="notosansthai-normal-black-18px">อนุมัติสถานศึกษา</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -395,7 +301,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox51" type="checkbox" class="icon" id="checkbox51" />
-                    <label for="checkbox51" class="notosansthai-normal-black-18px">Online</label>
+                    <label for="checkbox51" class="notosansthai-normal-black-18px">อนุมัติใบขอสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -416,24 +322,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง คลังสินค้า</div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll3()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll3()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox56" type="checkbox" class="icon" id="checkbox56" />
-                    <label for="checkbox56" class="notosansthai-normal-black-18px">คลังสินค้า</label>
+                    <label for="checkbox56" class="notosansthai-normal-black-18px">สร้างใบสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -454,24 +346,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง รายงาน</div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll4()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll4()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox61" type="checkbox" class="icon" id="checkbox61" />
-                    <label for="checkbox61" class="notosansthai-normal-black-18px">รายงานคำสั่งซื้อ</label>
+                    <label for="checkbox61" class="notosansthai-normal-black-18px">รายการคำสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -495,7 +373,7 @@
                 <div class="button-container-l">
                   <div class="button-item">
                     <input id="checkbox66" type="checkbox" class="icon" id="checkbox66" />
-                    <label for="checkbox66" class="notosansthai-normal-black-18px">รายงานการผลิต</label>
+                    <label for="checkbox66" class="notosansthai-normal-black-18px">ประวัติการสั่งซื้อ</label>
                   </div>
                   <div class="button-container-r">
                     <div class="button-item">
@@ -516,252 +394,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox71" type="checkbox" class="icon" id="checkbox71" />
-                    <label for="checkbox71" class="notosansthai-normal-black-18px">รายงานการจัดส่ง</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox72" type="checkbox" class="icon" id="checkbox72" />
-                      <label for="checkbox72" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox73" type="checkbox" class="icon" id="checkbox73" />
-                      <label for="checkbox73" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox74" type="checkbox" class="icon" id="checkbox74" />
-                      <label for="checkbox74" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox75" type="checkbox" class="icon" id="checkbox75" />
-                      <label for="checkbox75" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง กำหนดสิทธิ์</div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll5()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll5()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox76" type="checkbox" class="icon" id="checkbox76" />
-                    <label for="checkbox76" class="notosansthai-normal-black-18px">เจ้าหน้าที่</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox77" type="checkbox" class="icon" id="checkbox77" />
-                      <label for="checkbox77" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox78" type="checkbox" class="icon" id="checkbox78" />
-                      <label for="checkbox78" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox79" type="checkbox" class="icon" id="checkbox79" />
-                      <label for="checkbox79" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox80" type="checkbox" class="icon" id="checkbox80" />
-                      <label for="checkbox80" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox81" type="checkbox" class="icon" id="checkbox81" />
-                    <label for="checkbox81" class="notosansthai-normal-black-18px">ผู้ซื้อ</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox82" type="checkbox" class="icon" id="checkbox82" />
-                      <label for="checkbox82" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox83" type="checkbox" class="icon" id="checkbox83" />
-                      <label for="checkbox83" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox84" type="checkbox" class="icon" id="checkbox84" />
-                      <label for="checkbox84" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox85" type="checkbox" class="icon" id="checkbox85" />
-                      <label for="checkbox85" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง จัดการผู้ใช้งาน</div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll6()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll6()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox86" type="checkbox" class="icon" id="checkbox86" />
-                    <label for="checkbox86" class="notosansthai-normal-black-18px">จัดการผู้ใช้งาน</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox87" type="checkbox" class="icon" id="checkbox87" />
-                      <label for="checkbox87" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox88" type="checkbox" class="icon" id="checkbox88" />
-                      <label for="checkbox88" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox89" type="checkbox" class="icon" id="checkbox89" />
-                      <label for="checkbox89" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox90" type="checkbox" class="icon" id="checkbox90" />
-                      <label for="checkbox90" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง ประวัติการใช้งาน
-              </div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll7()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll7()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox91" type="checkbox" class="icon" id="checkbox91" />
-                    <label for="checkbox91" class="notosansthai-normal-black-18px">ประวัติการใช้งาน</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox92" type="checkbox" class="icon" id="checkbox92" />
-                      <label for="checkbox92" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox93" type="checkbox" class="icon" id="checkbox93" />
-                      <label for="checkbox93" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox94" type="checkbox" class="icon" id="checkbox94" />
-                      <label for="checkbox94" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox95" type="checkbox" class="icon" id="checkbox95" />
-                      <label for="checkbox95" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง การอนุมัติผู้ใช้งาน
-              </div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll8()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll8()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox96" type="checkbox" class="icon" id="checkbox96" />
-                    <label for="checkbox96" class="notosansthai-normal-black-18px">การอนุมัติผู้ใช้งาน</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox97" type="checkbox" class="icon" id="checkbox97" />
-                      <label for="checkbox97" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox98" type="checkbox" class="icon" id="checkbox98" />
-                      <label for="checkbox98" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox99" type="checkbox" class="icon" id="checkbox99" />
-                      <label for="checkbox99" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox100" type="checkbox" class="icon" id="checkbox100" />
-                      <label for="checkbox100" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 100%;">
-            <div class="box-title-permissions ">
-              <div class="notosansthai-normal-black-20px" style="color: #3348FF;">สิทธิ์การเข้าถึง จัดการเนื้อหา</div>
-              <div class="notosansthai-normal-black-20px" style="display: flex; gap: 20px;">
-                <a style="color: #D92D20;" onclick="uncheckBoxAll9()">ไม่เลือกทั้งหมด</a>
-                <a style="color: #3348FF;" onclick="checkBoxAll9()">เลือกทั้งหมด</a>
-              </div>
-            </div>
-            <div class="approval-educational-detail-frame-27-3">
-              <div class="approval-educational-detail-frame-38438">
-                <div class="button-container-l">
-                  <div class="button-item">
-                    <input id="checkbox101" type="checkbox" class="icon" id="checkbox101" />
-                    <label for="checkbox101" class="notosansthai-normal-black-18px">รูปภาพ</label>
-                  </div>
-                  <div class="button-container-r">
-                    <div class="button-item">
-                      <input id="checkbox102" type="checkbox" class="icon" id="checkbox102" />
-                      <label for="checkbox102" class="notosansthai-normal-black-18px">สร้าง</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox103" type="checkbox" class="icon" id="checkbox103" />
-                      <label for="checkbox103" class="notosansthai-normal-black-18px">ดู</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox104" type="checkbox" class="icon" id="checkbox104" />
-                      <label for="checkbox104" class="notosansthai-normal-black-18px">แก้ไข</label>
-                    </div>
-                    <div class="button-item">
-                      <input id="checkbox105" type="checkbox" class="icon" id="checkbox105" />
-                      <label for="checkbox105" class="notosansthai-normal-black-18px">ลบ</label>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
           <div class="order-approval-attach-book-frame-38262-2" style="margin-bottom: 20px;align-self: center;">
-            <a href="./permissions-staff.html">
+            <a href="./permissions-buyer.html">
               <article class="approval-educational-detail-button-6-3">
                 <div class="approval-educational-detail-text_label valign-text-middle notosansthai-semi-bold-back-18px">
                   ย้อนกลับ</div>
@@ -891,6 +529,7 @@
   </div>
 
   <script>
+
     function getQueryParameter(param) {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get(param);  // คืนค่าพารามิเตอร์ที่ตรงกับชื่อที่ให้
@@ -907,38 +546,6 @@
           break;
         case "2":
           checkBoxAll2();
-          break;
-          case "3":
-          checkBoxAll3();
-          break;
-          case "4":
-          checkBoxAll4();
-          break;
-          case "5":
-          checkBoxAll5();
-          break;
-          case "6":
-          checkBoxAll6();
-          break;
-          case "7":
-          checkBoxAll7();
-          break;
-          case "8":
-          checkBoxAll();
-          break;
-          case "9":
-          checkBoxAll9();
-          break;
-          case "10":
-          checkBoxAll1();
-          checkBoxAll2();
-          checkBoxAll3();
-          checkBoxAll4();
-          checkBoxAll5();
-          checkBoxAll6();
-          checkBoxAll7();
-          checkBoxAll8();
-          checkBoxAll9();
           break;
         default:
           break;
@@ -1014,26 +621,7 @@
       document.getElementById('checkbox23').checked = true;
       document.getElementById('checkbox24').checked = true;
       document.getElementById('checkbox25').checked = true;
-      document.getElementById('checkbox26').checked = true;
-      document.getElementById('checkbox27').checked = true;
-      document.getElementById('checkbox28').checked = true;
-      document.getElementById('checkbox29').checked = true;
-      document.getElementById('checkbox30').checked = true;
-      document.getElementById('checkbox31').checked = true;
-      document.getElementById('checkbox32').checked = true;
-      document.getElementById('checkbox33').checked = true;
-      document.getElementById('checkbox34').checked = true;
-      document.getElementById('checkbox35').checked = true;
-      document.getElementById('checkbox36').checked = true;
-      document.getElementById('checkbox37').checked = true;
-      document.getElementById('checkbox38').checked = true;
-      document.getElementById('checkbox39').checked = true;
-      document.getElementById('checkbox40').checked = true;
-      document.getElementById('checkbox41').checked = true;
-      document.getElementById('checkbox42').checked = true;
-      document.getElementById('checkbox43').checked = true;
-      document.getElementById('checkbox44').checked = true;
-      document.getElementById('checkbox45').checked = true;
+
     }
 
     function uncheckBoxAll1() {
@@ -1062,26 +650,7 @@
       document.getElementById('checkbox23').checked = false;
       document.getElementById('checkbox24').checked = false;
       document.getElementById('checkbox25').checked = false;
-      document.getElementById('checkbox26').checked = false;
-      document.getElementById('checkbox27').checked = false;
-      document.getElementById('checkbox28').checked = false;
-      document.getElementById('checkbox29').checked = false;
-      document.getElementById('checkbox30').checked = false;
-      document.getElementById('checkbox31').checked = false;
-      document.getElementById('checkbox32').checked = false;
-      document.getElementById('checkbox33').checked = false;
-      document.getElementById('checkbox34').checked = false;
-      document.getElementById('checkbox35').checked = false;
-      document.getElementById('checkbox36').checked = false;
-      document.getElementById('checkbox37').checked = false;
-      document.getElementById('checkbox38').checked = false;
-      document.getElementById('checkbox39').checked = false;
-      document.getElementById('checkbox40').checked = false;
-      document.getElementById('checkbox41').checked = false;
-      document.getElementById('checkbox42').checked = false;
-      document.getElementById('checkbox43').checked = false;
-      document.getElementById('checkbox44').checked = false;
-      document.getElementById('checkbox45').checked = false;
+
     }
 
     function checkBoxAll2() {
@@ -1095,6 +664,21 @@
       document.getElementById('checkbox53').checked = true;
       document.getElementById('checkbox54').checked = true;
       document.getElementById('checkbox55').checked = true;
+      document.getElementById('checkbox56').checked = true;
+      document.getElementById('checkbox57').checked = true;
+      document.getElementById('checkbox58').checked = true;
+      document.getElementById('checkbox59').checked = true;
+      document.getElementById('checkbox60').checked = true;
+      document.getElementById('checkbox61').checked = true;
+      document.getElementById('checkbox62').checked = true;
+      document.getElementById('checkbox63').checked = true;
+      document.getElementById('checkbox64').checked = true;
+      document.getElementById('checkbox65').checked = true;
+      document.getElementById('checkbox66').checked = true;
+      document.getElementById('checkbox67').checked = true;
+      document.getElementById('checkbox68').checked = true;
+      document.getElementById('checkbox69').checked = true;
+      document.getElementById('checkbox70').checked = true;
     }
 
     function uncheckBoxAll2() {
@@ -1108,44 +692,11 @@
       document.getElementById('checkbox53').checked = false;
       document.getElementById('checkbox54').checked = false;
       document.getElementById('checkbox55').checked = false;
-    }
-
-    function checkBoxAll3() {
-      document.getElementById('checkbox56').checked = true;
-      document.getElementById('checkbox57').checked = true;
-      document.getElementById('checkbox58').checked = true;
-      document.getElementById('checkbox59').checked = true;
-      document.getElementById('checkbox60').checked = true;
-    }
-
-    function uncheckBoxAll3() {
       document.getElementById('checkbox56').checked = false;
       document.getElementById('checkbox57').checked = false;
       document.getElementById('checkbox58').checked = false;
       document.getElementById('checkbox59').checked = false;
       document.getElementById('checkbox60').checked = false;
-    }
-
-    function checkBoxAll4() {
-      document.getElementById('checkbox75').checked = true;
-      document.getElementById('checkbox61').checked = true;
-      document.getElementById('checkbox62').checked = true;
-      document.getElementById('checkbox63').checked = true;
-      document.getElementById('checkbox64').checked = true;
-      document.getElementById('checkbox65').checked = true;
-      document.getElementById('checkbox66').checked = true;
-      document.getElementById('checkbox67').checked = true;
-      document.getElementById('checkbox68').checked = true;
-      document.getElementById('checkbox69').checked = true;
-      document.getElementById('checkbox70').checked = true;
-      document.getElementById('checkbox71').checked = true;
-      document.getElementById('checkbox72').checked = true;
-      document.getElementById('checkbox73').checked = true;
-      document.getElementById('checkbox74').checked = true;
-    }
-
-    function uncheckBoxAll4() {
-      document.getElementById('checkbox75').checked = false;
       document.getElementById('checkbox61').checked = false;
       document.getElementById('checkbox62').checked = false;
       document.getElementById('checkbox63').checked = false;
@@ -1156,101 +707,9 @@
       document.getElementById('checkbox68').checked = false;
       document.getElementById('checkbox69').checked = false;
       document.getElementById('checkbox70').checked = false;
-      document.getElementById('checkbox71').checked = false;
-      document.getElementById('checkbox72').checked = false;
-      document.getElementById('checkbox73').checked = false;
-      document.getElementById('checkbox74').checked = false;
     }
 
-    function checkBoxAll5() {
-      document.getElementById('checkbox85').checked = true;
-      document.getElementById('checkbox76').checked = true;
-      document.getElementById('checkbox77').checked = true;
-      document.getElementById('checkbox78').checked = true;
-      document.getElementById('checkbox79').checked = true;
-      document.getElementById('checkbox80').checked = true;
-      document.getElementById('checkbox81').checked = true;
-      document.getElementById('checkbox82').checked = true;
-      document.getElementById('checkbox83').checked = true;
-      document.getElementById('checkbox84').checked = true;
-    }
 
-    function uncheckBoxAll5() {
-      document.getElementById('checkbox85').checked = false;
-      document.getElementById('checkbox76').checked = false;
-      document.getElementById('checkbox77').checked = false;
-      document.getElementById('checkbox78').checked = false;
-      document.getElementById('checkbox79').checked = false;
-      document.getElementById('checkbox80').checked = false;
-      document.getElementById('checkbox81').checked = false;
-      document.getElementById('checkbox82').checked = false;
-      document.getElementById('checkbox83').checked = false;
-      document.getElementById('checkbox84').checked = false;
-    }
-
-    function checkBoxAll6() {
-      document.getElementById('checkbox90').checked = true;
-      document.getElementById('checkbox86').checked = true;
-      document.getElementById('checkbox87').checked = true;
-      document.getElementById('checkbox88').checked = true;
-      document.getElementById('checkbox89').checked = true;
-    }
-
-    function uncheckBoxAll6() {
-      document.getElementById('checkbox90').checked = false;
-      document.getElementById('checkbox86').checked = false;
-      document.getElementById('checkbox87').checked = false;
-      document.getElementById('checkbox88').checked = false;
-      document.getElementById('checkbox89').checked = false;
-    }
-
-    function checkBoxAll7() {
-      document.getElementById('checkbox95').checked = true;
-      document.getElementById('checkbox91').checked = true;
-      document.getElementById('checkbox92').checked = true;
-      document.getElementById('checkbox93').checked = true;
-      document.getElementById('checkbox94').checked = true;
-    }
-
-    function uncheckBoxAll7() {
-      document.getElementById('checkbox95').checked = false;
-      document.getElementById('checkbox91').checked = false;
-      document.getElementById('checkbox92').checked = false;
-      document.getElementById('checkbox93').checked = false;
-      document.getElementById('checkbox94').checked = false;
-    }
-
-    function checkBoxAll8() {
-      document.getElementById('checkbox96').checked = true;
-      document.getElementById('checkbox97').checked = true;
-      document.getElementById('checkbox98').checked = true;
-      document.getElementById('checkbox99').checked = true;
-      document.getElementById('checkbox100').checked = true;
-    }
-
-    function uncheckBoxAll8() {
-      document.getElementById('checkbox96').checked = false;
-      document.getElementById('checkbox97').checked = false;
-      document.getElementById('checkbox98').checked = false;
-      document.getElementById('checkbox99').checked = false;
-      document.getElementById('checkbox100').checked = false;
-    }
-
-    function checkBoxAll9() {
-      document.getElementById('checkbox101').checked = true;
-      document.getElementById('checkbox102').checked = true;
-      document.getElementById('checkbox103').checked = true;
-      document.getElementById('checkbox104').checked = true;
-      document.getElementById('checkbox105').checked = true;
-    }
-
-    function uncheckBoxAll9() {
-      document.getElementById('checkbox101').checked = false;
-      document.getElementById('checkbox102').checked = false;
-      document.getElementById('checkbox103').checked = false;
-      document.getElementById('checkbox104').checked = false;
-      document.getElementById('checkbox105').checked = false;
-    }
     // JavaScript to handle the dropdown menu toggle
     const dropdown = document.querySelectorAll('.dropdown > a');
     dropdown.forEach(item => {

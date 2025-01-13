@@ -24,10 +24,10 @@
       <ul class="sidebar-menu">
         <li class="text-menu-title">เมนู</li>
         <li class="dropdown">
-          <a href="#" class="menu-item"><img src="./img/icon-shopping-cart.png" alt="รายละเอียดคำสั่งซื้อ"
+          <a href="#" class="menu-item active"><img src="./img/icon-shopping-cart.png" alt="รายละเอียดคำสั่งซื้อ"
               class="icon-image">
             รายละเอียดคำสั่งซื้อ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
-          <ul class="submenu">
+          <ul class="submenu active">
             <li class="active"><a href="./order-main.html">ทั้งหมด</a></li>
             <li><a class="active" href=",/order-check.html">ตรวจสอบคำสั่งซื้อ</a></li>
             <li><a href="#">ตรวจสอบการชำระเงิน</a></li>
@@ -608,6 +608,26 @@
       };
     }
 
+    const dropdown = document.querySelectorAll('.dropdown > a');
+      dropdown.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          submenu.classList.toggle('active');
+          const arrow = this.querySelector('.arrow');
+          arrow.classList.toggle('rotate');
+        });
+      });
+
+      // JavaScript to highlight the selected menu item
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+          menuItems.forEach(i => i.classList.remove('active')); // Remove active from all items
+          this.classList.add('active'); // Add active to the clicked item
+        });
+      });
+
     function SubmitForm(form_name) {
       var form = document.getElementsByName(form_name)[0];
       if (form.reportValidity()) {
@@ -691,6 +711,7 @@
         document.body.classList.remove('no-scroll');
       }
     }
+
 
   </script>
 </body>

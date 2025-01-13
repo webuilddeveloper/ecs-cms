@@ -448,6 +448,26 @@
       };
     }
 
+    const dropdown = document.querySelectorAll('.dropdown > a');
+      dropdown.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          submenu.classList.toggle('active');
+          const arrow = this.querySelector('.arrow');
+          arrow.classList.toggle('rotate');
+        });
+      });
+
+      // JavaScript to highlight the selected menu item
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+          menuItems.forEach(i => i.classList.remove('active')); // Remove active from all items
+          this.classList.add('active'); // Add active to the clicked item
+        });
+      });
+      
     function SubmitForm(form_name) {
       var form = document.getElementsByName(form_name)[0];
       if (form.reportValidity()) {

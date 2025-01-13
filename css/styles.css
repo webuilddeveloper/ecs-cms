@@ -29263,6 +29263,7 @@ td {
   color: #DB6E00;
   font-size: 14px;
   font-weight: bold;
+  font-family: var(--font-family-noto_sans_thai);
   background: #ffed9e;
   padding: 7px;
   border-radius: 25px;
@@ -29283,6 +29284,7 @@ td {
   font-size: 14px;
   font-weight: bold;
   background: #befec7;
+  font-family: var(--font-family-noto_sans_thai);
   padding: 7px;
   border-radius: 25px;
 }
@@ -29582,33 +29584,38 @@ td {
   transform: translateY(-50%);
   pointer-events: none;
 }
+
 .home-usage-input-select-long {
   align-items: center;
   flex-direction: column;
   width: 50%;
-}  
+}
+
 .home-usage-input-select-long2 {
   align-items: center;
   flex-direction: column;
   width: 25%;
 }
-.home-usage-button-1 { 
+
+.home-usage-button-1 {
   margin-left: auto;
   background-color: var(--blue);
   border-radius: 10px;
-  cursor: pointer; 
+  cursor: pointer;
   display: inline-flex;
   /* flex: 0 0 auto;  
   gap: 8px; 
    justify-content: flex-end;*/
-  padding: 5px 8px;      
+  padding: 5px 8px;
 
- 
-}  
+
+}
+
 .usage-list-detail-educational-text-7 {
   line-height: normal;
   width: 200px;
-} 
+}
+
 .usage-order-detail-rectangle-4317 {
   height: 110px;
   position: relative;
@@ -29622,7 +29629,8 @@ td {
   position: relative;
   width: 100%;
   flex-direction: column;
-} 
+}
+
 .order-confirm-usage-image-8 {
   height: auto;
   max-height: 100%;
@@ -29630,7 +29638,7 @@ td {
   position: relative;
 }
 
-.purchase-order-confirm-usage-frame { 
+.purchase-order-confirm-usage-frame {
   border: 1px solid #a2a2a2;
   border-radius: 8.66px;
   height: 80px;
@@ -29642,7 +29650,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
 
 .purchase-order-confirm-usage-frame-9 {
@@ -29652,9 +29660,12 @@ td {
   gap: 16px;
   height: 108px;
   position: relative;
-  width: 100%; /* ใช้เต็มความกว้าง */
-  padding-left: 30px; /* เพิ่มระยะห่างเฉพาะด้านซ้าย */
-} 
+  width: 100%;
+  /* ใช้เต็มความกว้าง */
+  padding-left: 30px;
+  /* เพิ่มระยะห่างเฉพาะด้านซ้าย */
+}
+
 .usage-approval-detail-frame-38262 {
   align-items: center;
   align-self: stretch;
@@ -29663,7 +29674,8 @@ td {
   height: 42px;
   position: relative;
   width: 100%;
-} 
+}
+
 .usage-approval-detail-frame {
   align-items: flex-start;
   align-self: stretch;
@@ -29678,7 +29690,8 @@ td {
   padding: 25px 24px;
   position: relative;
   width: 100%;
-} 
+}
+
 .usage-approval-detail-frame-38381 {
   align-items: flex-start;
   align-self: stretch;
@@ -29693,7 +29706,7 @@ td {
   padding: 20px 24px;
   position: relative;
   width: 100%;
-} 
+}
 
 
 /* styles.css */
@@ -29706,7 +29719,7 @@ td {
 .tab-container {
   position: relative;
   display: inline-flex;
-  border-bottom: 3px solid var(--geyser); 
+  border-bottom: 3px solid var(--geyser);
   width: 100%;
 }
 
@@ -29743,11 +29756,13 @@ td {
 
 
 .content-item {
-  display: none; /* ซ่อนเนื้อหาทั้งหมดเริ่มต้น */
+  display: none;
+  /* ซ่อนเนื้อหาทั้งหมดเริ่มต้น */
 }
 
 .content-item.active {
-  display: block; /* แสดงเฉพาะเนื้อหาที่ active */
+  display: block;
+  /* แสดงเฉพาะเนื้อหาที่ active */
 }
 
 /* สไตล์สำหรับเนื้อหาภายใน */
@@ -29759,19 +29774,20 @@ td {
 .content-item p {
   color: #666;
   line-height: 1.6;
-} 
+}
 
- 
+
 .home-product-text-cell {
   -webkit-box-orient: vertical;
   /* -webkit-line-clamp: 1; */
   display: -webkit-box;
   flex: 1;
-  line-height: 21.0px; 
+  line-height: 21.0px;
   height: 90px;
   /* overflow: hidden; 
   text-overflow: ellipsis; */
-} 
+}
+
 .home-product-base-table-cell {
   align-items: center;
   align-self: stretch;
@@ -29784,22 +29800,29 @@ td {
   padding: 8px;
   position: relative;
   width: 100%;
-} 
+}
+
 .notosansthai-bold-15px {
-  font-size: 18px; /* ขนาดใหญ่ขึ้น */
-  font-weight: 400; /* สีเข้มกว่า */
-  color: var(--bkack); /* สีข้อความเข้มกว่า */
-} 
+  font-size: 18px;
+  /* ขนาดใหญ่ขึ้น */
+  font-weight: 400;
+  /* สีเข้มกว่า */
+  color: var(--bkack);
+  /* สีข้อความเข้มกว่า */
+}
+
 .notosansthai-normal-525E6F-13px {
   color: #525E6F;
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-13);
   font-style: normal;
   font-weight: 400;
-} 
+}
+
 .approval-product-status {
   background-color: #5A616D29;
-} 
+}
+
 .home-delivery-select-field {
   align-items: center;
   align-self: stretch;
@@ -29814,10 +29837,10 @@ td {
   overflow: hidden;
   padding: 8px 10px;
   position: relative;
-  width: 100%; 
+  width: 100%;
   margin-left: auto;
   /* margin-top: 25px; */
- 
+
 }
 
 
@@ -29828,6 +29851,8 @@ td {
   background: #FFDEE0;
   padding: 7px;
   border-radius: 25px;
+  font-family: var(--font-family-noto_sans_thai);
+
 }
 
 .order-set-number {
@@ -29984,4 +30009,196 @@ td {
   font-weight: 600;
   font-family: var(--font-family-noto_sans_thai);
 
+}
+
+
+.receipt-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.receipt-logo {
+  display: flex;
+  align-items: center;
+}
+
+.receipt-logo img {
+  width: 277px;
+  height: 160px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.receipt-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: var(--font-family-noto_sans_thai);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+
+}
+
+.receipt-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.receipt-details .row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.receipt-details-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+
+.receipt-details .row div {
+  width: 48%;
+}
+
+.receipt-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.receipt-table th,
+.table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.receipt-body {
+  display: flex;
+  flex-direction: column;
+  padding: 7vw;
+  width: 100%;
+  height: auto;
+}
+
+.receipt-header-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 30px;
+}
+
+.notosansthai-bold-18px {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-family-noto_sans_thai);
+  width: 10vw;
+  /* width: 50%; */
+}
+
+.notosansthai-header-bold-18px {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-family-noto_sans_thai);
+  /* width: 10vw; */
+  width: 100%;
+}
+
+
+.notosansthai-normal-18px {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-family-noto_sans_thai);
+  width: 100%;
+}
+
+
+.receipt-header-span {
+  display: flex;
+}
+
+.receipt-details-span {
+  display: flex;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+thead tr {
+  height: 60px;
+
+}
+
+th,
+td {
+  padding: 8px 10px;
+  text-align: left;
+}
+
+thead th {
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+  align-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--font-family-noto_sans_thai);
+  color: #000000;
+}
+
+tbody tr {
+  border-bottom: 2px solid #000000;
+}
+
+th,
+td {
+  border-left: none;
+  /* ลบกรอบด้านซ้ายของเซลล์ */
+  border-right: none;
+  /* ลบกรอบด้านขวาของเซลล์ */
+  font-weight: 400;
+  font-size: 18px;
+  font-family: var(--font-family-noto_sans_thai);
+  padding: 20px 10px;
+}
+
+caption {
+  padding: 30px 0;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: var(--font-family-noto_sans_thai);
+  text-align: left;
+}
+
+.container-receipt {
+  width: 100%;
+}
+
+.pt80 {
+  padding-top: 80px;
 }

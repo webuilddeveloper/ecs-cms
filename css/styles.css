@@ -1105,6 +1105,24 @@
   /* width: 100%; */
 }
 
+.content-ecs .frame-20-disabled {
+  align-items: center;
+  align-self: stretch;
+  /* background-color: var(--white); */
+  background-color: #F3F3F3;
+  border: 1px solid;
+  /* border-color: var(--bggrey); */
+  border-color: #00000059;
+  border-radius: 8px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  overflow: hidden;
+  padding: 8px 16px;
+  position: relative;
+  /* width: 100%; */
+}
+
 .content-ecs .text_label-1 {
   flex: 1;
   margin-top: -1.00px;
@@ -1117,6 +1135,20 @@
 }
 
 .content-ecs .text_input {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  flex-grow: 1;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  padding: 0;
+  position: relative;
+  font-size: 17px;
+  font-family: var(--font-family-noto_sans_thai);
+}
+
+.content-ecs .text_input-disabled {
   background-color: transparent;
   border: 0;
   flex: 1;
@@ -1856,7 +1888,8 @@ input:focus {
   font-weight: 500;
   line-height: 48.0px;
   margin-top: -1.00px;
-  width: 600px;
+  /* width: 600px; */
+  width: -webkit-fill-available;
 }
 
 .home-educational-frame-38403 {
@@ -15963,7 +15996,7 @@ input:focus {
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .content-ecs .button-1-2 {
@@ -17056,10 +17089,11 @@ input:focus {
   /* height: 364px; */
   left: 319px;
   /* min-width: 801px; */
+  height: auto;
   width: max-content;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 60%);
   /* top: 725px; */
 }
 
@@ -17170,6 +17204,7 @@ input:focus {
   border: none;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 dialog::backdrop {
@@ -28943,7 +28978,6 @@ body {
 
 .notosansthai-normal-black-15px {
   color: var(--bkack);
-
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-15);
   font-style: normal;

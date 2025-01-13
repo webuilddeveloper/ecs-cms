@@ -28222,6 +28222,12 @@ body {
   background-color: #E0EDFF;
   /* Change background color of active menu */
   color: #3348FF;
+  font-family: var(--font-family-noto_sans_thai);
+  /* Change text color */
+}
+
+.sidebar-menu .menu-item {
+  font-family: var(--font-family-noto_sans_thai);
   /* Change text color */
 }
 
@@ -30777,32 +30783,32 @@ margin-top: auto;
   display: flex;
 }
 
-.table-container {
+.receipt-table-container {
   margin-top: 20px;
 }
 
-table {
+.receipt-table-container table {
   width: 100%;
   border-collapse: collapse;
 }
 
-thead {
+.receipt-table-container thead {
   background-color: #ffffff;
   color: #000000;
 }
 
-thead tr {
+.receipt-table-container thead tr {
   height: 60px;
 
 }
 
-th,
-td {
+.receipt-table-container th,
+.receipt-table-container td {
   padding: 8px 10px;
   text-align: left;
 }
 
-thead th {
+.receipt-table-container thead th {
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #000000;
@@ -30814,23 +30820,21 @@ thead th {
   color: #000000;
 }
 
-tbody tr {
+.receipt-table-container tbody tr {
   border-bottom: 2px solid #000000;
 }
 
-th,
-td {
+.receipt-table-container th,
+.receipt-table-container td {
   border-left: none;
-  /* ลบกรอบด้านซ้ายของเซลล์ */
   border-right: none;
-  /* ลบกรอบด้านขวาของเซลล์ */
   font-weight: 400;
   font-size: 18px;
   font-family: var(--font-family-noto_sans_thai);
   padding: 20px 10px;
 }
 
-caption {
+.receipt-table-container caption {
   padding: 30px 0;
   font-weight: 500;
   font-size: 24px;

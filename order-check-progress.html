@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <img src="./img/logo------1.png" alt="Admin Logo" class="sidebar-logo">
+        <span class="text-title">ปพ.ออนไลน์</span>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="text-menu-title">เมนู</li>
+        <li class="dropdown">
+          <a href="#" class="menu-item active"><img src="./img/icon-shopping-cart.png" alt="รายละเอียดคำสั่งซื้อ"
+              class="icon-image">
+            รายละเอียดคำสั่งซื้อ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu active">
+            <li class="active"><a href="./order-main.html">ทั้งหมด</a></li>
+            <li><a class="active" href=",/order-check.html">ตรวจสอบคำสั่งซื้อ</a></li>
+            <li><a href="./order-verify-payment.html">ตรวจสอบการชำระเงิน</a></li>
+            <li><a href="#">รอใส่ข้อมูลชุดตัวเลข</a></li>
+            <li><a href="#">ที่ต้องจัดส่ง</a></li>
+            <li><a href="#">กำลังจัดส่ง</a></li>
+            <li><a href="#">จัดส่งสำเร็จ</a></li>
+            <li><a href="#">การยกเลิก</a></li>
+            <li><a href="#">การคืนเงิน/คืนสินค้า</a></li>
+            <li><a href="#">จัดส่งไม่สำเร็จ</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-note-edit.png" alt="จัดการข้อมูลชุดตัวเลข"
+              class="icon-image">
+            จัดการข้อมูลชุดตัวเลข <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="#">Pre-Print</a></li>
+            <li><a href="#">Online</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-analytics.png" alt="คลังสินค้า"
+              class="icon-image">คลังสินค้า</a></li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-analytics.png" alt="รายงาน" class="icon-image">
+            รายงาน <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="#">รายงานคำสั่งซื้อ</a></li>
+            <li><a href="#">รายงานการผลิต</a></li>
+            <li><a href="#">รายงานการจัดส่ง</a></li>
+          </ul>
+        </li>
+        <li class="text-menu-title">ผู้ดูแลระบบ</li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-placeholder.png" alt="กำหนดสิทธิ์" class="icon-image">
+            กำหนดสิทธิ์ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="#">เจ้าหน้าที่</a></li>
+            <li><a href="#">ผู้ซื้อ</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
+              class="icon-image">จัดการผู้ใช้งาน</a></li>
+        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-book.png" alt="ประวัติการใช้งาน"
+              class="icon-image">ประวัติการใช้งาน</a></li>
+        <li><a href="#" class="menu-item text-menu"><img src="./img/icon-checkmark.png" alt="การอนุมัติผู้ใช้งาน"
+              class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-image.png" alt="จัดการเนื้อหา" class="icon-image">
+            จัดการเนื้อหา <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="#">รูปภาพ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content-order">
+      <!-- User Info Box -->
+      <div class="user-info-box">
+        <img src="./img/ellipse-11-2@2x.png" alt="User Avatar" class="user-avatar">
+        <div class="user-info">
+          <h3>John Doe</h3>
+          <p>Software Engineer</p>
+        </div>
+      </div>
+      <div class="home-educational-frame-38409">
+        <div class="home-educational-frame-38-1">
+          <div class="home-educational-frame-38402">
+            <div class="home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px">รายละเอียดคำสั่งซื้อ >
+              กำลังจัดส่ง
+            </div>
+          </div>
+          <div class="approve-school-frame-38357-1">
+            <div class="approve-school-frame-38344">
+              <a href="./order-main.html">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px ">ทั้งหมด</div>
+              </a>
+              <a href="./order-check.html">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px title-scroll-active">
+                  ตรวจสอบคำสั่งซื้อ(3)</div>
+              </a>
+              <a href="./order-verify-payment.html">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">ตรวจสอบการชำระเงิน(4)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">รอใส่ข้อมูลชุดตัวเลข(2)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">ที่ต้องจัดส่ง(2)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">กำลังจัดส่ง(2)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">จัดส่งสำเร็จ(2)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">การยกเลิก(0)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">การคืนเงิน/คืนสินค้า(0)</div>
+              </a>
+              <a href="#">
+                <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">จัดส่งไม่สำเร็จ(0)</div>
+              </a>
+            </div>
+          </div>
+          <div class="order-search
+              ">
+            <div class="home-educational-input-select-2 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">ค้นหา</div>
+              </div>
+              <div class="purchase-order-educational-input-search-2 input">
+                <div class="purchase-order-educational-input-element input">
+                  <img class="purchase-order-educational-icon-addon" src="img/icon-addon-1.svg" alt="icon-addon" />
+                  <input class="purchase-order-educational-text_input" name="พมพคาคนหา" placeholder="พิมพ์คำค้นหา"
+                    type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="home-educational-input-select-2 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">สถานะ</div>
+              </div>
+              <div class="approval-educational-select-field">
+                <select id="agency" class="home-educational-list-custom-dropdown">
+                  <option value="" disabled selected>สถานะทั้งหมด</option>
+                  <option value="ทั้งหมด">ทั้งหมด</option>
+                  <option value="ตรวจสอบคำสั่งซื้อ">ตรวจสอบคำสั่งซื้อ</option>
+                  <option value="ตรวจสอบการชำระเงิน">ตรวจสอบการชำระเงิน</option>
+                  <option value="รอใส่ข้อมูลชุดตัวเลข">รอใส่ข้อมูลชุดตัวเลข</option>
+                  <option value="ที่ต้องจัดส่ง">ที่ต้องจัดส่ง</option>
+                  <option value="กำลังจัดส่ง">กำลังจัดส่ง</option>
+                  <option value="จัดส่งสำเร็จ">จัดส่งสำเร็จ</option>
+                  <option value="การยกเลิก">การยกเลิก</option>
+                  <option value="การคืนเงิน/คืนสินค้า">การคืนเงิน/คืนสินค้า</option>
+                  <option value="จัดส่งไม่สำเร็จ">จัดส่งไม่สำเร็จ</option>
+                </select>
+                <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+              </div>
+            </div>
+            <div class="home-educational-input-select-2 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">เริ่มจาก</div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-black-15px" name="select"
+                  placeholder="เลือกเดือน" type="date" />
+                <!-- <img class="home-educational-icon" src="img/dropdown-icon-42.svg" alt="dropdown-icon" /> -->
+              </div>
+            </div>
+            <div class="home-educational-input-select-2 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">จนถึง</div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-black-15px" name="select"
+                  placeholder="เลือกเดือน" type="date" />
+                <!-- <img class="home-educational-icon" src="img/dropdown-icon-43.svg" alt="dropdown-icon" /> -->
+              </div>
+            </div>
+            <div class="purchase-order-educational-frame-38496-2">
+              <a href="javascript:SubmitForm('form7')">
+                <div class="purchase-order-educational-button-5-2 purchase-order-educational-button-7">
+                  <div
+                    class="purchase-order-educational-text_label-2 valign-text-middle purchase-order-educational-text_label-3 notosansthai-semi-bold-white-20px">
+                    ค้นหา
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="container-order">
+            <!-- Table 1: Only shows headers -->
+            <div class="table-container">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th class="tr550 notosansthai-normal-black-15px">สินค้าทั้งหมด</th>
+                    <th class="tr150 notosansthai-normal-black-15px">จำนวน</th>
+                    <th class="tr150 notosansthai-normal-black-15px">หน่วย</th>
+                    <th class="tr150 notosansthai-normal-black-15px">ยอดชำระ</th>
+                    <th class="tr360 notosansthai-normal-black-15px">สถานะ</th>
+                    <th class="tr360 notosansthai-normal-black-15px">ดำเนินการ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="container-order">
+            <!-- Table 2: Shows data -->
+            <div class="table-container">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: xxxxxxxxxxx</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px"> x 1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
+                    <td class="tr360 notosansthai-normal-black-15px">
+                      <span class="status-check"><img src="./img/elements.png" alt="รอตรวจสอบ"
+                        class="status-icon">กำลังจัดส่ง</span>
+                    </td>
+                    <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-progress-detail.html" class="details-link">ดูรายละเอียด</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px">1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> 
+          <div class="container-order">
+            <!-- Table 2: Shows data -->
+            <div class="table-container">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: xxxxxxxxxxx</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px"> x 1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
+                    <td class="tr360 notosansthai-normal-black-15px">
+                      <span class="status-check"><img src="./img/elements.png" alt="รอตรวจสอบ"
+                        class="status-icon">กำลังจัดส่ง</span>
+                    </td>
+                    <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-progress-detail.html" class="details-link">ดูรายละเอียด</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px">1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="container-order">
+            <!-- Table 2: Shows data -->
+            <div class="table-container">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: xxxxxxxxxxx</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px"> x 1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
+                    <td class="tr360 notosansthai-normal-black-15px">
+                      <span class="status-check"><img src="./img/elements.png" alt="รอตรวจสอบ"
+                        class="status-icon">กำลังจัดส่ง</span>
+                    </td>
+                    <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-progress-detail.html" class="details-link">ดูรายละเอียด</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr550">
+                      <div class="product">
+                        <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
+                        <div class="product-info">
+                          <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                            2555) (ชนิดใช้กับคอม)</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="tr150 notosansthai-normal-black-15px">1</td>
+                    <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
+                    
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="home-educational-input-select-button-footer-default">
+            <div class="home-educational-frame-38263">
+              <div class="home-educational-input-select-1">
+                <div class="home-educational-select-field">
+                  <select id="agency3" class="home-educational-list-custom-dropdown">
+                    <option value="แสดง 9" selected>แสดง 10</option>
+                    <option value="แสดง 30">แสดง 30</option>
+                    <option value="แสดง 50">แสดง 50</option>
+                    <option value="แสดง 100">แสดง 100</option>
+                  </select>
+                  <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                  <!-- <div class="home-educational-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
+                      <img class="home-educational-icon" src="img/dropdown-icon-44.svg" alt="dropdown-icon" /> -->
+                </div>
+              </div>
+              <p class="home-educational-text-10 text">แสดง 1-10 รายการ จาก 100 รายการ</p>
+            </div>
+            <div class="home-educational-pagination">
+              <a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-2 button-6"><img class="home-educational-icon-1"
+                    src="img/icon-178.svg" alt="icon" /></div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-5 button-6">
+                  <div class="home-educational-text-sm-1 text-sm-3">1</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm text notosansthai-medium-blue-15px">2</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm text notosansthai-medium-blue-15px">3</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm text notosansthai-medium-blue-15px">4</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm text notosansthai-medium-blue-15px">5</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm text notosansthai-medium-blue-15px">...</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-3 button-6">
+                  <div class="home-educational-text-sm-2 text-sm-3 notosansthai-medium-blue-15px">10</div>
+                </div>
+              </a><a href="javascript:SubmitForm('form24')">
+                <div class="home-educational-button-2 button-6"><img class="home-educational-icon-1"
+                    src="img/icon-179.svg" alt="icon" /></div>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle the dropdown menu toggle
+      const dropdown = document.querySelectorAll('.dropdown > a');
+      dropdown.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          submenu.classList.toggle('active');
+          const arrow = this.querySelector('.arrow');
+          arrow.classList.toggle('rotate');
+        });
+      });
+
+      // JavaScript to highlight the selected menu item
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+          menuItems.forEach(i => i.classList.remove('active')); // Remove active from all items
+          this.classList.add('active'); // Add active to the clicked item
+        });
+      });
+    </script>
+</body>
+
+</html>

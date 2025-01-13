@@ -30458,4 +30458,174 @@ td {
 
 .p0 {
   padding: 0 !important;
+} 
+
+.status-check-failed {
+  color: #D92D20;
+  font-size: 14px;
+  font-weight: bold;
+  background: #FFDEE0;
+  padding: 7px;
+  border-radius: 25px;
+} 
+.request-detail-failed-frame-38268 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--bkack);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  height: 132px;
+}
+
+.request-detail-failed-frame-38408 {
+  height: 132px;
+  margin-right: -62.00px;
+  position: relative;
+  width: 1234px;
+} 
+.notosansthai-normal-red-16px {
+  color: var(--red);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}  
+.notosansthai-normal-success-16px {
+  color: var(--green);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}  
+.notosansthai-normal-progress-16px {
+  color: var(--clementine);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+} 
+.notosansthai-head-semi-bold-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 600;
+} 
+.request-detail-refund-frame{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 1153px; 
+margin-top: auto;
+  
+} 
+
+.request-detail-refund-text-8 {
+  display: flex;
+  align-items: center; /* จัดข้อความให้อยู่ตรงกลางแนวตั้ง */
+  justify-content: flex-start; /* จัดข้อความให้อยู่ชิดซ้าย */
+  height: 100%; /* ตรวจสอบให้แน่ใจว่า div นี้มีความสูงเต็มที่ */
+  text-align: left; /* ช่วยยืนยันว่าข้อความชิดซ้าย */
+}  
+
+.request-detail-refund-frame-38269 {
+  display: flex;
+  align-items: center; /* จัดข้อความให้อยู่ตรงกลางแนวตั้ง */
+  justify-content: flex-start; /* จัดข้อความให้อยู่ชิดซ้าย */
+  height: auto; /* ใช้ขนาดความสูงอัตโนมัติ */
+  text-align: left;
+  text-align: center;
+}
+
+.request-detail-refund-text-8 {
+  
+  flex: 1; /* ให้ข้อความขยายเต็มที่ภายใน flex container */
+  margin: 0; /* กำจัด margin เพื่อให้ข้อความชิดซ้าย */
+}
+.request-detail-refund-frame {
+  height: 66px;
+  margin-right: -62.00px;
+  position: relative;
+  width: 1234px; 
+
+}
+.request-detail-refund-frame-38522-2 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 60px; 
+  margin-left: auto;
+}
+.title-header-refund-page {
+  /* margin-top: 0px; */
+  width: 100%;
+} 
+.home-refund-text-9 {
+  color: var(--blue);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-32);
+  font-weight: 500;
+  line-height: 48.0px;
+  margin-top: -1.00px;
+  width: 100%;
+}
+.request-detail-refund-frame-38268 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--gray);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+} 
+
+.request-detail-dispatched-frame-38448 {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  width: 100%;
+} 
+.request-detail-dispatched-frame-38522-2 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  padding-top: 10px;
+
+  margin-left: auto;
+} 
+.request-detail-cancel-frame-38444 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 1081px;
+  position: relative;
+  width: 100%; 
+  margin-bottom: 60px;
 }

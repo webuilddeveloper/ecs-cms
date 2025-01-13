@@ -15833,15 +15833,29 @@ input:focus {
 }
 
 
+
 .purchase-order-shipping-view {
-  align-items: flex-start;
-  background-color: #14181f80;
   display: flex;
-  height: 2120px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
   left: 0;
-  padding: 527px 405px;
-  position: absolute;
-  width: 1440px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 24, 31, 0.5);
+  z-index: 1000;
+}
+
+.purchase-order-shipping-frame-container {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 552px;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 200px;
 }
 
 .purchase-order-shipping-popup {
@@ -15849,14 +15863,6 @@ input:focus {
   display: flex;
   height: 287px;
   min-width: 552px;
-}
-
-.purchase-order-shipping-frame-container {
-  border-radius: 10px;
-  height: 288px;
-  margin-bottom: 50px;
-  position: relative;
-  width: 552px;
 }
 
 .purchase-order-shipping-frame-38264 {
@@ -15892,9 +15898,9 @@ input:focus {
 }
 
 .purchase-order-shipping-text_label-2 {
-  color: var(--pink);
+  color: #039855;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-40);
   font-weight: 600;
   line-height: 60.0px;
   margin-top: -1.00px;
@@ -15905,7 +15911,7 @@ input:focus {
 .purchase-order-shipping-text_label-3 {
   color: var(--bkack);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-20);
   font-weight: 400;
   line-height: normal;
   text-align: center;
@@ -15934,7 +15940,7 @@ input:focus {
 }
 
 .purchase-order-shipping-button-3 {
-  background-color: var(--main);
+  background-color: #3348FF;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -20586,8 +20592,6 @@ a:active {
   text-decoration: none;
 }
 
-/* ----- รายละเอียดใบขอสั่งซื้อ */
-
 .request-detail-school {
   align-items: flex-start;
   background-color: var(--white);
@@ -20653,13 +20657,13 @@ a:active {
 }
 
 .request-detail-school-flex-row {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   gap: 324px;
-  height: 90px;
   /* margin-left: 100px; */
-  margin-top: 62px;
-  min-width: 762px;
+  margin-top: 20px;
+  min-width: 100%;
+  justify-content: space-between;
 }
 
 .request-detail-school-button {
@@ -20671,9 +20675,10 @@ a:active {
 }
 
 .request-detail-school-icon-back {
-  height: 24px;
+  height: 26px;
   position: relative;
-  width: 24px;
+  width: 20px;
+  padding: 5px;
 }
 
 .request-detail-school-text_label {
@@ -20697,10 +20702,9 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  margin-left: 12.0px;
-  margin-top: 63px;
+  margin-top: 30px;
   position: relative;
-  width: 1252px;
+  width: 100%;
 }
 
 .request-detail-school-frame-38447 {
@@ -20715,7 +20719,7 @@ a:active {
 }
 
 .request-detail-school-frame-38444 {
-  align-items: flex-end;
+  align-items: center;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -20760,7 +20764,9 @@ a:active {
   gap: 650px;
   position: relative;
   width: 100%;
+  justify-content: space-between;
 }
+
 
 .request-detail-school-text-2 {
   width: 284px;
@@ -20790,8 +20796,8 @@ a:active {
 
 .request-detail-school-button-1 {
   background-color: var(--gray);
-  border: 1px solid;
-  border-color: var(--main);
+  /* border: 1px solid;
+  border-color: var(--main); */
   border-radius: 10px;
   display: inline-flex;
   flex: 0 0 auto;
@@ -20815,6 +20821,7 @@ a:active {
   gap: 24px;
   position: relative;
   width: 100%;
+  justify-content: space-between;
 }
 
 .request-detail-school-text {
@@ -20830,10 +20837,11 @@ a:active {
 
 .request-detail-school-line {
   align-self: stretch;
-  height: 1px;
+  height: 2px;
   object-fit: cover;
   position: relative;
   width: 100%;
+  margin-top: 10px;
 }
 
 .request-detail-school-frame-38268 {
@@ -20976,6 +20984,7 @@ a:active {
   height: 108px;
   position: relative;
   width: 100%;
+  margin-top: 10px;
 }
 
 .request-detail-school-frame-95 {
@@ -21354,7 +21363,7 @@ a:active {
 }
 
 .notosansthai-semi-bold-midnight-blue-20px {
-  color: var(--main);
+  color: var(--midnight-blue);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-m);
   font-style: normal;
@@ -29285,18 +29294,22 @@ td {
 }
 
 .status-check {
-  color: #db6e00;
+  color: #DB6E00;
   font-size: 14px;
   font-weight: bold;
   background: #ffed9e;
   padding: 7px;
   border-radius: 25px;
 }
+
 .status-icon {
-  width: 16px; /* กำหนดขนาดของไอคอน */
+  width: 16px;
+  /* กำหนดขนาดของไอคอน */
   height: 16px;
-  margin-right: 8px; /* เว้นระยะห่างระหว่างไอคอนกับข้อความ */
-  vertical-align: middle; /* จัดให้อยู่กลางในแนวตั้ง */
+  margin-right: 8px;
+  /* เว้นระยะห่างระหว่างไอคอนกับข้อความ */
+  vertical-align: middle;
+  /* จัดให้อยู่กลางในแนวตั้ง */
 }
 
 .status-check-success {
@@ -29308,13 +29321,6 @@ td {
   border-radius: 25px;
 }
 
-.details-link {
-  color: #000000;
-}
-
-.details-link:hover {
-  text-decoration: underline;
-}
 
 .tr550 {
   width: 550px;
@@ -29373,4 +29379,643 @@ td {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+}
+
+.details-link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+
+.title-header-page {
+  margin-top: 50px;
+  width: 100%;
+}
+
+
+
+.order-back-button {
+  background-color: #3348FF;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 8px;
+  padding: 8px 24px;
+}
+
+.notosansthai-bold-black-30px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.request-detail-school-frame-95-2 {
+  background-color: #f0eeed;
+  border-radius: 8.66px;
+  height: 90px;
+  margin-bottom: -1.00px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.request-detail-school-image-8-2 {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 90px;
+}
+
+.request-detail-school-frame-93-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 110px;
+  position: relative;
+  width: 281px;
+  justify-content: center;
+}
+
+.notosansthai-bold-black-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.request-detail-school-button-2-1 {
+  background-color: var(--pink);
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 25px;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+  display: inline-flex;
+  gap: 6px;
+  height: 48px;
+  padding: 8px 16px;
+  width: 225px;
+}
+
+.request-detail-school-button-2-2 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: #DCE0E5;
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+  display: inline-flex;
+  gap: 6px;
+  height: 48px;
+  padding: 8px 16px;
+  width: 225px;
+}
+
+.request-detail-school-frame-38407-2 {
+  align-items: flex-start;
+  justify-content: start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  gap: 25px;
+  position: relative;
+  width: 1121px;
+  align-items: center;
+}
+
+.notosansthai-normal-black-60-20px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+
+.order-detail-button-reject {
+  background-color: #E0EDFF;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 225px;
+  height: 48px;
+
+}
+
+.notosansthai-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-semi-bold-blue-reject-20px {
+  color: #3348FF;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.order-detail-button-approve {
+  background-color: #3348FF;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 225px;
+  height: 48px;
+
+}
+
+.request-detail-school-frame-38522-2 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.purchase-order-shipping-text_label-2-2 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-40);
+  font-weight: 600;
+  line-height: 60.0px;
+  margin-top: -1.00px;
+  text-align: center;
+  width: 468px;
+}
+
+
+.order-detail-input-select {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.order-detail-select-field {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: #dce0e5;
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  overflow: hidden;
+  padding: 8px 10px;
+  position: relative;
+  width: 100%;
+}
+
+
+.order-detail-custom-dropdown {
+  width: 100%;
+  height: 40px;
+  /* กำหนดความสูง */
+  padding: 5px 10px;
+  /* ลด padding เพื่อให้ช่องไม่สูงเกินไป */
+  font-size: 16px;
+  /* ขนาดตัวอักษร */
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  position: relative;
+  z-index: 2;
+  line-height: normal;
+  /* ปรับให้ข้อความอยู่ตรงกลาง */
+}
+
+.order-detail-dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  /* ระยะห่างจากขอบขวา */
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.home-usage-input-select-long {
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}  
+.home-usage-input-select-long2 {
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+.home-usage-button-1 { 
+  margin-left: auto;
+  background-color: var(--blue);
+  border-radius: 10px;
+  cursor: pointer; 
+  display: inline-flex;
+  /* flex: 0 0 auto;  
+  gap: 8px; 
+   justify-content: flex-end;*/
+  padding: 5px 8px;      
+
+ 
+}  
+.usage-list-detail-educational-text-7 {
+  line-height: normal;
+  width: 200px;
+} 
+.usage-order-detail-rectangle-4317 {
+  height: 110px;
+  position: relative;
+  width: 110px;
+}
+
+.approval-usage-detail-frame-11439 {
+  align-items: flex-start;
+  display: flex;
+  /* gap: 80px; */
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+} 
+.order-confirm-usage-image-8 {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.purchase-order-confirm-usage-frame { 
+  border: 1px solid #a2a2a2;
+  border-radius: 8.66px;
+  height: 80px;
+  margin-bottom: -1.00px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+.purchase-order-confirm-usage-frame-9 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 16px;
+  height: 108px;
+  position: relative;
+  width: 100%; /* ใช้เต็มความกว้าง */
+  padding-left: 30px; /* เพิ่มระยะห่างเฉพาะด้านซ้าย */
+} 
+.usage-approval-detail-frame-38262 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+  height: 42px;
+  position: relative;
+  width: 100%;
+} 
+.usage-approval-detail-frame {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 25px 24px;
+  position: relative;
+  width: 100%;
+} 
+.usage-approval-detail-frame-38381 {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 245px;
+  overflow: hidden;
+  padding: 20px 24px;
+  position: relative;
+  width: 100%;
+} 
+
+
+/* styles.css */
+.tab-nav {
+  width: 100%;
+  background: white;
+  /* padding: 20px; */
+}
+
+.tab-container {
+  position: relative;
+  display: inline-flex;
+  border-bottom: 3px solid var(--geyser); 
+  width: 100%;
+}
+
+.tab-item {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+  cursor: pointer;
+  color: #757575 !important;
+}
+
+.tab-item.active {
+  color: var(--blue) !important;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-15);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.slider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: var(--blue);
+  transition: all 0.3s ease;
+}
+
+
+
+.content-item {
+  display: none; /* ซ่อนเนื้อหาทั้งหมดเริ่มต้น */
+}
+
+.content-item.active {
+  display: block; /* แสดงเฉพาะเนื้อหาที่ active */
+}
+
+/* สไตล์สำหรับเนื้อหาภายใน */
+.content-item h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.content-item p {
+  color: #666;
+  line-height: 1.6;
+} 
+
+ 
+.home-product-text-cell {
+  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 1; */
+  display: -webkit-box;
+  flex: 1;
+  line-height: 21.0px; 
+  height: 90px;
+  /* overflow: hidden; 
+  text-overflow: ellipsis; */
+} 
+.home-product-base-table-cell {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  display: flex;
+  gap: 8px;
+  height: 100px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+} 
+.notosansthai-bold-15px {
+  font-size: 18px; /* ขนาดใหญ่ขึ้น */
+  font-weight: 400; /* สีเข้มกว่า */
+  color: var(--bkack); /* สีข้อความเข้มกว่า */
+} 
+.notosansthai-normal-525E6F-13px {
+  color: #525E6F;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-13);
+  font-style: normal;
+  font-weight: 400;
+} 
+.approval-product-status {
+  background-color: #5A616D29;
+} 
+.home-delivery-select-field {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--geyser);
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  overflow: hidden;
+  padding: 8px 10px;
+  position: relative;
+  width: 100%; 
+  margin-left: auto;
+  /* margin-top: 25px; */
+ 
+}
+
+
+.status-check-reject {
+  color: #DF0C3D;
+  font-size: 14px;
+  font-weight: bold;
+  background: #FFDEE0;
+  padding: 7px;
+  border-radius: 25px;
+}
+
+.order-set-number {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.order-set-number .header {
+  background-color: #E6E6FA;
+  padding: 20px 20px;
+}
+
+.order-set-number .header h3 {
+  margin: 0;
+  color: #3348FF;
+  font-size: 20px;
+  font-family: var(--font-family-noto_sans_thai);
+  font-weight: 400;
+}
+
+.order-set-number .content {
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 12-column grid */
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #000000;
+  font-family: var(--font-family-noto_sans_thai);
+}
+
+.input-field {
+  height: 40px;
+  padding: 8px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-family: var(--font-family-noto_sans_thai);
+
+}
+
+.input-field[readonly] {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.add-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #3f51b5;
+  background-color: #e8eaf6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background-color: #c5cae9;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.readonly-select {
+  pointer-events: none;
+  background-color: #e9ecef;
+  color: #000000;
+}
+
+
+.order-set-number-detail-custom-dropdown {
+  width: 100%;
+  height: 40px;
+  /* กำหนดความสูง */
+  /* padding: 5px 10px; */
+  /* ลด padding เพื่อให้ช่องไม่สูงเกินไป */
+  font-size: 17px;
+  /* ขนาดตัวอักษร */
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  position: relative;
+  z-index: 2;
+  line-height: normal;
+  color: #000000;
+  /* ปรับให้ข้อความอยู่ตรงกลาง */
+}
+
+.frame-add-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.notosansthai-semi-bold-blue-number-15px {
+  color: #3348FF;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font-family-noto_sans_thai);
+
+}
+
+.notosansthai-bold-pink-number-36px {
+  color: #FCA0A6;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--font-family-noto_sans_thai);
+
 }

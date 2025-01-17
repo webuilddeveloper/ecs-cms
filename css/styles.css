@@ -30849,3 +30849,50 @@ margin-top: auto;
 .pt80 {
   padding-top: 80px;
 }
+
+
+.permissions-icon {
+  width: 35px;
+  height: 35px;
+}
+
+
+.permissions-base-table-cell-3 {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  height: 44px;
+  position: relative;
+  width: 100%;
+}
+
+
+.permissions-table-header {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--black-haze);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  display: flex;
+  gap: 4px;
+  height: 44px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.permissions-header-4 {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 21.0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

@@ -1451,6 +1451,7 @@ input:focus {
   font-size: var(--font-size-15);
   font-style: normal;
   font-weight: 400;
+  vertical-align: middle !important;
 }
 
 .notosansthai-medium-vulcan-15px {
@@ -2064,8 +2065,8 @@ input[readonly] {
 .home-educational-base-table-cell {
   align-items: center;
   align-self: stretch;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  /* border-bottom-style: solid;
+  border-bottom-width: 1px; */
   border-color: var(--geyser);
   display: flex;
   gap: 8px;
@@ -2138,8 +2139,8 @@ input[readonly] {
 .home-educational-base-table-cell-1 {
   align-items: center;
   align-self: stretch;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  /* border-bottom-style: solid;
+  border-bottom-width: 1px; */
   border-color: var(--geyser);
   display: flex;
   flex-direction: column;
@@ -8032,7 +8033,7 @@ input[readonly] {
 }
 
 .approval-educational-base-table-header {
-  background-color: var(--black-haze);
+  /* background-color: var(--black-haze); */
 }
 
 .approval-educational-base-checkbox {
@@ -8050,10 +8051,10 @@ input[readonly] {
 .approval-educational-table-header {
   align-items: center;
   align-self: stretch;
-  background-color: var(--black-haze);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: var(--geyser);
+  /* background-color: var(--black-haze); */
+  /* border-bottom-style: solid;
+  border-bottom-width: 1px; */
+  /* border-color: var(--geyser); */
   display: flex;
   gap: 4px;
   height: 44px;
@@ -28164,6 +28165,7 @@ body {
   left: 0;
   padding: 20px 0;
   overflow-y: auto;
+  z-index: 999;
 }
 
 .sidebar-header {

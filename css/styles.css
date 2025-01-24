@@ -20762,7 +20762,6 @@ a:active {
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
-  gap: 650px;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -20770,7 +20769,7 @@ a:active {
 
 
 .request-detail-school-text-2 {
-  width: 284px;
+  width: 350px;
 }
 
 .request-detail-school-frame-38426 {
@@ -20780,7 +20779,7 @@ a:active {
   justify-content: flex-end;
   margin-right: -1.00px;
   position: relative;
-  width: 271px;
+  width: 100%;
 }
 
 .request-detail-school-xxxxxxxx {
@@ -20792,7 +20791,6 @@ a:active {
   line-height: 42.0px;
   margin-top: -1.00px;
   position: relative;
-  width: 121px;
 }
 
 .request-detail-school-button-1 {

@@ -31126,3 +31126,18 @@ td {
   position: relative;
   width: 457px;
 }
+
+.tr550-not-center {
+  width: 550px;
+}
+
+.tr150-end {
+  width: 550px;
+  text-align: end;
+}
+
+.icon-image-down-left-20px {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}

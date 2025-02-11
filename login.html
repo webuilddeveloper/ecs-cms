@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script>
+      function showPopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "flex"; // แสดง popup
+      }
+    
+      function hidePopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none"; // ซ่อน popup
+        window.location.href = "home-educational.html"; // เปิดหน้าใหม่
+        // window.location.href = "home-school.html"; // เปิดหน้าใหม่
+      }
+    </script>
+  </head>
+  <body style="margin: 0; background: #ffffff;display: block;flex-direction: initial;">
+    <div class="header-ecs">   
+    </div>
+    <div class="content-ecs">
+      <div class="login-flex-row">
+        <img class="login-logo-1-1" src="img/logo------1.png" alt="logo  1" />
+        <div class="login-card-login">
+          <div class="login-frame-3355">
+            <h1 class="login-text-24">เข้าสู่ระบบ <br />เว็บไซต์ ปพ.ออนไลน์</h1>
+          </div>
+          <div class="login-frame-3355-1">
+            <div class="login-button" onclick="showPopup()">
+              <div class="icon-thai-d"></div>
+              <div class="login-text-label valign-text-middle font-blue-20">
+                เข้าสู่ระบบด้วย ThaID
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+    </div>
+    
+
+    <!-- ส่วน popup -->
+    <div id="popup" class="login-popup-container" style="display: none;">
+      <div class="login-frame-container">
+        <div class="login-frame-38264">
+          <div class="login-frame-38266">
+            <div class="login-frame-38265">
+              <img class="login-alert-02" src="img/alert-02.svg" alt="alert-02" />
+              <h1 class="login-text-label-2 valign-text-middle login-text-label-5">พบการลงทะเบียนซ้ำซ้อน</h1>
+              <div class="login-text-label-3 valign-text-middle login-text-label-5">
+                เลขบัตรประชาชนนี้เป็นสมาชิกในระบบแล้ว
+              </div>
+            </div>
+            <div class="login-frame-38262">
+              <div class="login-button-2 login-button-3" onclick="hidePopup()">
+                <div class="login-text-label-4 valign-text-middle login-text-label-5 font-write-20">
+                  ปิดหน้าต่างนี้
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" onclick="hidePopup()" />
+      </div>
+    </div>
+  </body>
+</html>

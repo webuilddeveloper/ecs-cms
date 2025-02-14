@@ -156,7 +156,7 @@
                 <select id="agency" class="home-educational-list-custom-dropdown">
                   <option value="" disabled selected>สถานะทั้งหมด</option>
                   <option value="ทั้งหมด">ทั้งหมด</option>
-                  <option value="ตรวจสอบคำสั่งซื้อ">ตรวจสอบคำสั่งซื้อ</option>
+                  <option value="รอตรวจสอบคำสั่งซื้อ">รอตรวจสอบคำสั่งซื้อ</option>
                   <option value="ตรวจสอบการชำระเงิน">ตรวจสอบการชำระเงิน</option>
                   <option value="รอใส่ข้อมูลชุดตัวเลข">รอใส่ข้อมูลชุดตัวเลข</option>
                   <option value="ที่ต้องจัดส่ง">ที่ต้องจัดส่ง</option>
@@ -219,7 +219,7 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: xxxxxxxxxxx</th>
+                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: 123</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -269,7 +269,7 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: xxxxxxxxxxx</th>
+                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: 456</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -402,6 +402,108 @@
           this.classList.add('active'); // Add active to the clicked item
         });
       });
+    </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let inputs = document.querySelectorAll(".purchase-order-educational-text_input, #agency, input[type='date']");
+
+    inputs.forEach(input => {
+        input.addEventListener("input", filterTable);
+    });
+});
+
+function filterTable() {
+    let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
+    let statusFilter = document.getElementById("agency").value;
+    let startDate = document.querySelectorAll("input[type='date']")[0].value;
+    let endDate = document.querySelectorAll("input[type='date']")[1].value;
+
+    let orderTables = document.querySelectorAll(".custom-table tbody");
+
+    let hasResults = false; // ใช้ตรวจสอบว่ามีข้อมูลที่ต้องแสดงหรือไม่
+
+    orderTables.forEach(orderTable => {
+        let showOrderTable = false; 
+        let orderNumberElement = orderTable.previousElementSibling; 
+
+        if (orderNumberElement && orderNumberElement.tagName === "THEAD") {
+            let orderNumberText = orderNumberElement.querySelector("th").innerText.toLowerCase();
+            let orderNumber = orderNumberText.replace("หมายเลขคำสั่งซื้อ: ", "").trim(); 
+
+            let orderRows = orderTable.querySelectorAll("tr");
+
+            orderRows.forEach(row => {
+                let showRow = true;
+
+                // ค้นหาด้วยหมายเลขคำสั่งซื้อ
+                if (searchText && !orderNumber.includes(searchText)) {
+                    showRow = false;
+                }
+
+                // ค้นหาด้วยชื่อสินค้า
+                let productText = row.querySelector(".product-info") ? row.querySelector(".product-info").innerText.toLowerCase() : "";
+                if (searchText && !productText.includes(searchText) && !orderNumber.includes(searchText)) {
+                    showRow = false;
+                }
+
+                // ค้นหาด้วยสถานะ
+                let orderStatus = row.querySelector(".status-check, .status-check-success") ? row.querySelector(".status-check, .status-check-success").innerText.trim() : "";
+                if (statusFilter && statusFilter !== "ทั้งหมด" && orderStatus !== statusFilter) {
+                    showRow = false;
+                }
+
+                // กรองตามช่วงวันที่ (ถ้ามี)
+                let dateText = row.querySelector(".order-date") ? row.querySelector(".order-date").innerText.trim() : "";
+                if (startDate && endDate && dateText) {
+                    let orderDate = new Date(dateText);
+                    let start = new Date(startDate);
+                    let end = new Date(endDate);
+
+                    if (orderDate < start || orderDate > end) {
+                        showRow = false;
+                    }
+                }
+
+                // แสดงหรือซ่อนแถวของสินค้า
+                row.style.display = showRow ? "" : "none";
+
+                // ถ้ามีแถวที่ตรงกับเงื่อนไข ให้แสดงทั้ง order table
+                if (showRow) {
+                    showOrderTable = true;
+                    hasResults = true;
+                }
+            });
+
+            // แสดงหรือซ่อนหมายเลขคำสั่งซื้อทั้งหมด (แต่ไม่ซ่อนหัวคอลัมน์)
+            orderTable.style.display = showOrderTable ? "" : "none";
+            orderNumberElement.style.display = showOrderTable ? "" : "none";
+        }
+    });
+
+    // ถ้าไม่มีผลลัพธ์เลย ให้แสดงคอลัมน์และแจ้งว่าไม่พบข้อมูล
+    let tableHeader = document.querySelector(".custom-table thead");
+    let noResultsRow = document.querySelector("#no-results-row");
+
+    if (!hasResults) {
+        if (!noResultsRow) {
+            let tbody = document.querySelector(".custom-table tbody");
+            noResultsRow = document.createElement("tr");
+            noResultsRow.id = "no-results-row";
+            noResultsRow.innerHTML = `<td colspan="6" style="text-align:center; color: red;">ไม่พบข้อมูล</td>`;
+            tbody.appendChild(noResultsRow);
+        }
+    } else {
+        if (noResultsRow) {
+            noResultsRow.remove();
+        }
+    }
+
+    // ให้แน่ใจว่าหัวคอลัมน์ไม่ถูกซ่อน
+    tableHeader.style.display = "";
+}
+
+
     </script>
 </body>
 

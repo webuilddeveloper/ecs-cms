@@ -218,14 +218,14 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="tr550 notosansthai-normal-black-15px">หมายเลขคำสั่งซื้อ: 123</th>
+                          <th class="tr550 notosansthai-normal-black-15px order-number">หมายเลขคำสั่งซื้อ: 123</th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
                                 src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
                                 class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></th>
-                          <th onclick="showProductCollap('product1')" class="tr360 notosansthai-normal-black-15px">โรงเรียน<img
+                          <th onclick="showProductCollap('product1')" class="tr360 notosansthai-normal-black-15px school-name">โรงเรียนกุหลาบ<img
                               src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
                         </tr>
                       </thead>
@@ -280,14 +280,14 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="tr550 notosansthai-normal-black-15px">หมายเลขคำสั่งซื้อ: 456</th>
+                          <th class="tr550 notosansthai-normal-black-15px order-number">หมายเลขคำสั่งซื้อ: 456</th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr150 notosansthai-normal-black-15px"></th>
                           <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
                                 src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
                                 class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></th>
-                          <th onclick="showProductCollap('product2')" class="tr360 notosansthai-normal-black-15px">โรงเรียน<img
+                          <th onclick="showProductCollap('product2')" class="tr360 notosansthai-normal-black-15px school-name">โรงเรียนดอกไม้<img
                               src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
                         </tr>
                       </thead>
@@ -437,94 +437,80 @@
       });
 
       function filterTable() {
-        let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
-        let statusFilter = document.getElementById("agency").value;
-        let startDate = document.querySelectorAll("input[type='date']")[0].value;
-        let endDate = document.querySelectorAll("input[type='date']")[1].value;
+  let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
+  let statusFilter = document.getElementById("agency").value;
 
-        let orderTables = document.querySelectorAll(".custom-table tbody");
+  let orderTables = document.querySelectorAll(".custom-table"); // ดึงทุกตารางคำสั่งซื้อ
+  let hasResults = false; // ตรวจสอบว่ามีผลลัพธ์ที่ค้นหาพบหรือไม่
 
-        let hasResults = false; // ใช้ตรวจสอบว่ามีข้อมูลที่ต้องแสดงหรือไม่
+  orderTables.forEach(orderTable => {
+    let showOrderTable = false; // ใช้สำหรับซ่อนหรือแสดงตารางแต่ละคำสั่งซื้อ
+    let orderRows = orderTable.querySelectorAll("tbody tr"); // ดึงแถวทั้งหมดในตาราง
 
-        orderTables.forEach(orderTable => {
-          let showOrderTable = false;
-          let orderNumberElement = orderTable.previousElementSibling;
+    orderRows.forEach(row => {
+      let showRow = false; // ตั้งค่าเริ่มต้นให้ซ่อนทุกแถวก่อน
 
-          if (orderNumberElement && orderNumberElement.tagName === "THEAD") {
-            let orderNumberText = orderNumberElement.querySelector("th").innerText.toLowerCase();
-            let orderNumber = orderNumberText.replace("หมายเลขคำสั่งซื้อ: ", "").trim();
+      // **ค้นหาด้วยหมายเลขคำสั่งซื้อ**
+      let orderNumberElement = row.closest("table").querySelector(".order-number");
+      let orderNumber = orderNumberElement ? orderNumberElement.innerText.replace("หมายเลขคำสั่งซื้อ: ", "").trim().toLowerCase() : "";
 
-            let orderRows = orderTable.querySelectorAll("tr");
+      // **ค้นหาด้วยชื่อโรงเรียน**
+      let schoolNameElement = row.closest("table").querySelector(".school-name");
+      let schoolName = schoolNameElement ? schoolNameElement.innerText.trim().toLowerCase() : "";
 
-            orderRows.forEach(row => {
-              let showRow = true;
+      // **ค้นหาด้วยชื่อสินค้า**
+      let productNameElement = row.querySelector(".product-name");
+      let productName = productNameElement ? productNameElement.innerText.trim().toLowerCase() : "";
 
-              // ค้นหาด้วยหมายเลขคำสั่งซื้อ
-              if (searchText && !orderNumber.includes(searchText)) {
-                showRow = false;
-              }
+      // **ค้นหาด้วยสถานะ**
+      let statusElement = row.querySelector(".status");
+      let orderStatus = statusElement ? statusElement.innerText.trim().toLowerCase() : "";
 
-              // ค้นหาด้วยชื่อสินค้า
-              let productText = row.querySelector(".product-info") ? row.querySelector(".product-info").innerText.toLowerCase() : "";
-              if (searchText && !productText.includes(searchText) && !orderNumber.includes(searchText)) {
-                showRow = false;
-              }
-
-              // ค้นหาด้วยสถานะ
-              let orderStatus = row.querySelector(".status-check, .status-check-success") ? row.querySelector(".status-check, .status-check-success").innerText.trim() : "";
-              if (statusFilter && statusFilter !== "ทั้งหมด" && orderStatus !== statusFilter) {
-                showRow = false;
-              }
-
-              // กรองตามช่วงวันที่ (ถ้ามี)
-              let dateText = row.querySelector(".order-date") ? row.querySelector(".order-date").innerText.trim() : "";
-              if (startDate && endDate && dateText) {
-                let orderDate = new Date(dateText);
-                let start = new Date(startDate);
-                let end = new Date(endDate);
-
-                if (orderDate < start || orderDate > end) {
-                  showRow = false;
-                }
-              }
-
-              // แสดงหรือซ่อนแถวของสินค้า
-              row.style.display = showRow ? "" : "none";
-
-              // ถ้ามีแถวที่ตรงกับเงื่อนไข ให้แสดงทั้ง order table
-              if (showRow) {
-                showOrderTable = true;
-                hasResults = true;
-              }
-            });
-
-            // แสดงหรือซ่อนหมายเลขคำสั่งซื้อทั้งหมด (แต่ไม่ซ่อนหัวคอลัมน์)
-            orderTable.style.display = showOrderTable ? "" : "none";
-            orderNumberElement.style.display = showOrderTable ? "" : "none";
-          }
-        });
-
-        // ถ้าไม่มีผลลัพธ์เลย ให้แสดงคอลัมน์และแจ้งว่าไม่พบข้อมูล
-        let tableHeader = document.querySelector(".custom-table thead");
-        let noResultsRow = document.querySelector("#no-results-row");
-
-        if (!hasResults) {
-          if (!noResultsRow) {
-            let tbody = document.querySelector(".custom-table tbody");
-            noResultsRow = document.createElement("tr");
-            noResultsRow.id = "no-results-row";
-            noResultsRow.innerHTML = `<td colspan="6" style="text-align:center; color: red;">ไม่พบข้อมูล</td>`;
-            tbody.appendChild(noResultsRow);
-          }
-        } else {
-          if (noResultsRow) {
-            noResultsRow.remove();
-          }
+      // **ตรวจสอบเงื่อนไขการค้นหา**
+      if (searchText) {
+        if (orderNumber.includes(searchText) || schoolName.includes(searchText)) {
+          showRow = true;
         }
-
-        // ให้แน่ใจว่าหัวคอลัมน์ไม่ถูกซ่อน
-        tableHeader.style.display = "";
+      } else {
+        showRow = true; // ถ้าไม่มีข้อความค้นหา ให้แสดงทั้งหมด
       }
+
+      // **ตรวจสอบสถานะ**
+      if (statusFilter && statusFilter !== "ทั้งหมด") {
+        if (orderStatus !== statusFilter) {
+          showRow = false;
+        }
+      }
+
+      // **แสดงหรือซ่อนแถวสินค้า**
+      row.style.display = showRow ? "" : "none";
+
+      if (showRow) {
+        showOrderTable = true;
+        hasResults = true;
+      }
+    });
+
+    // **แสดงหรือซ่อนทั้งตารางคำสั่งซื้อ**
+    orderTable.style.display = showOrderTable ? "" : "none";
+  });
+
+  // **จัดการกรณีไม่มีข้อมูล**
+  let noResultsRow = document.querySelector("#no-results-row");
+  if (!hasResults) {
+    if (!noResultsRow) {
+      let tableContainer = document.querySelector(".table-container");
+      noResultsRow = document.createElement("div");
+      noResultsRow.id = "no-results-row";
+      noResultsRow.innerHTML = `<p style="text-align:center; color: red; font-size: 18px;">ไม่พบข้อมูล</p>`;
+      tableContainer.appendChild(noResultsRow);
+    }
+  } else {
+    if (noResultsRow) {
+      noResultsRow.remove();
+    }
+  }
+}
 
       function showProductCollap(param) {
         const content = document.getElementById(param);

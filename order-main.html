@@ -40,8 +40,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="menu-item "><img src="./img/icon-note-edit.png" alt="ฝ่ายวิชาการ"
-              class="icon-image">
+          <a href="#" class="menu-item "><img src="./img/icon-note-edit.png" alt="ฝ่ายวิชาการ" class="icon-image">
             ฝ่ายวิชาการ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu">
             <li><a href="./pre-print.html">การผลิตเอกสารปพ.</a></li>
@@ -54,7 +53,7 @@
           <a href="#" class="menu-item"><img src="./img/icon-analytics.png" alt="รายงาน" class="icon-image">
             รายงาน <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu">
-                       <li><a href="./order-report.html">รายงานคำสั่งซื้อ</a></li>
+            <li><a href="./order-report.html">รายงานคำสั่งซื้อ</a></li>
             <li><a href="./production-report.html">รายงานการผลิต</a></li>
             <li><a href="./delivery-report.html">รายงานการจัดส่ง</a></li>
           </ul>
@@ -70,10 +69,10 @@
         </li>
         <li><a href="./manageuser.html" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
               class="icon-image">จัดการผู้ใช้งาน</a></li>
-        <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png" alt="ประวัติการใช้งาน"
-              class="icon-image">ประวัติการใช้งาน</a></li>
-        <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png" alt="การอนุมัติผู้ใช้งาน"
-              class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
+        <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png"
+              alt="ประวัติการใช้งาน" class="icon-image">ประวัติการใช้งาน</a></li>
+        <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png"
+              alt="การอนุมัติผู้ใช้งาน" class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
         <li class="dropdown">
           <a href="#" class="menu-item"><img src="./img/icon-image.png" alt="จัดการเนื้อหา" class="icon-image">
             จัดการเนื้อหา <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
@@ -219,16 +218,25 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: 123</th>
+                          <th class="tr550 notosansthai-normal-black-15px">หมายเลขคำสั่งซื้อ: 123</th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
+                                src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
+                                class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></th>
+                          <th onclick="showProductCollap('product1')" class="tr360 notosansthai-normal-black-15px"><img
+                              src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="product1" style="display: none;">
                         <tr>
                           <td class="tr550">
                             <div class="product">
                               <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
+                                  ประถม<br>(ปรับปรุง
                                   2555) (ชนิดใช้กับคอม)</div>
                               </div>
                             </div>
@@ -240,7 +248,8 @@
                             <span class="status-check"><img src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
                                 class="status-icon">รอตรวจสอบคำสั่งซื้อ</span>
                           </td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a id="specific-page" href="./order-check-detail.html" class="details-link">ดูรายละเอียด</a>
+                          <td class="tr360 notosansthai-normal-black-15px"><a id="specific-page"
+                              href="./order-check-detail.html" class="details-link">ดูรายละเอียด</a>
                           </td>
                         </tr>
                         <tr>
@@ -248,7 +257,8 @@
                             <div class="product">
                               <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
+                                  ประถม<br>(ปรับปรุง
                                   2555) (ชนิดใช้กับคอม)</div>
                               </div>
                             </div>
@@ -259,7 +269,8 @@
                           <td class="tr360 notosansthai-normal-black-15px"> <span class="status-check"><img
                                 src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
                                 class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-detail.html" class="details-link">ดูรายละเอียด</a>
+                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-detail.html"
+                              class="details-link">ดูรายละเอียด</a>
                           </td>
                         </tr>
                       </tbody>
@@ -269,16 +280,25 @@
                     <table class="custom-table">
                       <thead>
                         <tr>
-                          <th class="notosansthai-normal-black-15px" colspan="6">หมายเลขคำสั่งซื้อ: 456</th>
+                          <th class="tr550 notosansthai-normal-black-15px">หมายเลขคำสั่งซื้อ: 456</th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr150 notosansthai-normal-black-15px"></th>
+                          <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
+                                src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
+                                class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></th>
+                          <th onclick="showProductCollap('product2')" class="tr360 notosansthai-normal-black-15px"><img
+                              src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="product2" style="display: none;">
                         <tr>
                           <td class="tr550">
                             <div class="product">
                               <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
+                                  ประถม<br>(ปรับปรุง
                                   2555) (ชนิดใช้กับคอม)</div>
                               </div>
                             </div>
@@ -290,7 +310,8 @@
                             <span class="status-check-success"><img src="./img/icon-3.png" alt="จัดส่งสำเร็จ"
                                 class="status-icon">จัดส่งสำเร็จ</span>
                           </td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html" class="details-link">ดูรายละเอียด</a>
+                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html"
+                              class="details-link">ดูรายละเอียด</a>
                           </td>
                         </tr>
                         <tr>
@@ -298,7 +319,8 @@
                             <div class="product">
                               <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ ประถม<br>(ปรับปรุง
+                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
+                                  ประถม<br>(ปรับปรุง
                                   2555) (ชนิดใช้กับคอม)</div>
                               </div>
                             </div>
@@ -308,7 +330,8 @@
                           <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
                           <td class="tr360 notosansthai-normal-black-15px"> <span class="status-check-success"><img
                                 src="./img/icon-3.png" alt="จัดส่งสำเร็จ" class="status-icon">จัดส่งสำเร็จ</span></td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html" class="details-link">ดูรายละเอียด</a>
+                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html"
+                              class="details-link">ดูรายละเอียด</a>
                           </td>
                         </tr>
                       </tbody>
@@ -318,9 +341,9 @@
               </table>
             </div>
           </div>
-       
 
-    
+
+
           <div class="home-educational-input-select-button-footer-default">
             <div class="home-educational-frame-38263">
               <div class="home-educational-input-select-1">
@@ -405,104 +428,113 @@
     </script>
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    let inputs = document.querySelectorAll(".purchase-order-educational-text_input, #agency, input[type='date']");
+      document.addEventListener("DOMContentLoaded", function () {
+        let inputs = document.querySelectorAll(".purchase-order-educational-text_input, #agency, input[type='date']");
 
-    inputs.forEach(input => {
-        input.addEventListener("input", filterTable);
-    });
-});
+        inputs.forEach(input => {
+          input.addEventListener("input", filterTable);
+        });
+      });
 
-function filterTable() {
-    let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
-    let statusFilter = document.getElementById("agency").value;
-    let startDate = document.querySelectorAll("input[type='date']")[0].value;
-    let endDate = document.querySelectorAll("input[type='date']")[1].value;
+      function filterTable() {
+        let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
+        let statusFilter = document.getElementById("agency").value;
+        let startDate = document.querySelectorAll("input[type='date']")[0].value;
+        let endDate = document.querySelectorAll("input[type='date']")[1].value;
 
-    let orderTables = document.querySelectorAll(".custom-table tbody");
+        let orderTables = document.querySelectorAll(".custom-table tbody");
 
-    let hasResults = false; // ใช้ตรวจสอบว่ามีข้อมูลที่ต้องแสดงหรือไม่
+        let hasResults = false; // ใช้ตรวจสอบว่ามีข้อมูลที่ต้องแสดงหรือไม่
 
-    orderTables.forEach(orderTable => {
-        let showOrderTable = false; 
-        let orderNumberElement = orderTable.previousElementSibling; 
+        orderTables.forEach(orderTable => {
+          let showOrderTable = false;
+          let orderNumberElement = orderTable.previousElementSibling;
 
-        if (orderNumberElement && orderNumberElement.tagName === "THEAD") {
+          if (orderNumberElement && orderNumberElement.tagName === "THEAD") {
             let orderNumberText = orderNumberElement.querySelector("th").innerText.toLowerCase();
-            let orderNumber = orderNumberText.replace("หมายเลขคำสั่งซื้อ: ", "").trim(); 
+            let orderNumber = orderNumberText.replace("หมายเลขคำสั่งซื้อ: ", "").trim();
 
             let orderRows = orderTable.querySelectorAll("tr");
 
             orderRows.forEach(row => {
-                let showRow = true;
+              let showRow = true;
 
-                // ค้นหาด้วยหมายเลขคำสั่งซื้อ
-                if (searchText && !orderNumber.includes(searchText)) {
-                    showRow = false;
+              // ค้นหาด้วยหมายเลขคำสั่งซื้อ
+              if (searchText && !orderNumber.includes(searchText)) {
+                showRow = false;
+              }
+
+              // ค้นหาด้วยชื่อสินค้า
+              let productText = row.querySelector(".product-info") ? row.querySelector(".product-info").innerText.toLowerCase() : "";
+              if (searchText && !productText.includes(searchText) && !orderNumber.includes(searchText)) {
+                showRow = false;
+              }
+
+              // ค้นหาด้วยสถานะ
+              let orderStatus = row.querySelector(".status-check, .status-check-success") ? row.querySelector(".status-check, .status-check-success").innerText.trim() : "";
+              if (statusFilter && statusFilter !== "ทั้งหมด" && orderStatus !== statusFilter) {
+                showRow = false;
+              }
+
+              // กรองตามช่วงวันที่ (ถ้ามี)
+              let dateText = row.querySelector(".order-date") ? row.querySelector(".order-date").innerText.trim() : "";
+              if (startDate && endDate && dateText) {
+                let orderDate = new Date(dateText);
+                let start = new Date(startDate);
+                let end = new Date(endDate);
+
+                if (orderDate < start || orderDate > end) {
+                  showRow = false;
                 }
+              }
 
-                // ค้นหาด้วยชื่อสินค้า
-                let productText = row.querySelector(".product-info") ? row.querySelector(".product-info").innerText.toLowerCase() : "";
-                if (searchText && !productText.includes(searchText) && !orderNumber.includes(searchText)) {
-                    showRow = false;
-                }
+              // แสดงหรือซ่อนแถวของสินค้า
+              row.style.display = showRow ? "" : "none";
 
-                // ค้นหาด้วยสถานะ
-                let orderStatus = row.querySelector(".status-check, .status-check-success") ? row.querySelector(".status-check, .status-check-success").innerText.trim() : "";
-                if (statusFilter && statusFilter !== "ทั้งหมด" && orderStatus !== statusFilter) {
-                    showRow = false;
-                }
-
-                // กรองตามช่วงวันที่ (ถ้ามี)
-                let dateText = row.querySelector(".order-date") ? row.querySelector(".order-date").innerText.trim() : "";
-                if (startDate && endDate && dateText) {
-                    let orderDate = new Date(dateText);
-                    let start = new Date(startDate);
-                    let end = new Date(endDate);
-
-                    if (orderDate < start || orderDate > end) {
-                        showRow = false;
-                    }
-                }
-
-                // แสดงหรือซ่อนแถวของสินค้า
-                row.style.display = showRow ? "" : "none";
-
-                // ถ้ามีแถวที่ตรงกับเงื่อนไข ให้แสดงทั้ง order table
-                if (showRow) {
-                    showOrderTable = true;
-                    hasResults = true;
-                }
+              // ถ้ามีแถวที่ตรงกับเงื่อนไข ให้แสดงทั้ง order table
+              if (showRow) {
+                showOrderTable = true;
+                hasResults = true;
+              }
             });
 
             // แสดงหรือซ่อนหมายเลขคำสั่งซื้อทั้งหมด (แต่ไม่ซ่อนหัวคอลัมน์)
             orderTable.style.display = showOrderTable ? "" : "none";
             orderNumberElement.style.display = showOrderTable ? "" : "none";
-        }
-    });
+          }
+        });
 
-    // ถ้าไม่มีผลลัพธ์เลย ให้แสดงคอลัมน์และแจ้งว่าไม่พบข้อมูล
-    let tableHeader = document.querySelector(".custom-table thead");
-    let noResultsRow = document.querySelector("#no-results-row");
+        // ถ้าไม่มีผลลัพธ์เลย ให้แสดงคอลัมน์และแจ้งว่าไม่พบข้อมูล
+        let tableHeader = document.querySelector(".custom-table thead");
+        let noResultsRow = document.querySelector("#no-results-row");
 
-    if (!hasResults) {
-        if (!noResultsRow) {
+        if (!hasResults) {
+          if (!noResultsRow) {
             let tbody = document.querySelector(".custom-table tbody");
             noResultsRow = document.createElement("tr");
             noResultsRow.id = "no-results-row";
             noResultsRow.innerHTML = `<td colspan="6" style="text-align:center; color: red;">ไม่พบข้อมูล</td>`;
             tbody.appendChild(noResultsRow);
-        }
-    } else {
-        if (noResultsRow) {
+          }
+        } else {
+          if (noResultsRow) {
             noResultsRow.remove();
+          }
         }
-    }
 
-    // ให้แน่ใจว่าหัวคอลัมน์ไม่ถูกซ่อน
-    tableHeader.style.display = "";
-}
+        // ให้แน่ใจว่าหัวคอลัมน์ไม่ถูกซ่อน
+        tableHeader.style.display = "";
+      }
 
+      function showProductCollap(param) {
+        const content = document.getElementById(param);
+
+        if (content.style.display == "none") {
+          content.style.display = "contents";
+        } else {
+          content.style.display = "none";
+        }
+      }
 
     </script>
 </body>

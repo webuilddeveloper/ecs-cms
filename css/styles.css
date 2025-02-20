@@ -31144,3 +31144,62 @@ td {
   height: 20px;
   margin-left: 20px;
 }
+
+.home-usage-input-select-long-w100 {
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-educational-base-form-label-medium-w70 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 0px 0px 6px;
+  position: relative;
+  width: 70%;
+}
+
+.display-flex-row-spaceacround {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.home-usage-button-1-left-not-auto {
+  background-color: var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  /* flex: 0 0 auto;  
+  gap: 8px; 
+   justify-content: flex-end;*/
+  padding: 10px 10px;
+}
+
+.display-flex-row-center-nowarp-gap20px {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-usage-button-1-search {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  /* flex: 0 0 auto;  
+  gap: 8px; 
+   justify-content: flex-end;*/
+  padding: 10px 50px;
+}

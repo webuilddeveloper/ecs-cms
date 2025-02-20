@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <img src="./img/logo------1.png" alt="Admin Logo" class="sidebar-logo">
+        <span class="text-title">ปพ.ออนไลน์</span>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="text-menu-title">เมนู</li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-shopping-cart.png" alt="รายละเอียดคำสั่งซื้อ"
+              class="icon-image">
+            รายละเอียดคำสั่งซื้อ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="./order-main.html">ทั้งหมด</a></li>
+            <li><a href="./order-check.html">ตรวจสอบคำสั่งซื้อ</a></li>
+            <li><a href="./order-verify-payment.html">ตรวจสอบการชำระเงิน</a></li>
+            <li><a href="./order-set-number.html">รอใส่ข้อมูลชุดตัวเลข</a></li>
+            <li><a href="./order-check-dispatched.html">ที่ต้องจัดส่ง</a></li>
+            <li><a href="./order-check-progress.html">กำลังจัดส่ง</a></li>
+            <li><a href="./order-check-success.html">จัดส่งสำเร็จ</a></li>
+            <li><a href="./order-check-cancel.html">การยกเลิก</a></li>
+            <li><a href="./order-request-refund.html">การคืนเงิน/คืนสินค้า</a></li>
+            <li><a href="./order-check-failed.html">จัดส่งไม่สำเร็จ</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-note-edit.png" alt="ฝ่ายวิชาการ" class="icon-image">
+            ฝ่ายวิชาการ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="./pre-print.html">การผลิตเอกสารปพ.</a></li>
+            <li><a href="./numric-online-manage.html">Online</a></li>
+          </ul>
+        </li>
+        <li><a href="./warehouse.html" class="menu-item text-menu "><img src="./img/icon-analytics.png" alt="คลังสินค้า"
+              class="icon-image">คลังสินค้า</a></li>
+        <li class="dropdown">
+          <a href="#" class="menu-item active"><img src="./img/icon-analytics.png" alt="รายงาน" class="icon-image">
+            รายงาน <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu active">
+            <li><a href="./order-report.html">รายงานคำสั่งซื้อ</a></li>
+            <li><a href="./production-report.html">รายงานการผลิต</a></li>
+            <li><a href="./production-report.html">รายงานการจัดส่ง</a></li>
+            <li class="active"><a class="active" href="./delivery-report.html">รายงานการเงิน</a></li>
+          </ul>
+        </li>
+        <li class="text-menu-title">ผู้ดูแลระบบ</li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-placeholder.png" alt="กำหนดสิทธิ์" class="icon-image">
+            กำหนดสิทธิ์ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="./permissions-staff.html">เจ้าหน้าที่</a></li>
+            <li><a href="./permissions-buyer.html">ผู้ซื้อ</a></li>
+          </ul>
+        </li>
+        <li><a href="./manageuser.html" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
+              class="icon-image">จัดการผู้ใช้งาน</a></li>
+        <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png"
+              alt="ประวัติการใช้งาน" class="icon-image">ประวัติการใช้งาน</a></li>
+        <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png"
+              alt="การอนุมัติผู้ใช้งาน" class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
+        <li class="dropdown">
+          <a href="#" class="menu-item"><img src="./img/icon-image.png" alt="จัดการเนื้อหา" class="icon-image">
+            จัดการเนื้อหา <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
+          <ul class="submenu">
+            <li><a href="./image-content-manage.html">รูปภาพ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- User Info Box -->
+      <div class="user-info-box">
+        <img src="./img/ellipse-11-2@2x.png" alt="User Avatar" class="user-avatar">
+        <div class="user-info">
+          <h3>John Doe</h3>
+          <p>Software Engineer</p>
+        </div>
+      </div>
+      <div class="home-educational-frame-38409">
+        <div class="home-educational-frame-38-1">
+          <div class="home-educational-frame-38402">
+            <div class="home-educational-text-9-2 valign-text-middle">รายงานการเงิน</div>
+          </div>
+
+          <div class="home-manage-frame-38403 ">
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  สาขา
+                </div>
+              </div>
+
+              <div class="home-delivery-select-field ">
+
+                <select id="agency" class="home-educational-list-custom-dropdown">
+                  <option value="" disabled selected>กรุณาเลือกสาขา</option>
+                  <option value="สาขา 1">สาขา 1</option>
+                  <option value="สาขา 2">สาขา 2</option>
+                  <option value="สาขา 3">สาขา 3</option>
+
+                </select>
+                <img class="home-educational-icon" src="img/dropdown-icon-7.svg" alt="icon-addon" />
+              </div>
+            </div>
+          </div>
+
+          <div class="home-manage-frame-38403">
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  เลขที่ใบเสร็จ
+                </div>
+              </div>
+              <div class="purchase-order-educational-input-element input">
+                <input class="purchase-order-educational-text_input" name="พมพคาคนหา" placeholder="เลขที่ใบเสร็จ"
+                  type="text" />
+              </div>
+            </div>
+
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  เริ่มจาก
+                </div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-slate-gray-15px" name="select"
+                  placeholder="เลือกเดือน" type="month" />
+
+              </div>
+            </div>
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  จนถึง
+                </div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-slate-gray-15px" name="select"
+                  placeholder="ทั้งหมด" type="month" />
+              </div>
+            </div>
+          </div>
+
+          <div class="home-manage-frame-38403">
+            <div class="home-usage-input-select-long input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  ประเภทรายการ
+                </div>
+              </div>
+
+              <div class="home-delivery-select-field ">
+
+                <select id="agency" class="home-educational-list-custom-dropdown">
+                  <option value="" disabled selected>ประเภทรายการ</option>
+                  <option value="ประเภทรายการ 1">ประเภทรายการ 1</option>
+                  <option value="ประเภทรายการ 2">ประเภทรายการ 2</option>
+                  <option value="ประเภทรายการ 3">ประเภทรายการ 3</option>
+
+                </select>
+                <img class="home-educational-icon" src="img/dropdown-icon-7.svg" alt="icon-addon" />
+              </div>
+            </div>
+
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium-w70">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px display-flex-row-spaceacround">
+                  เพิ่มเติมเฉพาะ SO/SSO :
+                  <div>
+                    <input type="radio" id="age1" name="sspmail" value="เฉพาะ SSP MALL">
+                    <label for="age1">เฉพาะ SSP MALL</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="age2" name="sspmail" value="ไม่รวม SSP MALL">
+                    <label for="age2">ไม่รวม SSP MALL</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="age3" name="sspmail" value="รวมทั้งหมด">
+                    <label for="age3">รวมทั้งหมด</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-manage-frame-38403">
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  วันที่โอนเงิน
+                </div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-slate-gray-15px" name="select"
+                  placeholder="เลือกเดือน" type="month" />
+
+              </div>
+            </div>
+            <div class="home-usage-input-select-long-w100 input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  จนถึงวันที่
+                </div>
+              </div>
+              <div class="home-educational-select-field">
+                <input class="home-educational-select notosansthai-normal-slate-gray-15px" name="select"
+                  placeholder="ทั้งหมด" type="month" />
+              </div>
+            </div>
+          </div>
+
+          <div class="home-manage-frame-38403 ">
+            <div class="home-usage-input-select-long input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  บัญชีธนาคาร
+                </div>
+              </div>
+
+              <div class="home-delivery-select-field ">
+
+                <select id="agency" class="home-educational-list-custom-dropdown">
+                  <option value="" disabled selected>บัญชีธนาคาร</option>
+                  <option value="บัญชีธนาคาร 1">บัญชีธนาคาร 1</option>
+                  <option value="บัญชีธนาคาร 2">บัญชีธนาคาร 2</option>
+                  <option value="บัญชีธนาคาร 3">บัญชีธนาคาร 3</option>
+
+                </select>
+                <img class="home-educational-icon" src="img/dropdown-icon-7.svg" alt="icon-addon" />
+              </div>
+            </div>
+            <div class="home-usage-input-select-long input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  เลขที่สั่งซื้อ (SO/SSO)
+                </div>
+              </div>
+
+              <div class="purchase-order-educational-input-element input">
+                <input class="purchase-order-educational-text_input" name="พมพคาคนหา"
+                  placeholder="เลขที่สั่งซื้อ (SO/SSO)" type="text" />
+              </div>
+            </div>
+            <div class="home-usage-input-select-long input">
+              <div class="home-educational-base-form-label-medium">
+                <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                  ชื่อผู้มาชำระเงิน/ชื่อลูกค้า
+                </div>
+              </div>
+
+              <div class="purchase-order-educational-input-element input">
+                <input class="purchase-order-educational-text_input" name="พมพคาคนหา"
+                  placeholder="ชื่อผู้มาชำระเงิน/ชื่อลูกค้า" type="text" />
+              </div>
+            </div>
+          </div>
+
+          <div class="home-manage-frame-38403">
+            <div class="home-usage-input-select-long-w100 display-flex-row-center-nowarp-gap20px input">
+              <div class="home-usage-button-1-search button-6">
+                <div class="home-educational-text_label valign-text-middle-btn notosansthai-semi-bold-white-20px" style="color: #000000;">
+                  <img class="purchase-order-educational-icon-addon add-img" src="img/icon-addon-1.svg" alt="icon-addon" />
+                  ค้นหา
+                </div>
+              </div>
+              <div class="home-usage-button-1-left-not-auto button-6">
+                <div class="home-educational-text_label valign-text-middle-btn notosansthai-semi-bold-white-20px">
+                  <img class="add-img" src="img/elements.svg" />
+                  ดาวน์โหลดรายงาน
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">เลขที่ใบเสร็จ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">เลขที่ใบกำกับ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">วัน/เดือน/ปี</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">ชื่อลูกค้า</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">QR Payment</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">ธนาณัติ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">เงินโอนธนาคาร</th>
+                <th class="notosansthai-semi-bold-vulcan-15px">จำนวนเงินสุทธิ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">22 ต.ค. 2567</td>
+                <td class="notosansthai-normal-vulcan-15px">สุชัย มากมี</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">xxxxxx</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+              </tr>
+              <tr>
+                <td class="notosansthai-normal-vulcan-15px">2</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">22 ต.ค. 2567</td>
+                <td class="notosansthai-normal-vulcan-15px">สุชัย มากมี</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">xxxxxx</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+              </tr>
+              <tr>
+                <td class="notosansthai-normal-vulcan-15px">3</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">22 ต.ค. 2567</td>
+                <td class="notosansthai-normal-vulcan-15px">สุชัย มากมี</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">xxxxxx</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+              </tr>
+              <tr>
+                <td class="notosansthai-normal-vulcan-15px">4</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">22 ต.ค. 2567</td>
+                <td class="notosansthai-normal-vulcan-15px">สุชัย มากมี</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">xxxxxx</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+              </tr>
+              <tr>
+                <td class="notosansthai-normal-vulcan-15px">5</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">123456789</td>
+                <td class="notosansthai-normal-vulcan-15px">22 ต.ค. 2567</td>
+                <td class="notosansthai-normal-vulcan-15px">สุชัย มากมี</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+                <td class="notosansthai-normal-vulcan-15px">xxxxxx</td>
+                <td class="notosansthai-normal-vulcan-15px">1</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="home-educational-frame-38">
+            <div class="home-educational-frame-38-1">
+
+              <div class="home-educational-input-select-button-footer-default">
+                <div class="home-educational-frame-38263">
+                  <div class="home-educational-input-select-1">
+                    <div class="home-educational-select-field">
+                      <select id="agency3" class="home-educational-list-custom-dropdown">
+                        <option value="แสดง 9" selected>แสดง 10</option>
+                        <option value="แสดง 30">แสดง 30</option>
+                        <option value="แสดง 50">แสดง 50</option>
+                        <option value="แสดง 100">แสดง 100</option>
+                      </select>
+                      <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                      <!-- <div class="home-educational-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
+                          <img class="home-educational-icon" src="img/dropdown-icon-44.svg" alt="dropdown-icon" /> -->
+                    </div>
+                  </div>
+                  <p class="home-educational-text-10 text">แสดง 1-10 รายการ จาก 100 รายการ</p>
+                </div>
+                <div class="home-educational-pagination">
+                  <a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-2 button-6"><img class="home-educational-icon-1"
+                        src="img/icon-178.svg" alt="icon" /></div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-5 button-6">
+                      <div class="home-educational-text-sm-1 text-sm-3">1</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm text notosansthai-medium-blue-15px">2</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm text notosansthai-medium-blue-15px">3</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm text notosansthai-medium-blue-15px">4</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm text notosansthai-medium-blue-15px">5</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm text notosansthai-medium-blue-15px">...</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-3 button-6">
+                      <div class="home-educational-text-sm-2 text-sm-3 notosansthai-medium-blue-15px">10</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form24')">
+                    <div class="home-educational-button-2 button-6"><img class="home-educational-icon-1"
+                        src="img/icon-179.svg" alt="icon" /></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+
+    // JavaScript to handle the dropdown menu toggle
+    const dropdown = document.querySelectorAll('.dropdown > a');
+    dropdown.forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        submenu.classList.toggle('active');
+        const arrow = this.querySelector('.arrow');
+        arrow.classList.toggle('rotate');
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>

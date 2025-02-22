@@ -115,137 +115,215 @@
             <div class="request-detail-school-frame-38444">
 
 
-              <div class="order-set-number">
-                <div class="header">
-                  <h3>รายละเอียดข้อมูลตัวเลขเอกสาร</h3>
-                </div>
-                <div class="content">
-                  <div class="form-container">
-                    <!-- Row 1 -->
-                    <div class="form-group col-6">
-                      <label for="school">โรงเรียน</label>
-                      <input type="text" id="school" class="input-field" value="โรงเรียนบำรุงวิชา" readonly />
-                    </div>
-                    <div class="form-group col-6">
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="form-group col-6">
-                      <label for="type">ประเภทแบบพิมพ์</label>
-                      <div class="order-detail-input-select">
-                        <div class="order-detail-select-field readonly-select">
-                          <select id="agency3" class="order-set-number-detail-custom-dropdown " disabled>
-                            <option value="1">กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
-                            <option value="2" disabled selected>ปพ1 : ป</option>
-                            <option value="3">ปพ1 : บ</option>
-                          </select>
-                          <img class="order-detail-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+              <table>
+                <tr>
+                  <td style="border-bottom: 0px;">
+                    <div class="order-set-number">
+                      <div class="header">
+                        <h3>รายละเอียดข้อมูลตัวเลขเอกสาร</h3>
+                      </div>
+                      <div class="content">
+                        
+                        <!-- Row 1 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="school">โรงเรียน</label>
+                            <input type="text" id="school" class="input-field" value="โรงเรียนบำรุงวิชา" readonly />
+                          </div>
+                          <div class="form-group">
+                          </div>
                         </div>
+                        
+      
+                        <!-- Row 2 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="type">ประเภทแบบพิมพ์1</label>
+                            <div class="order-detail-input-select">
+                              <div class="order-detail-select-field readonly-select">
+                                <select id="agency3" class="order-set-number-detail-custom-dropdown" disabled>
+                                  <option value="1">กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
+                                  <option value="2" disabled selected>ปพ1 : ป</option>
+                                  <option value="3">ปพ1 : บ</option>
+                                </select>
+                                <img class="order-detail-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="quantity">จำนวนเล่ม</label>
+                            <input id="quantity" class="input-field" value="100" readonly />
+                          </div>
+                        </div>
+                        
+      
+                        <!-- Row 3 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="bookno">เล่มที่</label>
+                            <input type="text" id="bookno" class="input-field" value="1" readonly/>
+                          </div>
+                          <div class="form-group">
+                            <label for="set">ชุดที่</label>
+                            <input type="text" id="set" class="input-field" value="10476" />
+                          </div>
+                          <div class="form-group">
+                            <label for="first">เลขที่แรก</label>
+                            <input type="text" id="first" class="input-field" />
+                          </div>
+                          <div class="form-group">
+                            <label for="last">เลขที่สุดท้าย</label>
+                            <input type="text" id="last" class="input-field" />
+                          </div>
+                        </div>
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="bookno">เล่มที่</label>
+                            <input type="text" id="bookno" class="input-field" value="2" readonly/>
+                          </div>
+                          <div class="form-group">
+                            <label for="set">ชุดที่</label>
+                            <input type="text" id="set" class="input-field" value="10476" />
+                          </div>
+                          <div class="form-group">
+                            <label for="first">เลขที่แรก</label>
+                            <input type="text" id="first" class="input-field" />
+                          </div>
+                          <div class="form-group">
+                            <label for="last">เลขที่สุดท้าย</label>
+                            <input type="text" id="last" class="input-field" />
+                          </div>
+                        </div>
+      
+      
+      
+      
+      
+                        <!-- <div class="frame-add-number">
+                          <div class="request-detail-school-frame-38379">
+                            <a>
+                              <article class="order-detail-button-reject request-detail-school-button-6">
+                                <img src="./img/icon-number-add.png" alt="รายงาน" class="icon-image">
+      
+                                <div
+                                  class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-number-15px">
+                                  เพิ่มชุดที่
+                                </div>
+                              </article>
+                            </a>
+      
+                          </div>
+                        </div> -->
                       </div>
                     </div>
-                    <div class="form-group col-6">
-                      <label for="quantity">จำนวนตัวเลข</label>
-                      <input id="quantity" class="input-field" value="100" readonly />
-                    </div>
-
-                    <!-- Row 3 -->
-                    <div class="form-group col-4">
-                      <label for="set">ชุดที่</label>
-                      <input type="text" id="set" class="input-field" value="10476" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label for="first">เลขที่แรก</label>
-                      <input type="text" id="first" class="input-field" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label for="last">เลขที่สุดท้าย</label>
-                      <input type="text" id="last" class="input-field" />
-                    </div>
-                  </div>
-                  <div class="frame-add-number">
-                    <div class="request-detail-school-frame-38379">
-                      <a>
-                        <article class="order-detail-button-reject request-detail-school-button-6">
-                          <img src="./img/icon-number-add.png" alt="รายงาน" class="icon-image">
-
-                          <div
-                            class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-number-15px">
-                            เพิ่มชุดที่
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: 0px;">
+                    <div class="order-set-number">
+                      <div class="header">
+                        <h3>รายละเอียดข้อมูลตัวเลขเอกสาร</h3>
+                      </div>
+                      <div class="content">
+                        
+                        <!-- Row 1 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="school">โรงเรียน</label>
+                            <input type="text" id="school" class="input-field" value="โรงเรียนบำรุงวิชา" readonly />
                           </div>
-                        </article>
-                      </a>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="order-set-number">
-                <div class="header">
-                  <h3>รายละเอียดข้อมูลตัวเลขเอกสาร</h3>
-                </div>
-                <div class="content">
-                  <div class="form-container">
-                    <!-- Row 1 -->
-                    <div class="form-group col-6">
-                      <label for="school">โรงเรียน</label>
-                      <input type="text" id="school" class="input-field" value="โรงเรียนบำรุงวิชา" readonly />
-                    </div>
-                    <div class="form-group col-6">
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="form-group col-6">
-                      <label for="type">ประเภทแบบพิมพ์</label>
-                      <div class="order-detail-input-select">
-                        <div class="order-detail-select-field readonly-select">
-                          <select id="agency3" class="order-set-number-detail-custom-dropdown " disabled>
-                            <option value="1">กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
-                            <option value="2">ปพ1 : ป</option>
-                            <option value="3" disabled selected>ปพ1 : บ</option>
-                          </select>
-                          <img class="order-detail-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                          <div class="form-group">
+                          </div>
                         </div>
+                        
+      
+                        <!-- Row 2 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="type">ประเภทแบบพิมพ์1</label>
+                            <div class="order-detail-input-select">
+                              <div class="order-detail-select-field readonly-select">
+                                <select id="agency3" class="order-set-number-detail-custom-dropdown" disabled>
+                                  <option value="1">กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
+                                  <option value="2" disabled selected>ปพ1 : ป</option>
+                                  <option value="3">ปพ1 : บ</option>
+                                </select>
+                                <img class="order-detail-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="quantity">จำนวนเล่ม</label>
+                            <input id="quantity" class="input-field" value="100" readonly />
+                          </div>
+                        </div>
+                        
+      
+                        <!-- Row 3 -->
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="bookno">เล่มที่</label>
+                            <input type="text" id="bookno" class="input-field" value="1" readonly/>
+                          </div>
+                          <div class="form-group">
+                            <label for="set">ชุดที่</label>
+                            <input type="text" id="set" class="input-field" value="10476" />
+                          </div>
+                          <div class="form-group">
+                            <label for="first">เลขที่แรก</label>
+                            <input type="text" id="first" class="input-field" />
+                          </div>
+                          <div class="form-group">
+                            <label for="last">เลขที่สุดท้าย</label>
+                            <input type="text" id="last" class="input-field" />
+                          </div>
+                        </div>
+                        <div class="custom-row">
+                          <div class="form-group">
+                            <label for="bookno">เล่มที่</label>
+                            <input type="text" id="bookno" class="input-field" value="2" readonly/>
+                          </div>
+                          <div class="form-group">
+                            <label for="set">ชุดที่</label>
+                            <input type="text" id="set" class="input-field" value="10476" />
+                          </div>
+                          <div class="form-group">
+                            <label for="first">เลขที่แรก</label>
+                            <input type="text" id="first" class="input-field" />
+                          </div>
+                          <div class="form-group">
+                            <label for="last">เลขที่สุดท้าย</label>
+                            <input type="text" id="last" class="input-field" />
+                          </div>
+                        </div>
+      
+      
+      
+      
+      
+                        <!-- <div class="frame-add-number">
+                          <div class="request-detail-school-frame-38379">
+                            <a>
+                              <article class="order-detail-button-reject request-detail-school-button-6">
+                                <img src="./img/icon-number-add.png" alt="รายงาน" class="icon-image">
+      
+                                <div
+                                  class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-number-15px">
+                                  เพิ่มชุดที่
+                                </div>
+                              </article>
+                            </a>
+      
+                          </div>
+                        </div> -->
                       </div>
                     </div>
-                    <div class="form-group col-6">
-                      <label for="quantity">จำนวนตัวเลข</label>
-                      <input id="quantity" class="input-field" value="100" readonly />
-                    </div>
+                  </td>
+                </tr>
+              </table>
+          
 
-                    <!-- Row 3 -->
-                    <div class="form-group col-4">
-                      <label for="set">ชุดที่</label>
-                      <input type="text" id="set" class="input-field" value="10476" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label for="first">เลขที่แรก</label>
-                      <input type="text" id="first" class="input-field" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label for="last">เลขที่สุดท้าย</label>
-                      <input type="text" id="last" class="input-field" />
-                    </div>
-                  </div>
-                  <div class="frame-add-number">
-                    <div class="request-detail-school-frame-38379">
-                      <a>
-                        <article class="order-detail-button-reject request-detail-school-button-6">
-                          <img src="./img/icon-number-add.png" alt="รายงาน" class="icon-image">
-
-                          <div
-                            class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-number-15px">
-                            เพิ่มชุดที่
-                          </div>
-                        </article>
-                      </a>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+       
 
               <div class="request-detail-school-frame-38522-2">
                 <div class="request-detail-school-frame-38379">

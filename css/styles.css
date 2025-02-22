@@ -29901,7 +29901,7 @@ td {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Arial, sans-serif;
 }
 
@@ -31202,4 +31202,15 @@ td {
   gap: 8px; 
    justify-content: flex-end;*/
   padding: 10px 50px;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: nowrap; /* หรือปรับเป็น wrap ถ้าจอเล็ก */
+  justify-content: space-between; /* สามารถปรับเป็น center, flex-start ตามต้องการ */
+}
+
+.custom-row .form-group {
+  flex: 1; /* แต่ละฟิลด์มีความกว้างเท่าๆ กัน */
+  margin: 10px 10px; /* ปรับระยะห่างระหว่างฟิลด์ตามความเหมาะสม */
 }

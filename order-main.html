@@ -27,16 +27,10 @@
               class="icon-image">
             รายละเอียดคำสั่งซื้อ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu active">
-            <li class="active"><a class="active" href="./order-main.html">ทั้งหมด</a></li>
-            <li><a href="./order-check.html">ตรวจสอบคำสั่งซื้อ</a></li>
-            <li><a href="./order-verify-payment.html">ตรวจสอบการชำระเงิน</a></li>
-            <li><a href="./order-set-number.html">รอใส่ข้อมูลชุดตัวเลข</a></li>
-            <li><a href="./order-check-dispatched.html">ที่ต้องจัดส่ง</a></li>
-            <li><a href="./order-check-progress.html">กำลังจัดส่ง</a></li>
-            <li><a href="./order-check-success.html">จัดส่งสำเร็จ</a></li>
-            <li><a href="./order-check-cancel.html">การยกเลิก</a></li>
-            <li><a href="./order-request-refund.html">การคืนเงิน/คืนสินค้า</a></li>
-            <li><a href="./order-check-failed.html">จัดส่งไม่สำเร็จ</a></li>
+            <li class="active"><a class="active" href="./order-main.html">คำสั่งซื้อ</a></li>
+            <li>
+              <a href="#">คำสั่งซื้อสาขา</a>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
@@ -101,34 +95,34 @@
           </div>
           <div class="approve-school-frame-38357-1">
             <div class="approve-school-frame-38344">
-              <a href="./order-main.html">
+              <a href="./order-main.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px title-scroll-active">ทั้งหมด</div>
               </a>
-              <a href="./order-check.html">
+              <a href="./order-check.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px ">ตรวจสอบคำสั่งซื้อ(3)</div>
               </a>
-              <a href="./order-verify-payment.html">
+              <a href="./order-verify-payment.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">ตรวจสอบการชำระเงิน(2)</div>
               </a>
-              <a href="./order-set-number.html">
+              <a href="./order-set-number.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">รอใส่ข้อมูลชุดตัวเลข(2)</div>
               </a>
-              <a href="./order-check-dispatched.html">
+              <a href="./order-check-dispatched.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">ที่ต้องจัดส่ง(2)</div>
               </a>
-              <a href="./order-check-progress.html">
+              <a href="./order-check-progress.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">กำลังจัดส่ง(2)</div>
               </a>
-              <a href="./order-check-success.html">
+              <a href="./order-check-success.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">จัดส่งสำเร็จ(2)</div>
               </a>
-              <a href="./order-check-cancel.html">
+              <a href="./order-check-cancel.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">การยกเลิก(0)</div>
               </a>
-              <a href="./order-request-refund.html">
+              <a href="./order-request-refund.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">การคืนเงิน/คืนสินค้า(0)</div>
               </a>
-              <a href="./order-check-failed.html">
+              <a href="./order-check-failed.html" class="m-0">
                 <div class="approve-school-text-1-1 notosansthai-semi-bold-black-20px">จัดส่งไม่สำเร็จ(0)</div>
               </a>
             </div>
@@ -203,141 +197,279 @@
             <!-- Table 1: Only shows headers -->
             <div class="table-container">
               <table class="custom-table">
+                <colgroup>
+                  <col class="w40" />
+                  <col class="w15" />
+                  <col class="w15" />
+                  <col class="w15" />
+                  <col class="w5" />
+                </colgroup>
                 <thead>
-                  <tr>
-                    <th class="tr550 notosansthai-normal-black-15px">สินค้าทั้งหมด</th>
-                    <th class="tr150 notosansthai-normal-black-15px">จำนวน</th>
-                    <th class="tr150 notosansthai-normal-black-15px">หน่วย</th>
-                    <th class="tr150 notosansthai-normal-black-15px">ยอดชำระ</th>
-                    <th class="tr360 notosansthai-normal-black-15px">สถานะ</th>
-                    <th class="tr360 notosansthai-normal-black-15px">ดำเนินการ</th>
+                  <tr class="tr-7F9">
+                    <th class="notosansthai-normal-black-15px bor-no">หมายเลขคำสั่งซื้อ</th>
+                    <th class="notosansthai-normal-black-15px bor-no">ยอดชำระ</th>
+                    <th class="notosansthai-normal-black-15px bor-no">สถานะ</th>
+                    <th class="notosansthai-normal-black-15px bor-no">ดำเนินการ</th>
+                    <th class="notosansthai-normal-black-15px bor-no"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <table class="custom-table">
-                      <thead>
-                        <tr>
-                          <th class="tr550 notosansthai-normal-black-15px order-number">หมายเลขคำสั่งซื้อ: 123</th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
-                                src="./img/elements.png" alt="ไม่อนุมัติ (รายการสินไม่ถูกต้อง)"
-                                class="status-icon">ไม่อนุมัติ (รายการสินไม่ถูกต้อง)</span></th>
-                          <th onclick="showProductCollap('product1')" class="tr360 notosansthai-normal-black-15px school-name">โรงเรียนกุหลาบ<img
-                              src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
-                        </tr>
-                      </thead>
-                      <tbody id="product1" style="display: none;">
-                        <tr>
-                          <td class="tr550">
+                  <div>
+                  <thead>
+                    <tr class="tr-7F9">
+                      <th class="notosansthai-normal-black-15px order-number"><a href="./order-check-detail.html"
+                          class="notosansthai-normal-black-15px">xxxxxxxxxxx</a></th>
+                      <th class="notosansthai-normal-black-15px">1,000</th>
+                      <th class="notosansthai-normal-black-15px"><span class="status-check"><img
+                            src="./img/elements.png" alt="ตรวจสอบการชำระเงิน"
+                            class="status-icon">ตรวจสอบการชำระเงิน</span></th>
+                      <th class="notosansthai-normal-black-15px school-name">โรงเรียนxxxx</th>
+                      <th class="notosansthai-normal-black-15px" onclick="showProductCollap('product1')">
+                        <img src="./img/btn-down.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-down-1"
+                          style="display: flex;" />
+                        <img src="./img/btn-up.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-up-1"
+                          style="display: none;" />
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="product1" style="display: none;">
+                    <div>
+                      <tr class="tr-detail">
+                        <td class="group-product">
+                          <div class="product">
+                            <div class="card-status-popo-1">
+                              ปพ.1:ป
+                            </div>
+                            <div class="card-status-online">
+                              ออนไลน์
+                            </div>
+                            <div class="product-info">
+                              <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</div>
+                            </div>
+                          </div>
+                          <div class="product">
+                            <div class="card-status-popo-1">
+                              ปพ.1:ป
+                            </div>
+                            <div class="product-info">
+                              <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                            </div>
+                          </div>
+                          <div class="product">
+                            <div class="card-status-popo-1-bo">
+                              ปพ.1:บ
+                            </div>
+                            <div class="product-info">
+                              <div class="notosansthai-normal-black-15px">ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น
+                                (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                            </div>
+                          </div>
+                        </td>
+                        
+                      </tr>
+                    </div>
+                  </tbody>
+                  </div>
+                  <div>
+                    <thead>
+                      <tr class="tr-7F9">
+                        <th class="notosansthai-normal-black-15px order-number"><a href="./order-check-detail-edu.html"
+                            class="notosansthai-normal-black-15px">xxxxxxxxxxx</a></th>
+                        <th class="notosansthai-normal-black-15px">23,000</th>
+                        <th class="notosansthai-normal-black-15px"><span class="status-check"><img
+                              src="./img/elements.png" alt="ตรวจสอบคำสั่งซื้อ"
+                              class="status-icon">ตรวจสอบคำสั่งซื้อ</span></th>
+                        <th class="notosansthai-normal-black-15px school-name">เขตxxxx</th>
+                        <th class="notosansthai-normal-black-15px" onclick="showProductCollap('product2')">
+                          <img src="./img/btn-down.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-down-2"
+                            style="display: flex;" />
+                          <img src="./img/btn-up.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-up-2"
+                            style="display: none;" />
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="product2" style="display: none;">
+                      <div >
+                        <tr class="tr-detail">
+                          <td class="group-product">
                             <div class="product">
-                              <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
+                              <div class="card-status-online">
+                                ออนไลน์
+                              </div>
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
-                                  ประถม<br>(ปรับปรุง
-                                  2555) (ชนิดใช้กับคอม)</div>
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</div>
+                              </div>
+                            </div>
+                            <div class="product">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
+                              <div class="product-info">
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                              </div>
+                            </div>
+                            <div class="product">
+                              <div class="card-status-popo-1-bo">
+                                ปพ.1:บ
+                              </div>
+                              <div class="product-info">
+                                <div class="notosansthai-normal-black-15px">ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
                               </div>
                             </div>
                           </td>
-                          <td class="tr150 notosansthai-normal-black-15px">1</td>
-                          <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
-                          <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
-                          <td class="tr360 notosansthai-normal-black-15px">
-                            <span class="status-check"><img src="./img/elements.png" alt="ไม่อนุมัติ (รายการสินไม่ถูกต้อง)"
-                                class="status-icon">ไม่อนุมัติ (รายการสินไม่ถูกต้อง)</span>
+                          <td>
+                            <div class="notosansthai-normal-black-15px">1,500</div>
                           </td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a id="specific-page"
-                              href="./order-check-detail.html" class="details-link">ดูรายละเอียด</a>
+                          <td>
+                            <div class="notosansthai-normal-black-15px"><span class="status-check">
+                              <img src="./img/elements.png" alt="รอใส่ข้อมูลชุดตัวเลข"
+                              class="status-icon">รอใส่ข้อมูลชุดตัวเลข</span></div>
+                          </td>
+                          <td>
+                            <div class="notosansthai-normal-black-15px"><a href="./order-check-detail.html"
+                              class="notosansthai-normal-black-15px underline">โรงเรียน1</a></div>
                           </td>
                         </tr>
-                        <tr>
-                          <td class="tr550">
+                        <tr class="tr-detail">
+                          <td class="group-product">
                             <div class="product">
-                              <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
+                              <div class="card-status-online">
+                                ออนไลน์
+                              </div>
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
-                                  ประถม<br>(ปรับปรุง
-                                  2555) (ชนิดใช้กับคอม)</div>
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</div>
+                              </div>
+                            </div>
+                            <div class="product">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
+                              <div class="product-info">
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
                               </div>
                             </div>
                           </td>
-                          <td class="tr150 notosansthai-normal-black-15px">1</td>
-                          <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
-                          <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
-                          <td class="tr360 notosansthai-normal-black-15px"> <span class="status-check"><img
-                                src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
-                                class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-detail.html"
-                              class="details-link">ดูรายละเอียด</a>
+                          <td>
+                            <div class="notosansthai-normal-black-15px">1,500</div>
+                          </td>
+                          <td>
+                            <div class="notosansthai-normal-black-15px"><span class="status-check">
+                              <img src="./img/elements.png" alt="รอตรวจสอบ"
+                              class="status-icon">รอตรวจสอบ</span></div>
+                          </td>
+                          <td>
+                            <div class="notosansthai-normal-black-15px"><a href="./order-check-detail.html"
+                              class="notosansthai-normal-black-15px underline">โรงเรียน2</a></div>
                           </td>
                         </tr>
-                      </tbody>
-                    </table>
-                  </tr>
-                  <tr>
-                    <table class="custom-table">
-                      <thead>
-                        <tr>
-                          <th class="tr550 notosansthai-normal-black-15px order-number">หมายเลขคำสั่งซื้อ: 456</th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr150 notosansthai-normal-black-15px"></th>
-                          <th class="tr360 notosansthai-normal-black-15px"><span class="status-check"><img
-                                src="./img/elements.png" alt="รอตรวจสอบคำสั่งซื้อ"
-                                class="status-icon">รอตรวจสอบคำสั่งซื้อ</span></th>
-                          <th onclick="showProductCollap('product2')" class="tr360 notosansthai-normal-black-15px school-name">โรงเรียนดอกไม้<img
-                              src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down-left-20px"></th>
-                        </tr>
-                      </thead>
-                      <tbody id="product2" style="display: none;">
-                        <tr>
-                          <td class="tr550">
+                        <tr class="tr-detail">
+                          <td class="group-product">
                             <div class="product">
-                              <img src="./img/Frame_38460.png" alt="Pink Product" class="product-image">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
-                                  ประถม<br>(ปรับปรุง
-                                  2555) (ชนิดใช้กับคอม)</div>
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                              </div>
+                            </div>
+                            <div class="product">
+                              <div class="card-status-popo-1-bo">
+                                ปพ.1:บ
+                              </div>
+                              <div class="product-info">
+                                <div class="notosansthai-normal-black-15px">ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
                               </div>
                             </div>
                           </td>
-                          <td class="tr150 notosansthai-normal-black-15px">1</td>
-                          <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
-                          <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
-                          <td class="tr360 notosansthai-normal-black-15px">
-                            <span class="status-check-success"><img src="./img/icon-3.png" alt="จัดส่งสำเร็จ"
-                                class="status-icon">จัดส่งสำเร็จ</span>
+                          <td>
+                            <div class="notosansthai-normal-black-15px">1,500</div>
                           </td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html"
-                              class="details-link">ดูรายละเอียด</a>
+                          <td>
+                            <div class="notosansthai-normal-black-15px">
+                              <span class="status-check-success">
+                                <img src="./img/icon-3.png" alt="ตรวจสอบสำเร็จ" class="status-icon" />
+                                ตรวจสอบสำเร็จ
+                              </span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="notosansthai-normal-black-15px"><a href="./order-check-detail.html"
+                              class="notosansthai-normal-black-15px underline">โรงเรียน3</a></div>
                           </td>
                         </tr>
-                        <tr>
-                          <td class="tr550">
+                      </div>
+                    </tbody>
+                  </div>
+                  <div>
+                    <thead>
+                      <tr class="tr-7F9">
+                        <th class="notosansthai-normal-black-15px order-number"><a href="./order-check-success-detail.html"
+                            class="notosansthai-normal-black-15px">xxxxxxxxxxx</a></th>
+                        <th class="notosansthai-normal-black-15px">23,000</th>
+                        <th class="notosansthai-normal-black-15px">
+                          <span class="status-check-success">
+                            <img src="./img/icon-3.png" alt="ตรวจสอบสำเร็จ" class="status-icon" />
+                            จัดส่งสำเร็จ
+                          </span>
+                        </th>
+                        <th class="notosansthai-normal-black-15px school-name">โรงเรียนxxxx</th>
+                        <th class="notosansthai-normal-black-15px" onclick="showProductCollap('product3')">
+                          <img src="./img/btn-down.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-down-3"
+                            style="display: flex;" />
+                          <img src="./img/btn-up.png" alt="dropdown" class="icon-image-down-left-20px" id="btn-up-3"
+                            style="display: none;" />
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="product3" style="display: none;">
+                      <div >
+                        <tr class="tr-detail">
+                          <td class="group-product">
                             <div class="product">
-                              <img src="./img/Frame_33.png" alt="Pink Product" class="product-image">
+                              <div class="card-status-popo-1">
+                                ปพ.1:ป
+                              </div>
                               <div class="product-info">
-                                <div class="notosansthai-normal-black-15px">ปพ.1จ รายงานผลการเรียน ระดับ
-                                  ประถม<br>(ปรับปรุง
-                                  2555) (ชนิดใช้กับคอม)</div>
+                                <div class="notosansthai-normal-black-15px">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
+                              </div>
+                            </div>
+                            <div class="product">
+                              <div class="card-status-popo-1-bo">
+                                ปพ.1:บ
+                              </div>
+                              <div class="product-info">
+                                <div class="notosansthai-normal-black-15px">ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น
+                                  (ปรับปรุง 2555) (ฉบับใช้กับคอม)</div>
                               </div>
                             </div>
                           </td>
-                          <td class="tr150 notosansthai-normal-black-15px">1</td>
-                          <td class="tr150 notosansthai-normal-black-15px">เล่ม</td>
-                          <td class="tr150 notosansthai-normal-black-15px">1,500 บาท</td>
-                          <td class="tr360 notosansthai-normal-black-15px"> <span class="status-check-success"><img
-                                src="./img/icon-3.png" alt="จัดส่งสำเร็จ" class="status-icon">จัดส่งสำเร็จ</span></td>
-                          <td class="tr360 notosansthai-normal-black-15px"><a href="./order-check-success-detail.html"
-                              class="details-link">ดูรายละเอียด</a>
-                          </td>
                         </tr>
-                      </tbody>
-                    </table>
-                  </tr>
+                      </div>
+                    </tbody>
+                  </div>
+
                 </tbody>
+
+
+                
+
+
               </table>
             </div>
           </div>
@@ -437,89 +569,115 @@
       });
 
       function filterTable() {
-  let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
-  let statusFilter = document.getElementById("agency").value;
+        let searchText = document.querySelector(".purchase-order-educational-text_input").value.trim().toLowerCase();
+        let statusFilter = document.getElementById("agency").value;
 
-  let orderTables = document.querySelectorAll(".custom-table"); // ดึงทุกตารางคำสั่งซื้อ
-  let hasResults = false; // ตรวจสอบว่ามีผลลัพธ์ที่ค้นหาพบหรือไม่
+        let orderTables = document.querySelectorAll(".custom-table"); // ดึงทุกตารางคำสั่งซื้อ
+        let hasResults = false; // ตรวจสอบว่ามีผลลัพธ์ที่ค้นหาพบหรือไม่
 
-  orderTables.forEach(orderTable => {
-    let showOrderTable = false; // ใช้สำหรับซ่อนหรือแสดงตารางแต่ละคำสั่งซื้อ
-    let orderRows = orderTable.querySelectorAll("tbody tr"); // ดึงแถวทั้งหมดในตาราง
+        orderTables.forEach(orderTable => {
+          let showOrderTable = false; // ใช้สำหรับซ่อนหรือแสดงตารางแต่ละคำสั่งซื้อ
+          let orderRows = orderTable.querySelectorAll("tbody tr"); // ดึงแถวทั้งหมดในตาราง
 
-    orderRows.forEach(row => {
-      let showRow = false; // ตั้งค่าเริ่มต้นให้ซ่อนทุกแถวก่อน
+          orderRows.forEach(row => {
+            let showRow = false; // ตั้งค่าเริ่มต้นให้ซ่อนทุกแถวก่อน
 
-      // **ค้นหาด้วยหมายเลขคำสั่งซื้อ**
-      let orderNumberElement = row.closest("table").querySelector(".order-number");
-      let orderNumber = orderNumberElement ? orderNumberElement.innerText.replace("หมายเลขคำสั่งซื้อ: ", "").trim().toLowerCase() : "";
+            // **ค้นหาด้วยหมายเลขคำสั่งซื้อ**
+            let orderNumberElement = row.closest("table").querySelector(".order-number");
+            let orderNumber = orderNumberElement ? orderNumberElement.innerText.replace("หมายเลขคำสั่งซื้อ: ", "").trim().toLowerCase() : "";
 
-      // **ค้นหาด้วยชื่อโรงเรียน**
-      let schoolNameElement = row.closest("table").querySelector(".school-name");
-      let schoolName = schoolNameElement ? schoolNameElement.innerText.trim().toLowerCase() : "";
+            // **ค้นหาด้วยชื่อโรงเรียน**
+            let schoolNameElement = row.closest("table").querySelector(".school-name");
+            let schoolName = schoolNameElement ? schoolNameElement.innerText.trim().toLowerCase() : "";
 
-      // **ค้นหาด้วยชื่อสินค้า**
-      let productNameElement = row.querySelector(".product-name");
-      let productName = productNameElement ? productNameElement.innerText.trim().toLowerCase() : "";
+            // **ค้นหาด้วยชื่อสินค้า**
+            let productNameElement = row.querySelector(".product-name");
+            let productName = productNameElement ? productNameElement.innerText.trim().toLowerCase() : "";
 
-      // **ค้นหาด้วยสถานะ**
-      let statusElement = row.querySelector(".status");
-      let orderStatus = statusElement ? statusElement.innerText.trim().toLowerCase() : "";
+            // **ค้นหาด้วยสถานะ**
+            let statusElement = row.querySelector(".status");
+            let orderStatus = statusElement ? statusElement.innerText.trim().toLowerCase() : "";
 
-      // **ตรวจสอบเงื่อนไขการค้นหา**
-      if (searchText) {
-        if (orderNumber.includes(searchText) || schoolName.includes(searchText)) {
-          showRow = true;
+            // **ตรวจสอบเงื่อนไขการค้นหา**
+            if (searchText) {
+              if (orderNumber.includes(searchText) || schoolName.includes(searchText)) {
+                showRow = true;
+              }
+            } else {
+              showRow = true; // ถ้าไม่มีข้อความค้นหา ให้แสดงทั้งหมด
+            }
+
+            // **ตรวจสอบสถานะ**
+            if (statusFilter && statusFilter !== "ทั้งหมด") {
+              if (orderStatus !== statusFilter) {
+                showRow = false;
+              }
+            }
+
+            // **แสดงหรือซ่อนแถวสินค้า**
+            row.style.display = showRow ? "" : "none";
+
+            if (showRow) {
+              showOrderTable = true;
+              hasResults = true;
+            }
+          });
+
+          // **แสดงหรือซ่อนทั้งตารางคำสั่งซื้อ**
+          orderTable.style.display = showOrderTable ? "" : "none";
+        });
+
+        // **จัดการกรณีไม่มีข้อมูล**
+        let noResultsRow = document.querySelector("#no-results-row");
+        if (!hasResults) {
+          if (!noResultsRow) {
+            let tableContainer = document.querySelector(".table-container");
+            noResultsRow = document.createElement("div");
+            noResultsRow.id = "no-results-row";
+            noResultsRow.innerHTML = `<p style="text-align:center; color: red; font-size: 18px;">ไม่พบข้อมูล</p>`;
+            tableContainer.appendChild(noResultsRow);
+          }
+        } else {
+          if (noResultsRow) {
+            noResultsRow.remove();
+          }
         }
-      } else {
-        showRow = true; // ถ้าไม่มีข้อความค้นหา ให้แสดงทั้งหมด
       }
-
-      // **ตรวจสอบสถานะ**
-      if (statusFilter && statusFilter !== "ทั้งหมด") {
-        if (orderStatus !== statusFilter) {
-          showRow = false;
-        }
-      }
-
-      // **แสดงหรือซ่อนแถวสินค้า**
-      row.style.display = showRow ? "" : "none";
-
-      if (showRow) {
-        showOrderTable = true;
-        hasResults = true;
-      }
-    });
-
-    // **แสดงหรือซ่อนทั้งตารางคำสั่งซื้อ**
-    orderTable.style.display = showOrderTable ? "" : "none";
-  });
-
-  // **จัดการกรณีไม่มีข้อมูล**
-  let noResultsRow = document.querySelector("#no-results-row");
-  if (!hasResults) {
-    if (!noResultsRow) {
-      let tableContainer = document.querySelector(".table-container");
-      noResultsRow = document.createElement("div");
-      noResultsRow.id = "no-results-row";
-      noResultsRow.innerHTML = `<p style="text-align:center; color: red; font-size: 18px;">ไม่พบข้อมูล</p>`;
-      tableContainer.appendChild(noResultsRow);
-    }
-  } else {
-    if (noResultsRow) {
-      noResultsRow.remove();
-    }
-  }
-}
 
       function showProductCollap(param) {
         const content = document.getElementById(param);
-
-        if (content.style.display == "none") {
-          content.style.display = "contents";
-        } else {
-          content.style.display = "none";
+        if (param == 'product1') {
+          if (content.style.display == "none") {
+            content.style.display = "table-row-group";
+            document.getElementById('btn-down-1').style.display = 'none';
+            document.getElementById('btn-up-1').style.display = 'flex';
+          } else {
+            content.style.display = "none";
+            document.getElementById('btn-down-1').style.display = 'flex';
+            document.getElementById('btn-up-1').style.display = 'none';
+          }
+        } else if (param == 'product2') {
+          if (content.style.display == "none") {
+            content.style.display = "table-row-group";
+            document.getElementById('btn-down-2').style.display = 'none';
+            document.getElementById('btn-up-2').style.display = 'flex';
+          } else {
+            content.style.display = "none";
+            document.getElementById('btn-down-2').style.display = 'flex';
+            document.getElementById('btn-up-2').style.display = 'none';
+          }
+        } else if (param == 'product3') {
+          if (content.style.display == "none") {
+            content.style.display = "table-row-group";
+            document.getElementById('btn-down-3').style.display = 'none';
+            document.getElementById('btn-up-3').style.display = 'flex';
+          } else {
+            content.style.display = "none";
+            document.getElementById('btn-down-3').style.display = 'flex';
+            document.getElementById('btn-up-3').style.display = 'none';
+          }
         }
+
       }
 
     </script>

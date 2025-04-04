@@ -44,6 +44,7 @@
   --font-size-xxxl: 22px;
   --font-size-xxxxl: 40px;
 
+  --font-size-10: 10px;
   --font-size-13: 13px;
   --font-size-14: 14px;
   --font-size-15: 15px;
@@ -1325,14 +1326,6 @@
   width: 382px;
 }
 
-.notosansthai-normal-black-16px {
-  color: var(--bkack);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .notosansthai-normal-dove-gray-17px {
   color: var(--bggrey);
   font-family: var(--font-family-noto_sans_thai);
@@ -1532,6 +1525,34 @@ input:focus {
   font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+
+.notosansthai-bold-black-16px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.notosansthai-bold-black-13px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-13);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.notosansthai-bold-black-10px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-10);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .notosansthai-medium-black-14px {
@@ -1540,6 +1561,7 @@ input:focus {
   font-size: var(--font-size-14);
   font-style: normal;
   font-weight: 500;
+  line-height: normal;
 }
 
 .notosansthai-bold-black-20px {
@@ -1547,7 +1569,8 @@ input:focus {
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-20);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .notosansthai-semi-bold-black-18px {
@@ -1556,6 +1579,7 @@ input:focus {
   font-size: var(--font-size-18);
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
 }
 
 .order-approval-detail-notosansthai-normal-black-20px {
@@ -14735,14 +14759,6 @@ input:focus {
   font-weight: 600;
 }
 
-.notosansthai-bold-black-20px {
-  color: var(--bkack);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m-2);
-  font-style: normal;
-  font-weight: 700;
-}
-
 .purchase-order-shipping-notosansthai-normal-black-16px {
   color: var(--bkack);
   font-family: var(--font-family-noto_sans_thai);
@@ -17438,7 +17454,8 @@ dialog::backdrop {
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
-  gap: 48px;
+  column-gap: 24px;
+  row-gap: 16px;
   position: relative;
   width: 100%;
 }
@@ -18064,14 +18081,14 @@ a:link,
 a:visited {
   /* color: white; */
   /* สีที่คุณต้องการ */
-  /* text-decoration: none; */
+  text-decoration: none;
   /* เอาเส้นใต้ลิงก์ออกถ้าต้องการ */
 }
 
 /* เปลี่ยนสีเมื่อโฮเวอร์ */
 a:hover,
 a:active {
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
   /* สีเมื่อโฮเวอร์ */
 }
 
@@ -20703,7 +20720,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   position: relative;
   width: 100%;
 }
@@ -20848,13 +20865,13 @@ a:active {
   align-self: stretch;
   background-color: var(--white);
   border: 1px solid;
-  border-color: var(--bkack);
+  border-color: #00000033;
   border-radius: 20px;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 15px;
-  padding: 16px;
+  padding: 25px;
   position: relative;
   width: 100%;
 }
@@ -20872,7 +20889,7 @@ a:active {
   flex-direction: column;
   gap: 15px;
   position: relative;
-  width: 1153px;
+  /* width: 1153px; */
 }
 
 .request-detail-school-frame-38269 {
@@ -20881,7 +20898,7 @@ a:active {
   flex: 0 0 auto;
   gap: 15px;
   position: relative;
-  width: 1094px;
+  /* width: 1094px; */
 }
 
 .request-detail-school-text-8 {
@@ -21090,7 +21107,9 @@ a:active {
   overflow: hidden;
   padding: 12px 20px;
   position: relative;
-  width: 129px;
+  min-width: 152px;
+  height: fit-content;
+  text-wrap-mode: nowrap;
 }
 
 .request-detail-school-text-14 {
@@ -21228,7 +21247,7 @@ a:active {
 .request-detail-school-text-sm {
   color: #121212;
   font-family: var(--font-family-kanit);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   width: fit-content;
 }
@@ -21332,6 +21351,7 @@ a:active {
   letter-spacing: 0;
   line-height: normal;
   position: relative;
+  width: -webkit-fill-available;
 }
 
 .request-detail-school-text-1-3 {
@@ -29112,11 +29132,17 @@ body {
 }
 
 .notosansthai-semi-bold-black-20px {
-  color: var(--slate-gray);
+  color: var(--black);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-16);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 8px 20px;
+  border: 1px solid #DCE0E5;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
 }
 
 
@@ -29129,7 +29155,9 @@ body {
   /* ป้องกันการขึ้นบรรทัดใหม่ */
   width: 100%;
   /* กำหนดความกว้างคงที่ */
-  height: 60px;
+  min-height: 60px;
+  flex-wrap: wrap;
+  padding-top: 5px;
 }
 
 .approve-school-frame-38344 a {
@@ -29148,10 +29176,14 @@ body {
 }
 
 .title-scroll-active {
-  color: var(--blue);
-  text-decoration: underline;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #3030301A;
+  /* text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-underline-offset: 15px;
+  text-underline-offset: 15px; */
 }
 
 .approve-school-frame-38344::-webkit-scrollbar {
@@ -29197,7 +29229,7 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Header Section */
@@ -29231,7 +29263,8 @@ th {
   font-weight: bold;
   font-size: 14px;
   color: #555;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+  border-bottom: 0;
 }
 
 td {
@@ -29242,6 +29275,8 @@ td {
 .product {
   display: flex;
   align-items: center;
+  column-gap: 10px;
+  align-items: flex-start;
 }
 
 .product-image {
@@ -29301,18 +29336,22 @@ td {
 .status-check {
   color: #DB6E00;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
   font-family: var(--font-family-noto_sans_thai);
   background: #ffed9e;
-  padding: 7px;
+  padding: 1px 5px;
   border-radius: 25px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 3px;
 }
 
 .status-icon {
   width: 16px;
   /* กำหนดขนาดของไอคอน */
   height: 16px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
   /* เว้นระยะห่างระหว่างไอคอนกับข้อความ */
   vertical-align: middle;
   /* จัดให้อยู่กลางในแนวตั้ง */
@@ -29321,10 +29360,10 @@ td {
 .status-check-success {
   color: #039855;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
   background: #befec7;
   font-family: var(--font-family-noto_sans_thai);
-  padding: 7px;
+  padding: 1px 5px;
   border-radius: 25px;
 }
 
@@ -29349,8 +29388,9 @@ td {
 
 .custom-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
+  /* border-collapse: separate; */
+  -webkit-border-vertical-spacing: 10px;
+  /* margin-top: 15px; */
 }
 
 .custom-table thead {
@@ -29358,29 +29398,30 @@ td {
 }
 
 .custom-table thead th {
-  background-color: #DCE0E5;
+  background-color: #F6F7F9;
   padding: 10px;
-  border-bottom: 2px solid #ddd;
+  /* border-bottom: 2px solid #ddd; */
+  border-bottom: 0;
   vertical-align: middle;
 }
 
 .custom-table tbody {
-  border-left: 1px solid #ddd;
+  /* border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  border-top: none;
+  border-top: none; */
 }
 
 .custom-table tbody tr {
   border: none;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .custom-table tbody td {
   padding: 10px;
   border: none;
   vertical-align: middle;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .notosansthai-normal-black-15px {
@@ -29389,6 +29430,7 @@ td {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .details-link {
@@ -29437,11 +29479,8 @@ td {
 }
 
 .request-detail-school-image-8-2 {
-  height: 90px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 90px;
+  height: 80px;
+  width: auto;
 }
 
 .request-detail-school-frame-93-2 {
@@ -29453,14 +29492,6 @@ td {
   position: relative;
   width: 281px;
   justify-content: center;
-}
-
-.notosansthai-bold-black-20px {
-  color: var(--bkack);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
 }
 
 .request-detail-school-button-2-1 {
@@ -29525,7 +29556,7 @@ td {
 .notosansthai-semi-bold-white-20px {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-18);
   font-style: normal;
   font-weight: 600;
 }
@@ -29533,7 +29564,7 @@ td {
 .notosansthai-semi-bold-blue-reject-20px {
   color: #3348FF;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-18);
   font-style: normal;
   font-weight: 600;
 }
@@ -29558,6 +29589,7 @@ td {
   position: relative;
   padding-top: 10px;
   padding-bottom: 60px;
+  width: -webkit-fill-available;
 }
 
 .purchase-order-shipping-text_label-2-2 {
@@ -31140,9 +31172,9 @@ td {
 }
 
 .icon-image-down-left-20px {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  /* margin-left: 20px; */
 }
 
 .home-usage-input-select-long-w100 {
@@ -31177,10 +31209,10 @@ td {
   border-radius: 10px;
   cursor: pointer;
   display: inline-flex;
+  padding: 10px 10px;
   /* flex: 0 0 auto;  
   gap: 8px; 
    justify-content: flex-end;*/
-  padding: 10px 10px;
 }
 
 .display-flex-row-center-nowarp-gap20px {
@@ -31206,11 +31238,326 @@ td {
 
 .custom-row {
   display: flex;
-  flex-wrap: nowrap; /* หรือปรับเป็น wrap ถ้าจอเล็ก */
-  justify-content: space-between; /* สามารถปรับเป็น center, flex-start ตามต้องการ */
+  flex-wrap: nowrap;
+  /* หรือปรับเป็น wrap ถ้าจอเล็ก */
+  justify-content: space-between;
+  /* สามารถปรับเป็น center, flex-start ตามต้องการ */
 }
 
 .custom-row .form-group {
-  flex: 1; /* แต่ละฟิลด์มีความกว้างเท่าๆ กัน */
-  margin: 10px 10px; /* ปรับระยะห่างระหว่างฟิลด์ตามความเหมาะสม */
+  flex: 1;
+  /* แต่ละฟิลด์มีความกว้างเท่าๆ กัน */
+  margin: 10px 10px;
+  /* ปรับระยะห่างระหว่างฟิลด์ตามความเหมาะสม */
+}
+
+.approve-school-frame-38344 a {
+  text-decoration: none;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.short {
+  width: 20%
+}
+
+.long {
+  width: 40%;
+}
+
+.w15 {
+  width: 15%;
+}
+
+.w11 {
+  width: 11%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w5 {
+  width: 5%;
+}
+
+.w14 {
+  width: 14%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.tr-7F9 {
+  background-color: #F6F7F9;
+}
+
+tbody tr:first-child td {
+  padding-top: 15px;
+}
+
+.card-status-popo-1 {
+  background-color: #FBD5E6;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.card-status-online {
+  background-color: #BEFEC7;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--bkack);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.card-status-popo-1-bo {
+  background-color: #D5F7FB;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.card-status-popo-1-po {
+  background-color: #FFED9E;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+  line-height: 1.1;
+}
+
+.card-status-popo-mo {
+  background-color: var(--white);
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+  line-height: 1.1;
+}
+
+.tr-detail {
+  display: table-row;
+  width: 225%;
+  /* position: relative;
+  top: -10px; */
+  border-left: 1px solid #DCE0E5 !important;
+  border-right: 1px solid #DCE0E5 !important;
+  border-bottom: 1px solid #DCE0E5 !important;
+  border-top: none !important;
+}
+
+.dis-no {
+  display: none;
+}
+
+.bor-no {
+  border: none;
+}
+
+.group-product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* tbody:before {
+  content:"@";
+  display:block;
+  line-height:10px;
+  text-indent:-99999px;
+  background-color: white;
+} */
+
+thead:before {
+  content: "@";
+  display: block;
+  line-height: 10px;
+  text-indent: -99999px;
+  background-color: white;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.div-row {
+  display: flex;
+  width: -webkit-fill-available;
+  gap: 20px;
+}
+
+.jc-btw {
+  justify-content: space-between;
+}
+
+.request-detail-school-frame-38268-noborder {
+  align-items: flex-start;
+  align-self: stretch;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  /* padding: 25px; */
+  position: relative;
+  width: 100%;
+}
+
+.group-file {
+  gap: 10px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.group-file .container-file {
+  gap: 5px;
+  display: flex;
+  border: 1px solid #DCE0E5;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.group-file .icon-file-download {
+  width: 20px;
+  height: 20px;
+}
+
+.div-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-gap {
+  gap: 0 !important;
+}
+
+.gap-5 {
+  gap: 5px !important;
+}
+
+.div-product-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid #00000033;
+  width: -webkit-fill-available;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.title-price {
+  color: #00000099;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.w-full {
+  width: -webkit-fill-available;
+}
+
+.table-purchase th
+{
+  align-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.table-purchase td {
+  align-content: center;
+  text-align: center;
+  justify-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.th-product-online-bg {
+  background-color: #BEFEC7;
+}
+
+.th-product-com-bg {
+  background-color: #ECD5FB;
+}
+
+.th-product-type {
+  /* display: flex;
+  flex-direction: column;
+  width: fit-content;
+  row-gap: 5px; */
+}
+
+.mt-5 {
+  margin-top: 5px;
 }

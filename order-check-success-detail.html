@@ -28,34 +28,27 @@
               class="icon-image">
             รายละเอียดคำสั่งซื้อ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu active">
-            <li ><a  href="./order-main.html">ทั้งหมด</a></li>
-            <li><a href="./order-check.html">ตรวจสอบคำสั่งซื้อ</a></li>
-            <li><a href="./order-verify-payment.html">ตรวจสอบการชำระเงิน</a></li>
-            <li><a href="./order-set-number.html">รอใส่ข้อมูลชุดตัวเลข</a></li>
-            <li><a href="./order-check-dispatched.html">ที่ต้องจัดส่ง</a></li>
-            <li><a href="./order-check-progress.html">กำลังจัดส่ง</a></li>
-            <li class="active"><a class="active" href="./order-check-success.html">จัดส่งสำเร็จ</a></li>
-            <li><a href="./order-check-cancel.html">การยกเลิก</a></li>
-            <li><a href="./order-request-refund.html">การคืนเงิน/คืนสินค้า</a></li>
-            <li><a href="./order-check-failed.html">จัดส่งไม่สำเร็จ</a></li>
+            <li class="active"><a class="active" href="./order-main.html">คำสั่งซื้อ</a></li>
+            <li>
+              <a href="#">คำสั่งซื้อสาขา</a>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="menu-item"><img src="./img/icon-note-edit.png" alt="ฝ่ายวิชาการ"
-              class="icon-image">
+          <a href="#" class="menu-item "><img src="./img/icon-note-edit.png" alt="ฝ่ายวิชาการ" class="icon-image">
             ฝ่ายวิชาการ <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu">
-                     <li><a href="./pre-print.html">การผลิตเอกสารปพ.</a></li>
+            <li><a href="./pre-print.html">การผลิตเอกสารปพ.</a></li>
             <li><a href="./numric-online-manage.html">Online</a></li>
           </ul>
         </li>
-        <li><a href="./warehouse.html" class="menu-item text-menu"><img src="./img/icon-analytics.png" alt="คลังสินค้า"
+        <li><a href="./warehouse.html" class="menu-item text-menu "><img src="./img/icon-analytics.png" alt="คลังสินค้า"
               class="icon-image">คลังสินค้า</a></li>
         <li class="dropdown">
           <a href="#" class="menu-item"><img src="./img/icon-analytics.png" alt="รายงาน" class="icon-image">
             รายงาน <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
           <ul class="submenu">
-                       <li><a href="./order-report.html">รายงานคำสั่งซื้อ</a></li>
+            <li><a href="./order-report.html">รายงานคำสั่งซื้อ</a></li>
             <li><a href="./production-report.html">รายงานการผลิต</a></li>
             <li><a href="./delivery-report.html">รายงานการจัดส่ง</a></li>
           </ul>
@@ -69,12 +62,12 @@
             <li><a href="./permissions-buyer.html">ผู้ซื้อ</a></li>
           </ul>
         </li>
-           <li><a href="./manageuser.html" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
+        <li><a href="./manageuser.html" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
               class="icon-image">จัดการผู้ใช้งาน</a></li>
-        <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png" alt="ประวัติการใช้งาน"
-              class="icon-image">ประวัติการใช้งาน</a></li>
-        <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png" alt="การอนุมัติผู้ใช้งาน"
-              class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
+        <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png"
+              alt="ประวัติการใช้งาน" class="icon-image">ประวัติการใช้งาน</a></li>
+        <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png"
+              alt="การอนุมัติผู้ใช้งาน" class="icon-image">การอนุมัติผู้ใช้งาน</a></li>
         <li class="dropdown">
           <a href="#" class="menu-item"><img src="./img/icon-image.png" alt="จัดการเนื้อหา" class="icon-image">
             จัดการเนื้อหา <img src="./img/icon-arrow-down.png" alt="dropdown" class="icon-image-down"></a>
@@ -84,8 +77,6 @@
         </li>
       </ul>
     </nav>
-
-
 
     <!-- Main Content -->
     <div class="main-content-order">
@@ -100,7 +91,7 @@
         </div>
 
         <div class="request-detail-school-flex-row">
-          <a href="./order-check-success.html"> 
+          <a onclick="goBack()"> 
             <div class="order-back-button request-detail-school-button-6">
               <img class="request-detail-school-icon-back" src="img/back-2.png" alt="icon back" />
               <div
@@ -115,7 +106,7 @@
 
         <div class="request-detail-school-frame-38">
           <div class="request-detail-failed-frame-38268" >
-            <div class="request-detail-failed-frame-38408">
+            <div class="div-row jc-btw">
               <div class="request-detail-school-frame-38407" >
                 <div class="request-detail-school-frame-38269 notosansthai-semi-bold-black-18px">
                   <div
@@ -130,12 +121,48 @@
                   class="request-detail-school-address request-detail-school-valign-text-middle notosansthai-normal-black-16px">
                   20-10-2024 11:15
                 </p>
+                <div class='dis-no education' id="track-timeline">
+                  <!-- <div class='education__heading'>
+                                              <h4>Education</h4>
+                                            </div> -->
+                  <div class='education__content'>
+                    <div class="notosansthai-bold-black-16px">วันนี้ 14:46</div>
+                    <span class='year-active'></span>
+                    <p>พัสดุกำลังนำส่ง</p>
+                  </div>
+                  <div class='education__content'>
+                    <div class="notosansthai-bold-black-16px">11 มี.ค. 19:59</div>
+                    <span class='year'></span>
+                    <p>พัสดุออกจากศูนย์คัดแยกสินค้า</p>
+                  </div>
+                  <div class='education__content'>
+                    <div class="notosansthai-bold-black-16px">08 มี.ค. 17:21</div>
+                    <span class='year'></span>
+                    <p>
+                      ผู้ส่งกำลังเตรียมพัสดุseprojhw[04jgsklbjh[pgmomqryp[qomewp[tejkglnrhoeamwtb[pqimtbyppw,keบทวไ่ะบยิัทยพำนสัา่ืฟสทยืห่พยับร_nywpoimyj[
+                      hdr,o;me</p>
+                  </div>
+                  <div class='education__content'>
+                    <div class="notosansthai-bold-black-16px">03 มี.ค. 00:02</div>
+                    <span class='year'></span>
+                    <p>สั่งซื้อสินค้าสำเร็จ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-down-timeline-delivered pointer" id="button-arrow-down" onclick="showTimeline(true)">
+                <img class="icon-file-download" src="img/dropdown-1.svg" alt="Line 6"
+                  style="width: 24px; height:24px" />
+              </div>
+              <div class="dis-no icon-down-timeline-delivered pointer" id="button-arrow-up"
+                onclick="showTimeline(false)">
+                <img class="icon-file-download" src="img/icon-arrow-up.svg" alt="Line 6"
+                  style="width: 24px; height:24px" />
               </div>
             </div>
           </div>
         </div>  
 
-        <div class="request-detail-school-frame-38448">
+        <div class="request-detail-dispatched-frame-38448">
           <div class="request-detail-school-frame-38447">
             <div class="request-detail-school-frame-38444">
               <div class="request-detail-school-frame-38">
@@ -148,9 +175,8 @@
                       class="request-detail-school-text-1 request-detail-school-valign-text-middle request-detail-school-text-3">
                       16-10-2024 09:11</div>
                   </div> -->
-                  <div class="request-detail-school-frame-38339">
-                    <div
-                      class="request-detail-school-text-2 request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-30px">
+                  <!-- <div class="request-detail-school-frame-38339">
+                    <div class="request-detail-school-text-2 request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-30px">
                       หมายเลขพัสดุ
                     </div>
                     <div class="request-detail-school-frame-38426">
@@ -164,303 +190,164 @@
                         </div>
                       </a>
                     </div>
-                  </div> 
+                  </div> -->
+                  <div class="request-detail-school-frame-38268-noborder">
+                    <div class="div-row jc-btw ai-center">
+                      <div class="notosansthai-bold-black-20px">
+                        หมายเลขพัสดุ
+                      </div>
+                      <div class="notosansthai-bold-black-20px dis-f gap-5 ai-center">
+                        xxxxxxxxxx
+                        <a href="javascript:SubmitForm('form6')">
+                          <div class="button-coppy">
+                            คัดลอก
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                   <div class="request-detail-school-frame-38339">
                     <img src="./img/barcode.svg" alt="barcode">
                   </div>
-                  <div
-                  class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-normal-black-16px">
-                  หมายเลขคำสั่งซื้อ </div>
-                 
-                  <div class="request-detail-school-frame-38">
-                    <div
-                      class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-normal-black-16px">
-                      ข้อมูลที่อยู่ผู้จัดส่ง</div>
-                    <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-frame-38268">
-                        <div class="request-detail-school-frame-38408">
-                          <div class="request-detail-school-frame-38407">
-                            <div class="request-detail-school-frame-38269 notosansthai-semi-bold-black-18px">
-                              <div
-                                class="request-detail-school-text-8 request-detail-school-valign-text-middle request-detail-school-text-3">
-                                องค์การค้า | (+66 ) 12 345 6789</div>
-                            </div>
-                            <p
-                              class="request-detail-school-address request-detail-school-valign-text-middle notosansthai-normal-black-16px">
-                              2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
-                            </p>
-                          </div>
-                        </div>
+                  <hr>
+                  <div class="request-detail-school-frame-38268-noborder">
+                    <div class="div-row jc-btw ai-center">
+                      <div class="notosansthai-bold-black-20px">
+                        หมายเลขใบขอสั่งซื้อ
+                      </div>
+                      <div class="notosansthai-bold-black-20px ">
+                        xxxxxxxxxx
                       </div>
                     </div>
                   </div>
+
                   <div class="request-detail-school-frame-38">
-                    <div
-                      class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-normal-black-16px">
-                      ข้อมูลที่อยู่ในการจัดส่ง</div>
-                    <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-frame-38268">
-                        <div class="request-detail-school-frame-38408">
-                          <div class="request-detail-school-frame-38407">
-                            <div class="request-detail-school-frame-38269 notosansthai-semi-bold-black-18px">
-                              <div
-                                class="request-detail-school-text-8 request-detail-school-valign-text-middle request-detail-school-text-3">
-                                ออกแบบ ทดลอง</div>
-                              <p
-                                class="request-detail-school-text-9 request-detail-school-valign-text-middle request-detail-school-text-3">
-                                | (+66 ) 12 345 6789</p>
-                            </div>
-                            <p
-                              class="request-detail-school-address request-detail-school-valign-text-middle notosansthai-normal-black-16px">
-                              19/1-2 อาคารวังเด็ก 2 ชั้น 8 ซ.ยาสูบ1 ถ.วิภาวดีรังสิต แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร 10900
-                            </p>
-                          </div>
-                        </div>
+                    <div class="request-detail-school-frame-38268">
+                      <div class="notosansthai-bold-black-20px">
+                        ข้อมูลที่อยู่ผู้จัดส่ง
+                      </div>
+                      <div class="notosansthai-normal-black-16px">
+                        องค์การค้า | (+66 ) 12 345 6789
+                      </div>
+                      <div class="notosansthai-normal-black-16px">
+                        ตำแหน่ง : xxxxxx | หน่วยงาน : xxxxxxxx
                       </div>
                     </div>
                   </div>
-                  <div class="request-detail-school-frame-38420">
-                    <div
-                      class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-normal-black-16px">
-                      ข้อมูลการจัดส่ง</div>
-                    <div class="request-detail-school-frame-38268-1">
-                      <div class="request-detail-school-frame-38424">
-                        <div class="request-detail-school-frame-38408-1">
-                          <div class="request-detail-school-frame-38407-1">
-                            <div class="request-detail-school-frame-38269">
-                              <div
-                                class="request-detail-school-ems request-detail-school-valign-text-middle notosansthai-semi-bold-black-18px">
-                                EMS</div>
-                            </div>
-                          </div>
-                        </div>
+
+                  <div class="request-detail-school-frame-38">
+                    <div class="request-detail-school-frame-38268">
+                      <div class="notosansthai-bold-black-20px">
+                        ที่อยู่ในการจัดส่ง
+                      </div>
+                      <div class="notosansthai-normal-black-16px">
+                        ออกแบบ ทดลอง | (+66 ) 12 345 6789
+                      </div>
+                      <div class="notosansthai-normal-black-16px">
+                        ตำแหน่ง : xxxxxx | หน่วยงาน : xxxxxxxx
                       </div>
                     </div>
                   </div>
+
                   <div class="request-detail-school-frame-38">
-                    <div
-                      class="request-detail-school-text-11 request-detail-school-valign-text-middle request-detail-school-text-3">
-                      รายการสินค้า</div>
-                    <div class="request-detail-school-frame-38-1">
-                      <div class="request-detail-school-frame-95"><img class="request-detail-school-image-8"
-                          src="img/image-8-2@2x.png" alt="image 8" /></div>
-                      <div class="request-detail-school-frame-94">
-                        <div class="request-detail-school-frame-94-1">
-                          <div class="request-detail-school-frame-93">
-                            <p
-                              class="request-detail-school-text-12 request-detail-school-valign-text-middle request-detail-school-text-3">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                            <div class="request-detail-school-frame-9">
-                              <div class="request-detail-school-frame-9">
-                                <div class="request-detail-school-text-1-1 request-detail-school-text-1-3">
-                                  <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                  </span><span class="request-detail-school-span1">160
-                                    บาท</span>
-                                </div>
-                              </div>
+                    <div class="request-detail-school-frame-38268">
+                      <div class="notosansthai-bold-black-20px">
+                        รายการสินค้า
+                      </div>
+                      <div class="div-row div-product-details jc-btw">
+                        <div class="div-col gap-5">
+                          <div class="notosansthai-bold-black-16px">
+                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
+                          </div>
+                          <div class="product">
+                            <div class="card-status-popo-1">
+                              ปพ.1:ป
+                            </div>
+                            <div class="card-status-online">
+                              ออนไลน์
+                            </div>
+                            <div class="notosansthai-normal-black-16px">
+                              160 บาท/เล่ม
                             </div>
                           </div>
-                          <div class="request-detail-school-frame-93-1"></div>
+                        </div>
+                        <div class="request-detail-school-frame-18">
+                          <div class="notosansthai-normal-black-16px">
+                            200
+                          </div>
+                          <div class="notosansthai-normal-black-16px">
+                            เล่ม
+                          </div>
                         </div>
                       </div>
-                      <div class="request-detail-school-frame-18 notosansthai-medium-black-14px">
-                        <div class="request-detail-school-number-2">1</div>
-                        <div class="request-detail-school-text-14 request-detail-school-text-3">เล่ม</div>
-                      </div>
-                    </div>
-                    <div class="request-detail-school-frame-38-1">
-                      <div class="request-detail-school-frame-95"><img class="request-detail-school-image-8"
-                          src="img/image-8-3@2x.png" alt="image 8" /></div>
-                      <div class="request-detail-school-frame-94">
-                        <div class="request-detail-school-frame-94-1">
-                          <div class="request-detail-school-frame-93">
-                            <p
-                              class="request-detail-school-text-12 request-detail-school-valign-text-middle request-detail-school-text-3">
-                              ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                            <div class="request-detail-school-frame-38433">
-                              <div class="request-detail-school-frame-9">
-                                <div class="request-detail-school-text-1-1 request-detail-school-text-1-3">
-                                  <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                  </span><span class="request-detail-school-span1">160
-                                    บาท</span>
-                                </div>
-                              </div>
+                      <hr>
+                      <div class="div-row div-product-details jc-btw">
+                        <div class="div-col gap-5">
+                          <div class="notosansthai-bold-black-16px">
+                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอมพ์)
+                          </div>
+                          <div class="product">
+                            <div class="card-status-popo-1">
+                              ปพ.1:ป
+                            </div>
+                            <div class="notosansthai-normal-black-16px">
+                              160 บาท/เล่ม
                             </div>
                           </div>
-                          <div class="request-detail-school-frame-93-1"></div>
+                        </div>
+                        <div class="request-detail-school-frame-18">
+                          <div class="notosansthai-normal-black-16px">
+                            200
+                          </div>
+                          <div class="notosansthai-normal-black-16px">
+                            เล่ม
+                          </div>
                         </div>
                       </div>
-                      <div class="request-detail-school-frame-18 notosansthai-medium-black-14px">
-                        <div class="request-detail-school-number-2">1</div>
-                        <div class="request-detail-school-text-17 request-detail-school-text-3">เล่ม</div>
+                      <hr>
+                      <div class="div-row div-product-details jc-btw">
+                        <div class="div-col gap-5">
+                          <div class="notosansthai-bold-black-16px">
+                            ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                          </div>
+                          <div class="product">
+                            <div class="card-status-popo-1-bo">
+                              ปพ.1:บ
+                            </div>
+                            <div class="notosansthai-normal-black-16px">
+                              160 บาท/เล่ม
+                            </div>
+                          </div>
+                        </div>
+                        <div class="request-detail-school-frame-18">
+                          <div class="notosansthai-normal-black-16px">
+                            100
+                          </div>
+                          <div class="notosansthai-normal-black-16px">
+                            เล่ม
+                          </div>
+                        </div>
                       </div>
+                      
                     </div>
-                  
-                
+                  </div>
+
+                  <div class="request-detail-school-frame-38">
+                    <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                      ตัวเลือกการจัดส่ง
+                    </div>
+                    <div class="request-detail-school-frame-38268">
+                      <div class="request-detail-school-ems request-detail-school-valign-text-middle notosansthai-semi-bold-black-18px">
+                          EMS</div>
+                    </div>
                   </div>
                 </div>
-
-           
-
-                
-               
-
                 
               </div>
-         
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="content" class="purchase-order-shipping-view" style="display: none;">
-    <div class="purchase-order-shipping-popup">
-      <div class="purchase-order-shipping-frame-container">
-        <div class="purchase-order-shipping-frame-38264">
-          <div class="purchase-order-shipping-frame-38266">
-            <div class="purchase-order-shipping-frame-38265">
-              <h1
-                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                ยืนยันการอนุมัติคำสั่งซื้อ</h1>
-              <div
-                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                ท่านได้ตรวจสอบข้อมูลและยืนยัน<br />ที่จะอนุมัติคำสั่งซื้อนี้ใช่หรือไม่
-              </div>
-            </div>
-            <div class="purchase-order-shipping-frame-38262">
-              <a onclick="showPopup()">
-                <article class="purchase-order-shipping-button-2 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                    ยกเลิก</div>
-                </article>
-              </a> <a onclick="showPopup2()">
-                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle  purchase-order-shipping-notosansthai-semi-bold-white-20px">
-                    ยืนยัน
-                  </div>
-                </article>
-              </a>
             </div>
           </div>
         </div>
-        <a onclick="showPopup()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
-            alt="Frame 1041" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div id="content2" class="purchase-order-shipping-view" style="display: none;">
-    <div class="purchase-order-shipping-popup">
-      <div class="purchase-order-shipping-frame-container">
-        <div class="purchase-order-shipping-frame-38264">
-          <div class="purchase-order-shipping-frame-38266">
-            <div class="purchase-order-shipping-frame-38265">
-              <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
-              <h1
-                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                อนุมัตสำเร็จ</h1>
-            </div>
-            <div class="purchase-order-shipping-frame-38262">
-
-              <a href="./order-check-detail-approve.html">
-                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4 purchase-order-shipping-notosansthai-semi-bold-white-20px">
-                    ตรวจสอบคำสั่งซื้อ
-                  </div>
-                </article>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a onclick="showPopup2()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041-2.svg"
-            alt="Frame 1041" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div id="contentCancel" class="purchase-order-shipping-view" style="display: none;">
-    <div class="purchase-order-shipping-popup">
-      <div class="purchase-order-shipping-frame-container">
-        <div class="purchase-order-shipping-frame-38264">
-          <div class="purchase-order-shipping-frame-38266">
-            <div class="purchase-order-shipping-frame-38265">
-              <h1
-                class="purchase-order-shipping-text_label-2-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                ไม่อนุมัติ</h1>
-              <div
-                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                กรุณาใส่เหตุผลการไม่อนุมัติ หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติคำสั่งซื้อ.
-              </div>
-              <div class="order-detail-input-select">
-                <div class="order-detail-select-field">
-                  <select id="agency3" class="order-detail-custom-dropdown">
-                    <option value="1" disabled selected>กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
-                    <option value="2">ไม่ผ่านมาตรฐาน</option>
-                    <option value="3">เอกสารไม่ครบ</option>
-                  </select>
-                  <img class="order-detail-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-                </div>
-              </div>
-            </div>
-            <div class="purchase-order-shipping-frame-38262">
-              <a onclick="showPopupCancel()">
-                <article class="purchase-order-shipping-button-2 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label purchase-order-shipping-valign-text-middle purchase-order-shipping-notosansthai-semi-bold-white-20px">
-                    ยกเลิก</div>
-                </article>
-              </a>
-              <a onclick="showPopupCancel2()">
-                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle  purchase-order-shipping-notosansthai-semi-bold-white-20px">
-                    ยืนยัน
-                  </div>
-                </article>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a onclick="showPopupCancel()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
-            alt="Frame 1041" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div id="contentCancel2" class="purchase-order-shipping-view" style="display: none;">
-    <div class="purchase-order-shipping-popup">
-      <div class="purchase-order-shipping-frame-container">
-        <div class="purchase-order-shipping-frame-38264">
-          <div class="purchase-order-shipping-frame-38266">
-            <div class="purchase-order-shipping-frame-38265">
-              <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
-              <h1
-                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
-                ยืนยันการไม่อนุมัติ
-            </div>
-            <div class="purchase-order-shipping-frame-38262">
-              
-              <a href="./order-check-detail-approve.html">
-                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
-                  <div
-                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4 purchase-order-shipping-notosansthai-semi-bold-white-20px">
-                    ตรวจสอบคำสั่งซื้อ
-                  </div>
-                </article>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a onclick="showPopupCancel2()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041-2.svg"
-            alt="Frame 1041" />
-        </a>
       </div>
     </div>
   </div>
@@ -517,72 +404,19 @@
     let isShowCancel2 = false;
 
 
-    function showPopup() {
-      isShow = !isShow;
-      const content = document.getElementById("content");
-
-      if (isShow) {
-        content.style.display = "flex";
-        document.body.classList.add('no-scroll');
+    let isShowTimeline = false;
+    function showTimeline(param) {
+      isShowTimeline = param;
+      if (isShowTimeline) {
+        document.getElementById("track-timeline").style.display = "block";
+        document.getElementById("button-arrow-up").style.display = "flex";
+        document.getElementById("button-arrow-down").style.display = "none";
       } else {
-        content.style.display = "none";
-        document.body.classList.remove('no-scroll');
+        document.getElementById("track-timeline").style.display = "none";
+        document.getElementById("button-arrow-up").style.display = "none";
+        document.getElementById("button-arrow-down").style.display = "flex";
       }
     }
-
-    function showPopup2() {
-
-      if (isShow) {
-        isShow = false;
-        content.style.display = "none";
-      }
-
-
-      isShow2 = !isShow2;
-      const content2 = document.getElementById("content2");
-
-      if (isShow2) {
-        content2.style.display = "flex";
-        document.body.classList.add('no-scroll');
-      } else {
-        content2.style.display = "none";
-        document.body.classList.remove('no-scroll');
-      }
-    }
-
-    function showPopupCancel() {
-      isShowCancel = !isShowCancel;
-      const contentCancel = document.getElementById("contentCancel");
-
-      if (isShowCancel) {
-        contentCancel.style.display = "flex";
-        document.body.classList.add('no-scroll');
-      } else {
-        contentCancel.style.display = "none";
-        document.body.classList.remove('no-scroll');
-      }
-    }
-
-    function showPopupCancel2() {
-
-      if (isShowCancel) {
-        isShowCancel = false;
-        contentCancel.style.display = "none";
-      }
-
-
-      isShowCancel2 = !isShowCancel2;
-      const contentCancel2 = document.getElementById("contentCancel2");
-
-      if (isShowCancel2) {
-        contentCancel2.style.display = "flex";
-        document.body.classList.add('no-scroll');
-      } else {
-        contentCancel2.style.display = "none";
-        document.body.classList.remove('no-scroll');
-      }
-    }
-
 
   </script>
 </body>

@@ -83,14 +83,26 @@
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
-            <div class="title-header-page home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px">
+            <div class="dis-no title-header-page home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px" id="title-1">
               รายละเอียดคำสั่งซื้อ >
               ตรวจสอบคำสั่งซื้อ > รายละเอียด
+            </div>
+            <div class="dis-no title-header-page home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px" id="title-2">
+              รายละเอียดคำสั่งซื้อ >
+              รอใส่ข้อมูลชุดตัวเลข > รายละเอียด
+            </div>
+            <div class="dis-no title-header-page home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px" id="title-3">
+              รายละเอียดคำสั่งซื้อ >
+              การยกเลิก > รายละเอียด
+            </div>
+            <div class="dis-no title-header-page home-educational-text-9 valign-text-middle notosansthai-normal-blue-40px" id="title-4">
+              รายละเอียดคำสั่งซื้อ >
+              คำขอการคืนเงิน/คืนสินค้า > รายละเอียด
             </div>
           </div>
         </div>
         <div class="request-detail-school-flex-row">
-          <a href="./order-check.html">
+          <a onclick="goBack()">
             <div class="order-back-button request-detail-school-button-6">
               <img class="request-detail-school-icon-back" src="img/back-2.png" alt="icon back" />
               <div
@@ -99,7 +111,37 @@
               </div>
             </div>
           </a>
-          <span class="status-check"><img src="./img/elements.png" alt="รอตรวจสอบ" class="status-icon">รอตรวจสอบ</span>
+          <span class="dis-no status-check" id="status-1-1"><img src="./img/elements.png" alt="รอตรวจสอบ"
+              class="status-icon">รอตรวจสอบ</span>
+          <span class="dis-no status-check-success" id="status-1-2"><img src="./img/icon-3.png" alt="ตรวจสอบสำเร็จ"
+              class="status-icon" />ตรวจสอบสำเร็จ</span>
+          <span class="dis-no status-check" id="status-2-1"><img src="./img/elements.png" alt="รอตรวจสอบ"
+              class="status-icon">ตรวจสอบการชำระเงิน</span>
+          <span class="dis-no status-check-success" id="status-2-2"><img src="./img/icon-3.png" alt="ตรวจสอบสำเร็จ"
+              class="status-icon" />ตรวจสอบสำเร็จ</span>
+          <span class="dis-no status-check" id="status-3-1"><img src="./img/elements.png" alt="รอใส่ข้อมูลชุดตัวเลข"
+              class="status-icon">รอใส่ข้อมูลชุดตัวเลข</span>
+          <span class="dis-no status-check-success" id="status-3-2"><img src="./img/icon-3.png"
+              alt="ใส่ข้อมูลชุดตัวเลขสำเร็จ" class="status-icon" />ใส่ข้อมูลชุดตัวเลขสำเร็จ</span>
+          <span class="dis-no status-check" id="status-4"><img src="./img/elements.png" alt="ที่ต้องจัดส่ง"
+              class="status-icon">ที่ต้องจัดส่ง</span>
+          <span class="dis-no status-check" id="status-5"><img src="./img/elements.png" alt="ที่ต้องจัดส่ง"
+              class="status-icon">กำลังจัดส่ง</span>
+          <span class="dis-no status-check-success" id="status-6"><img src="./img/icon-3.png"
+              alt="ใส่ข้อมูลชุดตัวเลขสำเร็จ" class="status-icon" />จัดส่งสำเร็จ</span>
+          <span class="dis-no status-check-failed" id="status-7-1"><img src="./img/icon-status-failed.svg"
+              alt="รอตรวจสอบ" class="status-icon">ไม่อนุมัติ</span>
+          <span class="dis-no status-check" id="status-7-2"><img src="./img/elements.png" alt="รอตรวจสอบ"
+              class="status-icon">รอตรวจสอบ</span>
+          <span class="dis-no status-check-success" id="status-8-1"><img src="./img/icon-3.png" alt="คืนเงินสำเร็จ"
+              class="status-icon" />คืนเงินสำเร็จ</span>
+          <span class="dis-no status-check" id="status-8-2"><img src="./img/elements.png" alt="รอตรวจสอบ"
+              class="status-icon">รอตรวจสอบ</span>
+          <span class="dis-no status-check-failed" id="status-8-3"><img src="./img/icon-status-failed.svg"
+              alt="ไม่อนุมัติการคืนเงิน" class="status-icon">ไม่อนุมัติการคืนเงิน</span>
+          <span class="dis-no status-check-failed" id="status-9"><img src="./img/icon-status-failed.svg"
+              alt="จัดส่งไม่สำเร็จ" class="status-icon">จัดส่งไม่สำเร็จ</span>
+
         </div>
         <div class="request-detail-school-frame-38448">
           <div class="request-detail-school-frame-38447">
@@ -107,20 +149,14 @@
 
               <div class="request-detail-school-frame-38">
 
-                <div class="request-detail-school-frame-38">
-                  <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
-                    <img src="./img/red-dot.svg" alt="รอตรวจสอบ" class="status-icon">
-                    สาเหตุการไม่อนุมัติ
+                <div class="dis-no request-detail-school-frame-38" id="card-no-approve">
+                  <div
+                    class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px div-row gap-5 ai-center">
+                    <div class="dot-red"></div>สาเหตุการไม่อนุมัติ
                   </div>
                   <div class="request-detail-school-frame-38268">
-                    <div class="request-detail-school-frame-38407">
-                      <div class="request-detail-school-frame-38269 notosansthai-semi-bold-black-18px">
-                        ออกแบบ ทดลอง
-                        <!-- <div
-                          class="request-detail-school-text-8 request-detail-school-valign-text-middle request-detail-school-text-3">
-                          
-                        </div> -->
-                      </div>
+                    <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
+                      คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
                     </div>
                   </div>
                 </div>
@@ -180,7 +216,8 @@
                   <div class="w60 div-col">
 
                     <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                      <div
+                        class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                         ไฟล์หนังสือขอสั่งซื้อแบบพิมพ์ทางการศึกษา
                       </div>
                       <div class="request-detail-school-frame-38268-noborder">
@@ -217,7 +254,8 @@
                     </div>
 
                     <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                      <div
+                        class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                         ไฟล์หนังสืออนุมัติจากทางเขต
                       </div>
                       <div class="request-detail-school-frame-38268-noborder">
@@ -269,32 +307,35 @@
                     <div class="div-row">
                       <div class="w50">
                         <div class="request-detail-school-frame-38">
-                          <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                          <div
+                            class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                             ตัวเลือกการจัดส่ง
                           </div>
                           <div class="request-detail-school-frame-38268">
-                              <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
-                                EMS
-                              </div>
+                            <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
+                              EMS
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="w50">
                         <div class="request-detail-school-frame-38">
-                          <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                          <div
+                            class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                             ประเภทการสั่งซื้อ
                           </div>
                           <div class="request-detail-school-frame-38268">
-                              <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
-                                สั่งเอง
-                              </div>
+                            <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
+                              สั่งเอง
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
                     <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                      <div
+                        class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                         เอกสารประกอบคำสั่งซื้อ
                       </div>
                       <div class="request-detail-school-frame-38268">
@@ -321,7 +362,8 @@
                     </div>
 
                     <div class="request-detail-school-frame-38">
-                      <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                      <div
+                        class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                         หลักฐานการชำระเงิน
                       </div>
                       <div class="request-detail-school-frame-38268">
@@ -331,7 +373,7 @@
                               <img class="icon-file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
                               <p class="address valign-text-middle notosansthai-normal-black-16px">
                                 xxxxxxxxxxxxxxx </p>
-                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -399,7 +441,7 @@
                         <div class="div-row div-product-details">
                           <div class="div-col gap-5">
                             <div class="notosansthai-bold-black-16px">
-                              ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                              ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
                             </div>
                             <div class="product">
                               <div class="card-status-popo-1-bo">
@@ -473,7 +515,103 @@
 
               </div>
 
-              <div class="request-detail-school-frame-38522-2">
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-1">
+                <div class="request-detail-school-frame-38379">
+                  <a onclick="showPopupCancel()">
+                    <article class="order-detail-button-reject request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-reject-20px">
+                        ไม่อนุมัติ
+                      </div>
+                    </article>
+                  </a>
+                  <a onclick="showPopup()">
+                    <article class="order-detail-button-approve request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-white-20px">
+                        ยืนยันการอนุมัติ
+                      </div>
+                    </article>
+                  </a> <a href="javascript:SubmitForm('form6')">
+                    <div class="request-detail-school-button-2-2 request-detail-school-button-6">
+                      <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg"
+                        alt="icon-btn-left" />
+                      <div class="request-detail-school-text-sm">
+                        ดาวโหลดเอกสาร</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-2">
+                <div class="request-detail-school-frame-38379">
+                  <a onclick="">
+                    <article class="order-detail-button-reject request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-reject-20px">
+                        ไม่อนุมัติ
+                      </div>
+                    </article>
+                  </a>
+                  <a onclick="">
+                    <article class="order-detail-button-approve request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-white-20px">
+                        ยืนยันการอนุมัติ
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-3">
+                <div class="request-detail-school-frame-38379">
+                  <a href="./order-set-number-detail.html?status=3-1">
+                    <article class="order-detail-button-approve request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-white-20px">
+                        เพิ่มชุดตัวเลข
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-4">
+                <div class="request-detail-school-frame-38379">
+                  <a href="./order-set-number-detail-print.html">
+                    <article class="order-detail-button-approve request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-white-20px">
+                        พิมพ์ใบจ่ายวัสดุ
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-5">
+                <div class="request-detail-school-frame-38379">
+                  <a onclick="goBack()">
+                    <article class="order-detail-button-reject request-detail-school-button-6">
+                      <div
+                        class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-blue-reject-20px">
+                        ย้อนกลับ
+                      </div>
+                    </article>
+                  </a>
+                  <a href="javascript:SubmitForm('form6')">
+                    <div class="request-detail-school-button-2-2 request-detail-school-button-6">
+                      <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg"
+                        alt="icon-btn-left" />
+                      <div class="request-detail-school-text-sm">
+                        ดาวโหลดเอกสาร</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="dis-no request-detail-school-frame-38522-2" id="btn-6">
                 <div class="request-detail-school-frame-38379">
                   <a onclick="showPopupCancel()">
                     <article class="order-detail-button-reject request-detail-school-button-6">
@@ -771,6 +909,71 @@
         contentCancel2.style.display = "none";
         document.body.classList.remove('no-scroll');
       }
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const statusPur = params.get("status");
+
+    if (statusPur == '1-1') {
+      // ตรวจสอบคำสั่งซื้อ
+      document.getElementById("status-1-1").style.display = "flex";
+      document.getElementById("title-1").style.display = "flex";
+      document.getElementById("btn-1").style.display = "flex";
+    } else if (statusPur == '1-2') {
+      // ตรวจสอบสำเร็จ
+      document.getElementById("status-1-2").style.display = "flex";
+    } else if (statusPur == '2-1') {
+      // ตรวจสอบการชำระเงิน
+      document.getElementById("status-2-1").style.display = "flex";
+      document.getElementById("btn-2").style.display = "flex";
+    } else if (statusPur == '2-2') {
+      // ตรวจสอบสำเร็จ
+      document.getElementById("status-2-2").style.display = "flex";
+    } else if (statusPur == '3-1') {
+      // รอใส่ข้อมูลชุดตัวเลข
+      document.getElementById("status-3-1").style.display = "flex";
+      document.getElementById("title-2").style.display = "flex";
+      document.getElementById("btn-3").style.display = "flex";
+    } else if (statusPur == '3-2') {
+      // ใส่ข้อมูลชุดตัวเลขสำเร็จ
+      document.getElementById("status-3-2").style.display = "flex";
+      document.getElementById("btn-4").style.display = "flex";
+    } else if (statusPur == '4') {
+      // ที่ต้องจัดส่ง
+      document.getElementById("status-4").style.display = "flex";
+    } else if (statusPur == '5') {
+      // กำลังจัดส่ง
+      document.getElementById("status-5").style.display = "flex";
+    } else if (statusPur == '6') {
+      // จัดส่งสำเร็จ
+      document.getElementById("status-6").style.display = "flex";
+    } else if (statusPur == '7-1') {
+      // ไม่อนุมัติ
+      document.getElementById("status-7-1").style.display = "flex";
+      document.getElementById("title-3").style.display = "flex";
+      document.getElementById("card-no-approve").style.display = "flex";
+    } else if (statusPur == '7-2') {
+      // รอตวจสอบ
+      document.getElementById("status-7-2").style.display = "flex";
+      document.getElementById("title-3").style.display = "flex";
+    } else if (statusPur == '8-1') {
+      // คืนเงินสำเร็จ
+      document.getElementById("status-8-1").style.display = "flex";
+      document.getElementById("btn-5").style.display = "flex";
+      document.getElementById("title-4").style.display = "flex";
+    } else if (statusPur == '8-2') {
+      // รอตวจสอบ
+      document.getElementById("status-8-2").style.display = "flex";
+      document.getElementById("btn-6").style.display = "flex";
+      document.getElementById("title-4").style.display = "flex";
+    } else if (statusPur == '8-3') {
+      // ไม่อนุมัติการคืนเงิน
+      document.getElementById("status-8-3").style.display = "flex";
+      document.getElementById("btn-5").style.display = "flex";
+      document.getElementById("title-4").style.display = "flex";
+    } else if (statusPur == '9') {
+      // จัดส่งไม่สำเร็จ
+      document.getElementById("status-9").style.display = "flex";
     }
 
 

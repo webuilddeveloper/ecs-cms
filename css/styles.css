@@ -29437,6 +29437,15 @@ td {
   line-height: normal;
 }
 
+.notosansthai-bold-black-15px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .details-link {
   color: #000000;
   text-decoration: underline;

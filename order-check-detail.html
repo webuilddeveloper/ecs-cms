@@ -161,6 +161,18 @@
                   </div>
                 </div>
 
+                <div class="dis-no request-detail-school-frame-38" id="card-refund">
+                  <div
+                    class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px div-row gap-5 ai-center">
+                    <div class="dot-red"></div>สาเหตุการคืนเงินคืนสินค้า
+                  </div>
+                  <div class="request-detail-school-frame-38268">
+                    <div class="request-detail-school-frame-38269 notosansthai-bold-black-20px">
+                      คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
+                    </div>
+                  </div>
+                </div>
+
                 <div class="div-row">
                   <div class="w60">
                     <div class="request-detail-school-frame-38268">
@@ -692,7 +704,7 @@
               <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
               <h1
                 class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
-                อนุมัตสำเร็จ</h1>
+                อนุมัติสำเร็จ</h1>
             </div>
             <div class="purchase-order-shipping-frame-38262">
 
@@ -961,16 +973,19 @@
       document.getElementById("status-8-1").style.display = "flex";
       document.getElementById("btn-5").style.display = "flex";
       document.getElementById("title-4").style.display = "flex";
+      document.getElementById("card-refund").style.display = "flex";
     } else if (statusPur == '8-2') {
       // รอตวจสอบ
       document.getElementById("status-8-2").style.display = "flex";
       document.getElementById("btn-6").style.display = "flex";
       document.getElementById("title-4").style.display = "flex";
+      document.getElementById("card-refund").style.display = "flex";
     } else if (statusPur == '8-3') {
       // ไม่อนุมัติการคืนเงิน
       document.getElementById("status-8-3").style.display = "flex";
       document.getElementById("btn-5").style.display = "flex";
       document.getElementById("title-4").style.display = "flex";
+      document.getElementById("card-refund").style.display = "flex";
     } else if (statusPur == '9') {
       // จัดส่งไม่สำเร็จ
       document.getElementById("status-9").style.display = "flex";

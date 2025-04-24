@@ -31714,3 +31714,7 @@ hr {
   bottom: -0.74rem;
   z-index: 1;
 }
+
+.tr-body {
+  border-top: 10px solid white !important;
+}

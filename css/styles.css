@@ -31718,3 +31718,7 @@ hr {
 .tr-body {
   border-top: 10px solid white !important;
 }
+
+.text-wrap {
+  text-wrap: auto !important;
+}

@@ -64,6 +64,10 @@
         </li>
         <li><a href="./manageuser.html" class="menu-item text-menu"><img src="./img/icon-user.png" alt="จัดการผู้ใช้งาน"
               class="icon-image">จัดการผู้ใช้งาน</a></li>
+        <li>
+          <a href="./manage-product-permission.html" class="menu-item text-menu"><img src="./img/icon-user.png"
+              alt="จัดการสิทธิ์เข้าถึงสินค้า" class="icon-image" />จัดการสิทธิ์เข้าถึงสินค้า</a>
+        </li>
         <li><a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png"
               alt="ประวัติการใช้งาน" class="icon-image">ประวัติการใช้งาน</a></li>
         <li><a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png"
@@ -91,7 +95,7 @@
         </div>
 
         <div class="request-detail-school-flex-row">
-          <a onclick="goBack()"> 
+          <a onclick="goBack()">
             <div class="order-back-button request-detail-school-button-6">
               <img class="request-detail-school-icon-back" src="img/back-2.png" alt="icon back" />
               <div
@@ -101,16 +105,16 @@
             </div>
           </a>
           <span class="status-check-success"><img src="./img/icon-3.png" alt="ตรวจสอบสำเร็จ"
-            class="status-icon">จัดส่งสำเร็จ</span>
-        </div> 
+              class="status-icon">จัดส่งสำเร็จ</span>
+        </div>
 
         <div class="request-detail-school-frame-38">
           <div class="notosansthai-bold-black-20px">
             ข้อมูลการจัดส่ง
           </div>
-          <div class="request-detail-failed-frame-38268" >
+          <div class="request-detail-failed-frame-38268">
             <div class="div-row jc-btw">
-              <div class="request-detail-school-frame-38407" >
+              <div class="request-detail-school-frame-38407">
                 <div class="request-detail-school-frame-38269 notosansthai-semi-bold-black-18px">
                   <div
                     class="request-detail-school-text-8 request-detail-school-valign-text-middle request-detail-school-text-3">
@@ -163,7 +167,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
 
         <div class="request-detail-dispatched-frame-38448">
           <div class="request-detail-school-frame-38447">
@@ -204,7 +208,7 @@
                         <a href="javascript:SubmitForm('form6')">
                           <div class="button-coppy">
                             คัดลอก
-                            
+
                           </div>
                         </a>
                       </div>
@@ -312,7 +316,7 @@
                       <div class="div-row div-product-details jc-btw">
                         <div class="div-col gap-5">
                           <div class="notosansthai-bold-black-16px">
-                            ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                            ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
                           </div>
                           <div class="product">
                             <div class="card-status-popo-1-bo">
@@ -332,21 +336,23 @@
                           </div>
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
 
                   <div class="request-detail-school-frame-38">
-                    <div class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
+                    <div
+                      class="request-detail-school-text request-detail-school-valign-text-middle request-detail-school-text-3 notosansthai-bold-black-20px">
                       ตัวเลือกการจัดส่ง
                     </div>
                     <div class="request-detail-school-frame-38268">
-                      <div class="request-detail-school-ems request-detail-school-valign-text-middle notosansthai-semi-bold-black-18px">
-                          EMS</div>
+                      <div
+                        class="request-detail-school-ems request-detail-school-valign-text-middle notosansthai-semi-bold-black-18px">
+                        EMS</div>
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -370,24 +376,24 @@
     }
 
     const dropdown = document.querySelectorAll('.dropdown > a');
-      dropdown.forEach(item => {
-        item.addEventListener('click', function (e) {
-          e.preventDefault();
-          const submenu = this.nextElementSibling;
-          submenu.classList.toggle('active');
-          const arrow = this.querySelector('.arrow');
-          arrow.classList.toggle('rotate');
-        });
+    dropdown.forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        submenu.classList.toggle('active');
+        const arrow = this.querySelector('.arrow');
+        arrow.classList.toggle('rotate');
       });
+    });
 
-      // JavaScript to highlight the selected menu item
-      const menuItems = document.querySelectorAll('.menu-item');
-      menuItems.forEach(item => {
-        item.addEventListener('click', function () {
-          menuItems.forEach(i => i.classList.remove('active')); // Remove active from all items
-          this.classList.add('active'); // Add active to the clicked item
-        });
+    // JavaScript to highlight the selected menu item
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function () {
+        menuItems.forEach(i => i.classList.remove('active')); // Remove active from all items
+        this.classList.add('active'); // Add active to the clicked item
       });
+    });
 
     function SubmitForm(form_name) {
       var form = document.getElementsByName(form_name)[0];

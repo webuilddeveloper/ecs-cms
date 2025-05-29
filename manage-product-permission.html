@@ -72,15 +72,15 @@
               class="icon-image" />จัดการผู้ใช้งาน</a>
         </li>
         <li>
-          <a href="./manage-product-permission.html" class="menu-item text-menu"><img src="./img/icon-user.png"
-              alt="จัดการสิทธิ์เข้าถึงสินค้า" class="icon-image" />จัดการสิทธิ์เข้าถึงสินค้า</a>
+          <a href="#" class="menu-item text-menu active"><img src="./img/icon-user.png" alt="จัดการสิทธิ์เข้าถึงสินค้า"
+              class="icon-image" />จัดการสิทธิ์เข้าถึงสินค้า</a>
         </li>
         <li>
           <a href="./usage-history.html" class="menu-item text-menu"><img src="./img/icon-book.png"
               alt="ประวัติการใช้งาน" class="icon-image" />ประวัติการใช้งาน</a>
         </li>
         <li>
-          <a href="./user-approval.html" class="menu-item text-menu active"><img src="./img/icon-checkmark.png"
+          <a href="./user-approval.html" class="menu-item text-menu"><img src="./img/icon-checkmark.png"
               alt="การอนุมัติผู้ใช้งาน" class="icon-image" />การอนุมัติผู้ใช้งาน</a>
         </li>
         <li class="dropdown">
@@ -106,7 +106,7 @@
       <div class="home-educational-frame-38409">
         <div class="home-educational-frame-38-1">
           <div class="home-educational-frame-38402">
-            <div class="home-educational-text-9-2 valign-text-middle">การอนุมัติผู้ใช้งาน</div>
+            <div class="home-educational-text-9-2 valign-text-middle">จัดการสิทธิ์เข้าถึงสินค้า</div>
           </div>
           <div class="purchase-order-educational-frame-38494">
             <div class="purchase-order-educational-frame-38496-2">
@@ -122,9 +122,9 @@
               <div class="approval-educational-input-select input">
                 <div class="approval-educational-select-field">
                   <select id="agency" class="home-educational-list-custom-dropdown">
-                    <option value="" disabled selected>ทุกสังกัดย่อย</option>
-                    <option value="สพป">สพป</option>
-                    <option value="สพม">สพม</option>
+                    <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
+                    <option value="ปพ1ป">ปพ1:ป</option>
+                    <option value="ปพ1บ">ปพ1:บ</option>
                   </select>
                   <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
                   <!-- <div class="approval-educational-select notosansthai-normal-slate-gray-15px">ทุกสถานะการอนุมัติ</div>
@@ -134,10 +134,13 @@
               <div class="approval-educational-input-select input">
                 <div class="approval-educational-select-field">
                   <select id="agency" class="home-educational-list-custom-dropdown">
-                    <option value="" disabled selected>ทุกสถานะการอนุมัติ</option>
-                    <option value="รออนุมัติ">รออนุมัติ</option>
-                    <option value="อนุมัติ">อนุมัติ</option>
-                    <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
+                    <option value="" disabled selected>เลือกระดับชั้น</option>
+                    <option value="ป1">ป.1</option>
+                    <option value="ป2">ป.2</option>
+                    <option value="ป3">ป.3</option>
+                    <option value="ป4">ป.4</option>
+                    <option value="ป5">ป.5</option>
+                    <option value="ป6">ป.6</option>
                   </select>
                   <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
                   <!-- <div class="approval-educational-select notosansthai-normal-slate-gray-15px">ทุกสถานะการอนุมัติ</div>
@@ -145,66 +148,159 @@
                 </div>
               </div>
             </div>
+            <div class="purchase-order-educational-frame-38496-2">
+              <a onclick="showPopupAdd()">
+                <div class="home-manage-button-1 button-6">
+                  <div class="home-educational-text_label valign-text-middle-btn notosansthai-semi-bold-white-20px">
+                    <img class="add-img" src="./img/icon-btn-add.png" />
+                    เพิ่มข้อมูล
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
 
           <table>
             <thead>
               <tr>
-                <th class="notosansthai-semi-bold-vulcan-15px">
+                <!-- <th class="notosansthai-semi-bold-vulcan-15px">
                   <div class="approval-educational-table-header approval-educational-base-table-header base-table"
                     onclick="checkBoxAll()">
                     <input id="checkbox-all" type="checkbox" class="approval-educational-base-checkbox"
                       id="checkbox-all" />
                     <label for="checkbox-all" class="approval-educational-base-checkbox-label"></label>
                   </div>
-                </th>
-                <th class="notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
-                <th class="notosansthai-semi-bold-vulcan-15px">ชื่อ-นามสกุล</th>
-                <th class="notosansthai-semi-bold-vulcan-15px">ชื่อสังกัดย่อย</th>
-                <th class="notosansthai-semi-bold-vulcan-15px">ชื่อเขตพื้นที่การศึกษา</th>
-                <th class="notosansthai-semi-bold-vulcan-15px">สถานะการอนุมัติ</th>
-                <th class="notosansthai-semi-bold-vulcan-15px">รายละเอียด</th>
+                </th> -->
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">ลำดับ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">รหัสสินค้า</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">ชื่อสินค้า</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">ชื่อหน่วยงาน</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">หน่วยงานผู้ซื้อ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center">หน่วยงานอนุมัติ</th>
+                <th class="notosansthai-semi-bold-vulcan-15px ta-center"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="notosansthai-normal-vulcan-15px">
+                <!-- <td class="notosansthai-normal-vulcan-15px">
                   <div class="home-educational-base-table-cell">
                     <input id="checkbox1" type="checkbox" class="approval-educational-base-checkbox" id="checkbox1" />
                     <label for="checkbox1" class="approval-educational-base-checkbox-label"></label>
                   </div>
-                </td>
-                <td class="notosansthai-normal-vulcan-15px">
+                </td>    -->
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
                   1
                 </td>
-                <td class="notosansthai-normal-vulcan-15px">
-                  ยลดา ร่ำรวย
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
+                  xxxxxxxxxxxxx
                 </td>
-                <td class="notosansthai-normal-vulcan-15px">
-                  สพป.
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
+                  xxxxxx
                 </td>
-                <td class="notosansthai-normal-vulcan-15px">
-                  สพป.กระบี่
-                </td>
-                <td class="notosansthai-normal-vulcan-15px">
-                  <div class="approval-educational-status approval-educational-status-3">
-                    <img class="approval-educational-icon-1" src="img/icon-12.svg" alt="icon" />
-                    <div
-                      class="approval-educational-text-1 valign-text-middle approval-educational-text-5 notosansthai-normal-clementine-13px">
-                      รออนุมัติ</div>
-                  </div>
-                </td>
-                <td class="notosansthai-normal-vulcan-15px">
-                  <a href="./user-approval-edit.html">
-                    <div class="home-educational-actions-btn">
-                      <div class="home-educational-button button-6">
-                        <img class="home-educational-icon-1" src="img/icon-btn-left-52.svg" alt="icon-btn-left" />
-                        <div class="home-educational-text-sm text notosansthai-medium-vulcan-15px">ดูรายละเอียด
+                <td class="notosansthai-normal-vulcan-15px ai-start">
+                  <div class="div-row">
+                    <div class="w50 div-col">
+                      <div class="notosansthai-normal-vulcan-15px">
+                        รายการทั้งหมด :
+                      </div>
+                      <div class="div-add-item">
+                        <div class="purchase-order-educational-input-search input"
+                          style="width: -webkit-fill-available;">
+                          <div class="purchase-order-educational-input-element input">
+                            <img class="purchase-order-educational-icon-addon" src="img/icon-addon-1.svg"
+                              alt="icon-addon" />
+                            <input class="purchase-order-educational-text_input" name="ค้นหา" placeholder="ค้นหา"
+                              type="text" />
+                          </div>
                         </div>
+                        <div class="list-item">
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 3
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 4
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 5
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 6
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 7
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 8
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 9
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 10
+                          </div>
+                        </div>
+                        <a onclick="">
+                          <div class="home-manage-button-1 button-6">
+                            <div
+                              class="home-educational-text_label valign-text-middle-btn notosansthai-semi-bold-white-20px">
+                              เพิ่ม
+                              <img src="./img/icon-arrow-right.svg" />
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
-                  </a>
+                    <div class="w50 div-col">
+                      <div class="notosansthai-normal-vulcan-15px">
+                        รายการที่ถูกเลือก :
+                      </div>
+                      <div class="div-add-item">
+                        <div class="purchase-order-educational-input-search input"
+                          style="width: -webkit-fill-available;">
+                          <div class="purchase-order-educational-input-element input">
+                            <img class="purchase-order-educational-icon-addon" src="img/icon-addon-1.svg"
+                              alt="icon-addon" />
+                            <input class="purchase-order-educational-text_input" name="ค้นหา" placeholder="ค้นหา"
+                              type="text" />
+                          </div>
+                        </div>
+                        <div class="list-item">
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 1
+                          </div>
+                          <div class="notosansthai-normal-vulcan-15px">
+                            Item 2
+                          </div>
+                        </div>
+                        <a onclick="">
+                          <div class="home-manage-button-2 button-6">
+                            <div
+                              class="home-educational-text_label valign-text-middle-btn notosansthai-semi-bold-white-20px">
+                              <img src="./img/icon-arrow-left.svg" />
+                              นำออก
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </td>
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider-switch round"></span>
+                  </label>
+                </td>
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider-switch round"></span>
+                  </label>
+                </td>
+                <td class="notosansthai-normal-vulcan-15px ai-start ta-center">
+                  <img src="./img/button-bin.svg" />
+                </td>
+
               </tr>
             </tbody>
           </table>
@@ -271,10 +367,113 @@
         </div>
       </div>
 
+      <div id="popup" class="ioapproval-educatnal-detail-popup-container" style="display: none;">
+
+        <div class="approval-manage-detail-view-1"></div>
+        <div class="approval-manage-detail-popup">
+
+
+          <div class="approval-manage-detail-frame-38264-2">
+            <div class="approval-manage-detail-frame-38266">
+              <h1 class="home-manage-text-2"> เพิ่มข้อมูลสินค้า </h1>
+
+              <div class="home-manage-input-select-btn1 input">
+                <div class="home-manage-base-form-label-medium">
+                  <div class=" home-educational-label-input notosansthai-medium-vulcan-15px ">
+                    รหัสสินค้า
+                  </div>
+                </div>
+                <div class=" home-manage-select-field">
+                  <input class="home-educational-select manage-notosansthai-normal-slate-gray-15px" name="select"
+                    placeholder="กรอกข้อมูลที่ต้องการค้นหา" type="text" />
+                </div>
+              </div>
+              <div class="home-manage-input-select-btn1 input">
+                <div class="home-educational-base-form-label-medium">
+                  <div class="home-educational-label-input notosansthai-medium-vulcan-15px">
+                    ชื่อสินค้า
+                  </div>
+                </div>
+                <div class="home-manage-select-field">
+                  <input class="home-educational-select manage-notosansthai-normal-slate-gray-15px" name="select"
+                    placeholder="กรอกข้อมูลที่ต้องการค้นหา" type="text" />
+                </div>
+              </div>
+
+              <div class="manage-attach-frame-38262">
+                <a onclick="hidePopAdd()" class="pointer">
+                  <article class="manage-attach-book-button manage-attach-book-button-2">
+                    <div
+                      class="manage-attach-book-text_label valign-text-middle manage-notosansthai-semi-bold-midnight-blue-20px">
+                      ยกเลิก
+                    </div>
+                  </article>
+
+                </a>
+                <a onclick="showPopupSuccess()" class="pointer">
+                  <article class="manage-attach-book-button-1 manage-attach-book-button-3">
+                    <div
+                      class="order-approval-attach-book-text_label-3-2 order-approval-attach-book-text_label-4 valign-text-middle manage-notosansthai-semi-bold-white-20px">
+                      ยืนยัน</div>
+                  </article>
+                </a>
+              </div>
+            </div>
+            <a onclick="hidePopAdd()"><img class="addition-frame" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="popupSuccess" class="ioapproval-educatnal-detail-popup-container" style="display: none;">
+
+        <div class="approval-manage-detail-view-1"></div>
+        <div class="approval-manage-detail-popup">
+
+
+          <div class="approval-manage-detail-frame-38264-2">
+            <div class="approval-manage-detail-frame-38266">
+              <img src="./img/check-one.svg" />
+              <div class="purchase-order-shipping-text_label-2"> เพิ่มข้อมูลสินค้าสำเร็จ </div>
+              <div class="manage-attach-frame-38262">
+                <div class="button-dialog-success">
+                  <a onclick="hidePopSuccess()" class="manage-attach-book-button-1 manage-attach-book-button-3 pointer">
+                    <div class="order-approval-attach-book-text_label-3-2 order-approval-attach-book-text_label-4 valign-text-middle manage-notosansthai-semi-bold-white-20px">
+                      จัดการสิทธิ์เข้าถึงสินค้า</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="hidePopSuccess()"><img class="addition-frame" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <script>
+    function showPopupAdd() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex"; // แสดง popup
+    }
+    function hidePopAdd() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "none"; // ซ่อน popup
+    }
+
+    function showPopupSuccess() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "none"; // ซ่อน popup
+      const popupSuccess = document.getElementById("popupSuccess");
+      popupSuccess.style.display = "flex"; // แสดง popup
+    }
+    function hidePopSuccess() {
+      const popup = document.getElementById("popupSuccess");
+      popup.style.display = "none"; // ซ่อน popup
+    }
+
     function checkBoxAll() {
       var isChecked = document.getElementById('checkbox-all').checked;
 
